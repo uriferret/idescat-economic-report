@@ -1,0 +1,24 @@
+table dim_any
+	lineageTag: 25981fb9-5724-4b3c-9540-a2e47d4889ca
+
+	column any
+		dataType: int64
+		formatString: 0
+		lineageTag: af4466f2-c772-4878-8882-0256cdd24e61
+		summarizeBy: none
+		sourceColumn: any
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_any = m
+		mode: import
+		source =
+				let
+				    Source = Table.TransformColumnTypes(fnCsv("dim_any.csv"), {{"any", Int64.Type}})
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

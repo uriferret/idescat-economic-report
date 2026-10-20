@@ -1,63 +1,41 @@
-# Versió Power BI / Fabric
+# Versió Power BI
 
-Fa servir les mateixes dades de l'Idescat que la versió Python, però organitzades com a **model en estrella** per a Power BI. El projecte es desa en format `.pbip` perquè es pugui versionar amb Git.
+Informe de Power BI amb les mateixes dades de l'Idescat que la versió Python, organitzades com a **model en estrella**. Està desat en format `.pbip` (model en TMDL, informe en PBIR), perquè Git pugui versionar-ne cada canvi.
 
-## 1. Generar el model
+> **Estat:** model semàntic i mesures fets i validats. Pàgines de l'informe en construcció.
 
-Des de l'arrel del repositori, després de `python src/extract.py`:
+## Com obrir-lo
 
-```bash
-python src/model.py
-```
+1. Obre `informe_economic.pbip` amb Power BI Desktop.
+2. Si et demana credencials per a `raw.githubusercontent.com`, tria **Anònim** amb nivell de privacitat **Públic**.
+3. Fes clic a **Actualitza**.
 
-Crea `data/model/`:
+Les dades es llegeixen de `data/model/` d'aquest repositori a GitHub (paràmetre `RutaDades`). Per treballar amb fitxers locals, canvia el paràmetre per la ruta de la carpeta `data\model\` acabada en `\`.
+
+## Model
 
 | Taula | Gra | Contingut |
 |---|---|---|
-| `dim_territori` | comarca | `comarca_code`, `comarca`, `ambit_code`, `ambit` (jerarquia Àmbit → Comarca) |
+| `dim_territori` | comarca | comarca i àmbit territorial (jerarquia Àmbit → Comarca) |
 | `dim_any` | any | 1981–2026 |
-| `dim_indicador` | indicador | nom, unitat i com s'agrega (suma o mitjana ponderada) |
+| `dim_indicador` | indicador | nom, unitat i com s'agrega |
 | `dim_sector` | sector | agricultura, indústria, construcció, serveis |
 | `fact_indicadors` | comarca × any × indicador | PIB, població, IST, renda i components de l'IST |
 | `fact_vab` | comarca × any × sector | VAB en milions € |
-| `ref_oficial` | àmbit/Catalunya × any × indicador | valors oficials per conciliar (taula desconnectada) |
+| `ref_oficial` | àmbit/Catalunya × any × indicador | valors oficials, per conciliar (desconnectada) |
 
-## 2. Carregar-lo a Power BI Desktop
+Les dimensions filtren els fets en una sola direcció (1 → *). Les taules es generen amb `python src/model.py`.
 
-1. Crea un paràmetre `RutaRepo` (text) amb la ruta de la carpeta del repositori.
-2. Per a cada CSV, una consulta en blanc amb aquest patró (canvia el nom del fitxer):
+## Decisions de disseny
 
-```powerquery
-let
-    Origen = Csv.Document(
-        File.Contents(RutaRepo & "\data\model\dim_territori.csv"),
-        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
-    Capçaleres = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
-    Tipus = Table.TransformColumnTypes(Capçaleres, {{"comarca_code", type text}})
-in
-    Tipus
-```
+- **Fets a nivell de comarca.** Els àmbits i Catalunya s'obtenen sumant comarques, així tota la sèrie (1981–2025) fa servir la mateixa divisió de 8 àmbits. Respecte de les xifres oficials per àmbit, la diferència és inferior a l'1%, perquè alguns municipis pertanyen a un àmbit diferent del de la seva comarca.
+- **Indicadors no additius.** Per a un àmbit o per a Catalunya, l'IST i la renda es calculen com la mitjana de les comarques ponderada per la població del mateix any.
+- **Últim any amb dades.** Si el context inclou diversos anys (per exemple, una targeta sense filtre d'any), cada mesura mostra l'últim any disponible. El PIB per habitant fa servir el mateix any per al PIB i per a la població.
+- Cada mesura té la seva **descripció** al model, que es veu en passar el ratolí per sobre al panell *Data*.
 
-Compte amb dues coses:
-- `Encoding = 65001` (UTF-8). Sense això, els accents surten malament.
-- `comarca_code` ha de ser **text**. Si el converteixes en nombre, perds el zero inicial ("01" passa a 1) i les relacions fallen.
+## Validació
 
-3. Relacions (totes 1 → *, filtre en una sola direcció):
-
-| Des de | Cap a |
-|---|---|
-| `dim_territori[comarca_code]` | `fact_indicadors[comarca_code]`, `fact_vab[comarca_code]` |
-| `dim_any[any]` | `fact_indicadors[any]`, `fact_vab[any]` |
-| `dim_indicador[indicador_code]` | `fact_indicadors[indicador_code]` |
-| `dim_sector[sector_code]` | `fact_vab[sector_code]` |
-
-`ref_oficial` queda desconnectada. Es farà servir a la fase de control de qualitat.
-
-4. Mesures: obre [`measures.dax`](measures.dax) a la **Visualització de consultes DAX**, executa-ho i fes clic a *Actualitza el model amb els canvis*.
-
-## 3. Comprovar les mesures
-
-La consulta `EVALUATE` del final de `measures.dax` ha de donar aquests valors, calculats amb pandas a partir dels mateixos CSV. Cada mesura agafa l'últim any amb dades: PIB i VAB 2023, població 2025, renda 2023 i IST 2024.
+La consulta `Validacio` de la vista de consultes DAX ha de donar els mateixos valors que pandas a partir dels mateixos CSV. Cada mesura agafa l'últim any amb dades: PIB i VAB 2023, població 2025, renda 2023 i IST 2024.
 
 | Àmbit | PIB (M€) | Població | PIB per habitant (€) | Renda (€) | IST | Pes indústria |
 |---|---:|---:|---:|---:|---:|---:|
@@ -70,18 +48,16 @@ La consulta `EVALUATE` del final de `measures.dax` ha de donar aquests valors, c
 | Ponent | 12.750 | 381.531 | 34.127 | 14.557 | 89,0 | 20,9% |
 | Terres de l'Ebre | 5.865 | 190.648 | 31.688 | 13.342 | 86,2 | 34,1% |
 
-## 4. Pàgines de l'informe
+## Pàgines
 
-| Pàgina | Contingut |
-|---|---|
-| 1. Resum | Les 5 visualitzacions de la infografia Python, amb un segmentador d'any i d'àmbit |
-| 2. Comarques | Taula i mapa per comarca, amb detall Àmbit → Comarca |
-| 3. Mercat laboral | Atur i afiliacions (pendent: cal afegir les taules a `src/sources.py`) |
+| Pàgina | Contingut | Estat |
+|---|---|---|
+| 1. Resum | Les 5 visualitzacions de la infografia Python, amb segmentadors d'any i d'àmbit | pendent |
+| 2. Comarques | Taula i mapa per comarca, amb detall Àmbit → Comarca | pendent |
+| 3. Mercat laboral | Atur i afiliacions | pendent |
 
-## 5. Desar com a projecte
+## Com s'ha construït
 
-*Fitxer → Desa com a → Projecte de Power BI (.pbip)*, dins d'aquesta carpeta (`powerbi/`). Abans, activa a *Opcions → Característiques en versió preliminar* els formats **TMDL** i **PBIR**. Així el model i l'informe es desen com a text llegible i Git pot mostrar els canvis línia a línia. El `.gitignore` ja exclou els fitxers locals (`.pbi/localSettings.json`, `.pbi/cache.abf`).
-
-## 6. Fabric (més endavant)
-
-Durant els 60 dies de la prova gratuïta: un Lakehouse amb `src/` executat des d'un notebook (bronze = JSON crus, silver = `data/processed`, gold = `data/model`) i un model semàntic en mode Direct Lake. No s'ha d'activar la prova fins que aquesta versió de Desktop estigui acabada.
+- **Power Query:** una funció `fnCsv` llegeix cada CSV en UTF-8 des de la ruta del paràmetre `RutaDades` (URL de GitHub o carpeta local). Cada taula és una crida a la funció amb els tipus de columna explícits. Els codis de comarca es carreguen com a text, per conservar el zero inicial.
+- **Configuració regional:** anglès (Estats Units), perquè els CSV fan servir el punt com a separador decimal.
+- **Mesures:** es van escriure i provar amb `DEFINE MEASURE` a la vista de consultes DAX abans d'afegir-les al model.

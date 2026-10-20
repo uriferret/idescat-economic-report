@@ -1,0 +1,40 @@
+table dim_sector
+	lineageTag: 54246d0b-120a-46ee-bae6-578fa539ffd8
+
+	column sector_code
+		dataType: string
+		lineageTag: c40384da-f957-4eec-986c-457d5e270573
+		summarizeBy: none
+		sourceColumn: sector_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column sector
+		dataType: string
+		lineageTag: f92d9739-a2ab-431e-8ce5-9d8d273c4593
+		summarizeBy: none
+		sourceColumn: sector
+
+		annotation SummarizationSetBy = Automatic
+
+	column ordre
+		dataType: int64
+		formatString: 0
+		lineageTag: 094c255e-9a15-4b07-8db4-6aff9037af36
+		summarizeBy: none
+		sourceColumn: ordre
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_sector = m
+		mode: import
+		source =
+				let
+				    Source = Table.TransformColumnTypes(fnCsv("dim_sector.csv"), {{"sector_code", type text}, {"sector", type text}, {"ordre", Int64.Type}})
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

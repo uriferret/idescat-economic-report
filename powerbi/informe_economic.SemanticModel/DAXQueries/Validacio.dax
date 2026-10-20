@@ -1,0 +1,13 @@
+// Validació: una fila per àmbit amb l'últim any de cada indicador.
+// Els valors esperats (calculats amb pandas) són a powerbi/README.md.
+EVALUATE
+    SUMMARIZECOLUMNS (
+        dim_territori[ambit],
+        "PIB (M€)", [PIB (M€)],
+        "Població", [Població],
+        "PIB per habitant (€)", [PIB per habitant (€)],
+        "Renda (€)", [Renda mitjana per persona (€)],
+        "IST", [IST (Catalunya 100)],
+        "Pes indústria", [Pes indústria al VAB (%)]
+    )
+    ORDER BY dim_territori[ambit]

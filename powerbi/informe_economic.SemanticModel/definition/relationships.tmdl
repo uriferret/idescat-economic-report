@@ -1,0 +1,24 @@
+relationship 428155de-1fdc-fc7f-2aee-a60bccae14dc
+	fromColumn: fact_indicadors.comarca_code
+	toColumn: dim_territori.comarca_code
+
+relationship 67cd935e-db6e-ae79-e4d5-2d78f4d02c07
+	fromColumn: fact_vab.comarca_code
+	toColumn: dim_territori.comarca_code
+
+relationship 1bd11955-8500-9123-7e7a-8ac66b32a562
+	fromColumn: fact_indicadors.any
+	toColumn: dim_any.any
+
+relationship ae0faa9d-e2ce-60e3-9b88-d4bbce444ac0
+	fromColumn: fact_vab.any
+	toColumn: dim_any.any
+
+relationship 4fc2af5f-18fb-994d-9a01-cd2fe97125ae
+	fromColumn: fact_indicadors.indicador_code
+	toColumn: dim_indicador.indicador_code
+
+relationship f96ae567-2116-b0cb-1263-f29fd70f8cd0
+	fromColumn: fact_vab.sector_code
+	toColumn: dim_sector.sector_code
+

@@ -1,0 +1,58 @@
+table fact_vab
+	lineageTag: 333c7719-8518-4d9a-85b5-1e46eaadc90e
+
+	column comarca_code
+		dataType: string
+		lineageTag: 74f5f59b-cc2d-48a7-adb6-e684b22217b4
+		summarizeBy: none
+		sourceColumn: comarca_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column any
+		dataType: int64
+		formatString: 0
+		lineageTag: d9e9f430-8e5c-40c0-9bc5-52acb51341b5
+		summarizeBy: none
+		sourceColumn: any
+
+		annotation SummarizationSetBy = Automatic
+
+	column sector_code
+		dataType: string
+		lineageTag: 361e8717-63d3-45aa-81a5-71acac1f9f98
+		summarizeBy: none
+		sourceColumn: sector_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column vab_meur
+		dataType: double
+		lineageTag: bf48f265-8201-4014-96f4-15948bf3ca3f
+		summarizeBy: sum
+		sourceColumn: vab_meur
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column estat
+		dataType: string
+		lineageTag: 2c17ed31-8b9c-4ed0-865b-369075d33b3d
+		summarizeBy: none
+		sourceColumn: estat
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_vab = m
+		mode: import
+		source =
+				let
+				    Source = Table.TransformColumnTypes(fnCsv("fact_vab.csv"), {{"comarca_code", type text}, {"any", Int64.Type}, {"sector_code", type text}, {"vab_meur", type number}, {"estat", type text}})
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
