@@ -1,0 +1,43 @@
+source,period_code,period_label,geo_code,geo_label,CONCEPT,CONCEPT_label,value,status
+pib,2011,2011,TOTAL,Catalunya,GDP_ME,PIB (milions €),208272.2,
+pib,2011,2011,TOTAL,Catalunya,GDP_E_INH,PIB per habitant (€),27738.0,
+pib,2011,2011,TOTAL,Catalunya,GPD_INH_CAT_100,PIB per habitant (índex Catalunya=100),100.0,
+pib,2012,2012,TOTAL,Catalunya,GDP_ME,PIB (milions €),201755.6,
+pib,2012,2012,TOTAL,Catalunya,GDP_E_INH,PIB per habitant (€),26911.0,
+pib,2012,2012,TOTAL,Catalunya,GPD_INH_CAT_100,PIB per habitant (índex Catalunya=100),100.0,
+pib,2013,2013,TOTAL,Catalunya,GDP_ME,PIB (milions €),201023.3,
+pib,2013,2013,TOTAL,Catalunya,GDP_E_INH,PIB per habitant (€),26960.0,
+pib,2013,2013,TOTAL,Catalunya,GPD_INH_CAT_100,PIB per habitant (índex Catalunya=100),100.0,
+pib,2014,2014,TOTAL,Catalunya,GDP_ME,PIB (milions €),205511.1,
+pib,2014,2014,TOTAL,Catalunya,GDP_E_INH,PIB per habitant (€),27662.0,
+pib,2014,2014,TOTAL,Catalunya,GPD_INH_CAT_100,PIB per habitant (índex Catalunya=100),100.0,
+pib,2015,2015,TOTAL,Catalunya,GDP_ME,PIB (milions €),214488.5,
+pib,2015,2015,TOTAL,Catalunya,GDP_E_INH,PIB per habitant (€),28842.0,
+pib,2015,2015,TOTAL,Catalunya,GPD_INH_CAT_100,PIB per habitant (índex Catalunya=100),100.0,
+pib,2016,2016,TOTAL,Catalunya,GDP_ME,PIB (milions €),223652.6,
+pib,2016,2016,TOTAL,Catalunya,GDP_E_INH,PIB per habitant (€),29931.0,
+pib,2016,2016,TOTAL,Catalunya,GPD_INH_CAT_100,PIB per habitant (índex Catalunya=100),100.0,
+pib,2017,2017,TOTAL,Catalunya,GDP_ME,PIB (milions €),232800.0,
+pib,2017,2017,TOTAL,Catalunya,GDP_E_INH,PIB per habitant (€),30957.0,
+pib,2017,2017,TOTAL,Catalunya,GPD_INH_CAT_100,PIB per habitant (índex Catalunya=100),100.0,
+pib,2018,2018,TOTAL,Catalunya,GDP_ME,PIB (milions €),243487.3,
+pib,2018,2018,TOTAL,Catalunya,GDP_E_INH,PIB per habitant (€),32115.0,
+pib,2018,2018,TOTAL,Catalunya,GPD_INH_CAT_100,PIB per habitant (índex Catalunya=100),100.0,
+pib,2019,2019,TOTAL,Catalunya,GDP_ME,PIB (milions €),253298.8,
+pib,2019,2019,TOTAL,Catalunya,GDP_E_INH,PIB per habitant (€),33021.0,
+pib,2019,2019,TOTAL,Catalunya,GPD_INH_CAT_100,PIB per habitant (índex Catalunya=100),100.0,
+pib,2020,2020,TOTAL,Catalunya,GDP_ME,PIB (milions €),225499.9,
+pib,2020,2020,TOTAL,Catalunya,GDP_E_INH,PIB per habitant (€),29168.0,
+pib,2020,2020,TOTAL,Catalunya,GPD_INH_CAT_100,PIB per habitant (índex Catalunya=100),100.0,
+pib,2021,2021,TOTAL,Catalunya,GDP_ME,PIB (milions €),245443.3,
+pib,2021,2021,TOTAL,Catalunya,GDP_E_INH,PIB per habitant (€),31646.0,
+pib,2021,2021,TOTAL,Catalunya,GPD_INH_CAT_100,PIB per habitant (índex Catalunya=100),100.0,
+pib,2022,2022,TOTAL,Catalunya,GDP_ME,PIB (milions €),272268.3,p
+pib,2022,2022,TOTAL,Catalunya,GDP_E_INH,PIB per habitant (€),34764.0,p
+pib,2022,2022,TOTAL,Catalunya,GPD_INH_CAT_100,PIB per habitant (índex Catalunya=100),100.0,p
+pib,2023,2023,TOTAL,Catalunya,GDP_ME,PIB (milions €),296476.8,p
+pib,2023,2023,TOTAL,Catalunya,GDP_E_INH,PIB per habitant (€),37259.0,p
+pib,2023,2023,TOTAL,Catalunya,GPD_INH_CAT_100,PIB per habitant (índex Catalunya=100),100.0,p
+pib,2024,2024,TOTAL,Catalunya,GDP_ME,PIB (milions €),316728.3,p
+pib,2024,2024,TOTAL,Catalunya,GDP_E_INH,PIB per habitant (€),39531.0,p
+pib,2024,2024,TOTAL,Catalunya,GPD_INH_CAT_100,PIB per habitant (índex Catalunya=100),100.0,p

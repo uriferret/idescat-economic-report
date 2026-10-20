@@ -1,0 +1,110 @@
+// =============================================================================
+// Mesures DAX: Informe econòmic de Catalunya (Idescat)
+//
+// Com fer-les servir: Power BI Desktop > Visualització de consultes DAX
+// (DAX query view) > enganxa aquest fitxer > Executa. Després fes clic a
+// "Actualitza el model amb els canvis" (Update model with changes) i totes les
+// mesures quedaran creades a la taula fact_indicadors.
+//
+// Patró comú: si al context hi ha més d'un any (p. ex. una targeta sense filtre
+// d'any), les mesures mostren l'ÚLTIM any amb dades. En un gràfic per anys,
+// cada punt fa servir el seu any.
+// =============================================================================
+
+DEFINE
+
+    // --- Additives (sumen de comarca a àmbit i Catalunya) --------------------
+
+    MEASURE fact_indicadors[PIB (M€)] =
+        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = "GDP_ME" )
+        RETURN
+            CALCULATE ( SUM ( fact_indicadors[valor] ),
+                        dim_indicador[indicador_code] = "GDP_ME", dim_any[any] = _any )
+
+    MEASURE fact_indicadors[Població] =
+        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = "POP" )
+        RETURN
+            CALCULATE ( SUM ( fact_indicadors[valor] ),
+                        dim_indicador[indicador_code] = "POP", dim_any[any] = _any )
+
+    MEASURE fact_indicadors[VAB (M€)] =
+        VAR _any = CALCULATE ( MAX ( fact_vab[any] ) )
+        RETURN CALCULATE ( SUM ( fact_vab[vab_meur] ), dim_any[any] = _any )
+
+    // --- Ràtios -------------------------------------------------------------
+
+    // Calculat com PIB / població a 1 de gener. L'Idescat fa servir la població
+    // mitjana de l'any, per això pot diferir lleugerament del valor oficial.
+    // L'any es fixa al del PIB perquè numerador i denominador siguin del mateix any.
+    MEASURE fact_indicadors[PIB per habitant (€)] =
+        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = "GDP_ME" )
+        RETURN CALCULATE ( DIVIDE ( [PIB (M€)] * 1000000, [Població] ), dim_any[any] = _any )
+
+    MEASURE fact_indicadors[Pes indústria al VAB (%)] =
+        DIVIDE (
+            CALCULATE ( [VAB (M€)], dim_sector[sector_code] = "B-E" ),
+            CALCULATE ( [VAB (M€)], REMOVEFILTERS ( dim_sector ) )
+        )
+
+    MEASURE fact_indicadors[Renda / PIB per habitant] =
+        DIVIDE ( [Renda mitjana per persona (€)], [PIB per habitant (€)] )
+
+    // --- No additives: mitjana ponderada per població -------------------------
+    // Per a una comarca retornen el valor publicat; per a un àmbit o Catalunya,
+    // la mitjana de les comarques ponderada per la seva població del mateix any.
+
+    MEASURE fact_indicadors[IST (Catalunya=100)] =
+        VAR _codi = "IST_G_IND"
+        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = _codi )
+        RETURN
+            CALCULATE (
+                VAR _t =
+                    ADDCOLUMNS (
+                        VALUES ( dim_territori[comarca_code] ),
+                        "@v", CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = _codi ),
+                        "@p", CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "POP" )
+                    )
+                RETURN DIVIDE ( SUMX ( _t, [@v] * [@p] ), SUMX ( FILTER ( _t, NOT ISBLANK ( [@v] ) ), [@p] ) ),
+                dim_any[any] = _any
+            )
+
+    MEASURE fact_indicadors[Renda mitjana per persona (€)] =
+        VAR _codi = "AVER_INC_EUR"
+        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = _codi )
+        RETURN
+            CALCULATE (
+                VAR _t =
+                    ADDCOLUMNS (
+                        VALUES ( dim_territori[comarca_code] ),
+                        "@v", CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = _codi ),
+                        "@p", CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "POP" )
+                    )
+                RETURN DIVIDE ( SUMX ( _t, [@v] * [@p] ), SUMX ( FILTER ( _t, NOT ISBLANK ( [@v] ) ), [@p] ) ),
+                dim_any[any] = _any
+            )
+
+    // --- Evolució -------------------------------------------------------------
+
+    MEASURE fact_indicadors[Creixement població des de 1981 (%)] =
+        VAR _ara = [Població]
+        VAR _ini = CALCULATE ( [Població], dim_any[any] = 1981 )
+        RETURN DIVIDE ( _ara - _ini, _ini )
+
+    MEASURE fact_indicadors[Pes sobre el total de Catalunya (PIB %)] =
+        DIVIDE ( [PIB (M€)], CALCULATE ( [PIB (M€)], REMOVEFILTERS ( dim_territori ) ) )
+
+    MEASURE fact_indicadors[Pes sobre el total de Catalunya (població %)] =
+        DIVIDE ( [Població], CALCULATE ( [Població], REMOVEFILTERS ( dim_territori ) ) )
+
+// Prova ràpida: una fila per àmbit amb l'últim any de cada indicador
+EVALUATE
+    SUMMARIZECOLUMNS (
+        dim_territori[ambit],
+        "PIB (M€)", [PIB (M€)],
+        "Població", [Població],
+        "PIB per habitant (€)", [PIB per habitant (€)],
+        "Renda (€)", [Renda mitjana per persona (€)],
+        "IST", [IST (Catalunya=100)],
+        "Pes indústria", [Pes indústria al VAB (%)]
+    )
+    ORDER BY dim_territori[ambit]

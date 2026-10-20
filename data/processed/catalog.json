@@ -1,0 +1,128 @@
+[
+  {
+    "source": "pib",
+    "geo": "cat",
+    "file": "data/processed/pib_cat.csv",
+    "label": "Producte interior brut. Catalunya",
+    "updated": "2025-12-11",
+    "url": "https://api.idescat.cat/taules/v2/pibc/21925/26069/cat/data",
+    "filters": null,
+    "rows": 42
+  },
+  {
+    "source": "pib",
+    "geo": "at",
+    "file": "data/processed/pib_at.csv",
+    "label": "Producte interior brut. Àmbits del Pla territorial",
+    "updated": "2025-12-11",
+    "url": "https://api.idescat.cat/taules/v2/pibc/21925/26069/at/data",
+    "filters": null,
+    "rows": 351
+  },
+  {
+    "source": "pib",
+    "geo": "com",
+    "file": "data/processed/pib_com.csv",
+    "label": "Producte interior brut. Comarques i Aran",
+    "updated": "2025-12-11",
+    "url": "https://api.idescat.cat/taules/v2/pibc/21925/26069/com/data",
+    "filters": null,
+    "rows": 1716
+  },
+  {
+    "source": "vab",
+    "geo": "cat",
+    "file": "data/processed/vab_cat.csv",
+    "label": "Valor afegit brut. Per sectors d'activitat econòmica. Catalunya",
+    "updated": "2025-12-11",
+    "url": "https://api.idescat.cat/taules/v2/pibc/21926/26070/cat/data",
+    "filters": null,
+    "rows": 65
+  },
+  {
+    "source": "vab",
+    "geo": "at",
+    "file": "data/processed/vab_at.csv",
+    "label": "Valor afegit brut. Per sectors d'activitat econòmica. Àmbits del Pla territorial",
+    "updated": "2025-12-11",
+    "url": "https://api.idescat.cat/taules/v2/pibc/21926/26070/at/data",
+    "filters": null,
+    "rows": 585
+  },
+  {
+    "source": "vab",
+    "geo": "com",
+    "file": "data/processed/vab_com.csv",
+    "label": "Valor afegit brut. Per sectors d'activitat econòmica. Comarques i Aran",
+    "updated": "2025-12-11",
+    "url": "https://api.idescat.cat/taules/v2/pibc/21926/26070/com/data",
+    "filters": null,
+    "rows": 2860
+  },
+  {
+    "source": "poblacio",
+    "geo": "cat",
+    "file": "data/processed/poblacio_cat.csv",
+    "label": "Població. Per sexe. Catalunya",
+    "updated": "2026-05-04",
+    "url": "https://api.idescat.cat/taules/v2/ep/9122/10002/cat/data",
+    "filters": {
+      "SEX": "TOTAL"
+    },
+    "rows": 91
+  },
+  {
+    "source": "poblacio",
+    "geo": "at",
+    "file": "data/processed/poblacio_at.csv",
+    "label": "Població. Per sexe. Àmbits del Pla territorial",
+    "updated": "2025-05-07",
+    "url": "https://api.idescat.cat/taules/v2/ep/9122/10002/at/data",
+    "filters": {
+      "SEX": "TOTAL"
+    },
+    "rows": 801
+  },
+  {
+    "source": "poblacio",
+    "geo": "com",
+    "file": "data/processed/poblacio_com.csv",
+    "label": "Població. Per sexe. Comarques i Aran",
+    "updated": "2025-05-07",
+    "url": "https://api.idescat.cat/taules/v2/ep/9122/10002/com/data",
+    "filters": {
+      "SEX": "TOTAL"
+    },
+    "rows": 3916
+  },
+  {
+    "source": "ist",
+    "geo": "cat",
+    "file": "data/processed/ist_cat.csv",
+    "label": "Índex socioeconòmic territorial (IST). Índex Catalunya=100. Catalunya",
+    "updated": "2026-06-26",
+    "url": "https://api.idescat.cat/taules/v2/ist/14034/14994/cat/data",
+    "filters": null,
+    "rows": 10
+  },
+  {
+    "source": "ist",
+    "geo": "com",
+    "file": "data/processed/ist_com.csv",
+    "label": "Índex socioeconòmic territorial (IST). Índex Catalunya=100. Comarques i Aran",
+    "updated": "2026-06-26",
+    "url": "https://api.idescat.cat/taules/v2/ist/14034/14994/com/data",
+    "filters": null,
+    "rows": 440
+  },
+  {
+    "source": "ist_indicadors",
+    "geo": "com",
+    "file": "data/processed/ist_indicadors_com.csv",
+    "label": "Indicadors socioeconòmics. Valors. Comarques i Aran",
+    "updated": "2026-06-26",
+    "url": "https://api.idescat.cat/taules/v2/ist/14074/15022/com/data",
+    "filters": null,
+    "rows": 2580
+  }
+]
