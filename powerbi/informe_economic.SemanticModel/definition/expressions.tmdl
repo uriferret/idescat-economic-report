@@ -1,0 +1,23 @@
+expression RutaDades = "https://raw.githubusercontent.com/uriferret/idescat-economic-report/main/data/model/" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: fdac2964-20d7-4965-956a-fadf0b186ba9
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+expression fnCsv =
+		(nom as text) as table =>
+		let
+		    Contingut = if Text.StartsWith(RutaDades, "http")
+		        then Web.Contents(RutaDades & nom)
+		        else File.Contents(RutaDades & nom),
+		    Origen = Csv.Document(Contingut, [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+		    Taula = Table.PromoteHeaders(Origen, [PromoteAllScalars = true])
+		in
+		    Taula
+	lineageTag: d25e121c-785a-47eb-b29c-48506f999652
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Function
+

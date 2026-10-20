@@ -1,0 +1,66 @@
+table ref_oficial
+	lineageTag: 788b8774-4a9d-483b-a278-1085ce363baf
+
+	column nivell
+		dataType: string
+		lineageTag: 32b9e901-06e5-4b87-8780-9c4d0978dc00
+		summarizeBy: none
+		sourceColumn: nivell
+
+		annotation SummarizationSetBy = Automatic
+
+	column codi
+		dataType: string
+		lineageTag: 85a203bd-a6e4-47d7-b822-54a4caa20cce
+		summarizeBy: none
+		sourceColumn: codi
+
+		annotation SummarizationSetBy = Automatic
+
+	column nom
+		dataType: string
+		lineageTag: 481c0a90-478d-482b-ab36-4b260d1a1b8f
+		summarizeBy: none
+		sourceColumn: nom
+
+		annotation SummarizationSetBy = Automatic
+
+	column any
+		dataType: int64
+		formatString: 0
+		lineageTag: bd363aad-3277-46e1-a0d1-f709eaad128b
+		summarizeBy: sum
+		sourceColumn: any
+
+		annotation SummarizationSetBy = Automatic
+
+	column indicador_code
+		dataType: string
+		lineageTag: 53f07949-4436-4bdf-b8c6-fab44890bc32
+		summarizeBy: none
+		sourceColumn: indicador_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_oficial
+		dataType: double
+		lineageTag: 51593362-04dc-4109-8441-d3d82d7d5abc
+		summarizeBy: sum
+		sourceColumn: valor_oficial
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition ref_oficial = m
+		mode: import
+		source =
+				let
+				    Source = Table.TransformColumnTypes(fnCsv("ref_oficial.csv"), {{"nivell", type text}, {"codi", type text}, {"nom", type text}, {"any", Int64.Type}, {"indicador_code", type text}, {"valor_oficial", type number}})
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,47 @@
+table dim_territori
+	lineageTag: bb0a2853-e778-40e9-bced-a41cf72c8198
+
+	column comarca_code
+		dataType: string
+		lineageTag: 7361d900-a08c-43f2-81c1-75dcee4e1644
+		summarizeBy: none
+		sourceColumn: comarca_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column comarca
+		dataType: string
+		lineageTag: bd5181ba-5fac-4ca9-9463-dfc402b10c44
+		summarizeBy: none
+		sourceColumn: comarca
+
+		annotation SummarizationSetBy = Automatic
+
+	column ambit_code
+		dataType: string
+		lineageTag: c3c439eb-4939-417d-a22d-403a9ed897f4
+		summarizeBy: none
+		sourceColumn: ambit_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column ambit
+		dataType: string
+		lineageTag: 72c26421-7a91-4cad-bf58-abb17b2e7a10
+		summarizeBy: none
+		sourceColumn: ambit
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_territori = m
+		mode: import
+		source =
+				let
+				    Source = Table.TransformColumnTypes(fnCsv("dim_territori.csv"), {{"comarca_code", type text}, {"comarca", type text}, {"ambit_code", type text}, {"ambit", type text}})
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
