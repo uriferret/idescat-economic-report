@@ -62,6 +62,13 @@ def main() -> None:
            .rename(columns={"geo_code": "comarca_code", "geo_label": "comarca"}))
     dim_territori = com.merge(ambits, on="comarca", how="left").sort_values(["ambit_code", "comarca"])
     assert dim_territori["ambit_code"].notna().all(), "Hi ha comarques sense àmbit a config/"
+    # Ordre dels àmbits pel PIB de l'últim any (com a la infografia Python). A Power BI,
+    # "Ordena per columna" ambit -> ambit_ordre fa que els colors del tema segueixin aquest ordre.
+    pib = load("pib_com")
+    pib = pib[(pib["CONCEPT"] == "GDP_ME") & (pib["geo_code"] != "TOTAL")]
+    pib = pib[pib["period_code"] == pib["period_code"].max()].merge(ambits, left_on="geo_label", right_on="comarca")
+    ordre = pib.groupby("ambit")["value"].sum().sort_values(ascending=False)
+    dim_territori["ambit_ordre"] = dim_territori["ambit"].map({a: i for i, a in enumerate(ordre.index, 1)})
     dim_territori.to_csv(MODEL / "dim_territori.csv", index=False)
 
     # ---- Fets: indicadors per comarca ------------------------------------------
