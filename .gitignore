@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Respostes crues de l'API (es poden regenerar amb `python src/extract.py`)
+data/raw/
+
+# Power BI Project (.pbip): fitxers locals i memòria cau que no s'han de versionar
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+*.pbix
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini

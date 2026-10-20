@@ -1,0 +1,643 @@
+nivell,codi,nom,any,indicador_code,valor_oficial
+Àmbit,AT01,Metropolità,2011,GDP_ME,142338.1
+Àmbit,AT01,Metropolità,2011,GDP_E_INH,29875.0
+Àmbit,AT02,Comarques Gironines,2011,GDP_ME,17419.4
+Àmbit,AT02,Comarques Gironines,2011,GDP_E_INH,23683.0
+Àmbit,AT03,Camp de Tarragona,2011,GDP_ME,14288.4
+Àmbit,AT03,Camp de Tarragona,2011,GDP_E_INH,27662.0
+Àmbit,AT04,Terres de l'Ebre,2011,GDP_ME,4495.5
+Àmbit,AT04,Terres de l'Ebre,2011,GDP_E_INH,23804.0
+Àmbit,AT05,Ponent,2011,GDP_ME,9037.9
+Àmbit,AT05,Ponent,2011,GDP_E_INH,24850.0
+Àmbit,AT06,Comarques Centrals,2011,GDP_ME,9522.7
+Àmbit,AT06,Comarques Centrals,2011,GDP_E_INH,24153.0
+Àmbit,AT07,Alt Pirineu i Aran,2011,GDP_ME,1720.0
+Àmbit,AT07,Alt Pirineu i Aran,2011,GDP_E_INH,22663.0
+Àmbit,AT08,Penedès,2011,GDP_ME,9450.2
+Àmbit,AT08,Penedès,2011,GDP_E_INH,20132.0
+Àmbit,AT01,Metropolità,2012,GDP_ME,138191.3
+Àmbit,AT01,Metropolità,2012,GDP_E_INH,29046.0
+Àmbit,AT02,Comarques Gironines,2012,GDP_ME,16982.4
+Àmbit,AT02,Comarques Gironines,2012,GDP_E_INH,23105.0
+Àmbit,AT03,Camp de Tarragona,2012,GDP_ME,13556.6
+Àmbit,AT03,Camp de Tarragona,2012,GDP_E_INH,26232.0
+Àmbit,AT04,Terres de l'Ebre,2012,GDP_ME,4214.7
+Àmbit,AT04,Terres de l'Ebre,2012,GDP_E_INH,22493.0
+Àmbit,AT05,Ponent,2012,GDP_ME,8799.7
+Àmbit,AT05,Ponent,2012,GDP_E_INH,24233.0
+Àmbit,AT06,Comarques Centrals,2012,GDP_ME,9378.4
+Àmbit,AT06,Comarques Centrals,2012,GDP_E_INH,23863.0
+Àmbit,AT07,Alt Pirineu i Aran,2012,GDP_ME,1612.5
+Àmbit,AT07,Alt Pirineu i Aran,2012,GDP_E_INH,21551.0
+Àmbit,AT08,Penedès,2012,GDP_ME,9020.0
+Àmbit,AT08,Penedès,2012,GDP_E_INH,19219.0
+Àmbit,AT01,Metropolità,2013,GDP_ME,137796.2
+Àmbit,AT01,Metropolità,2013,GDP_E_INH,29111.0
+Àmbit,AT02,Comarques Gironines,2013,GDP_ME,17025.7
+Àmbit,AT02,Comarques Gironines,2013,GDP_E_INH,23282.0
+Àmbit,AT03,Camp de Tarragona,2013,GDP_ME,12964.5
+Àmbit,AT03,Camp de Tarragona,2013,GDP_E_INH,25186.0
+Àmbit,AT04,Terres de l'Ebre,2013,GDP_ME,4101.7
+Àmbit,AT04,Terres de l'Ebre,2013,GDP_E_INH,22179.0
+Àmbit,AT05,Ponent,2013,GDP_ME,9229.1
+Àmbit,AT05,Ponent,2013,GDP_E_INH,25574.0
+Àmbit,AT06,Comarques Centrals,2013,GDP_ME,9154.0
+Àmbit,AT06,Comarques Centrals,2013,GDP_E_INH,23461.0
+Àmbit,AT07,Alt Pirineu i Aran,2013,GDP_ME,1702.1
+Àmbit,AT07,Alt Pirineu i Aran,2013,GDP_E_INH,23137.0
+Àmbit,AT08,Penedès,2013,GDP_ME,9049.9
+Àmbit,AT08,Penedès,2013,GDP_E_INH,19364.0
+Àmbit,AT01,Metropolità,2014,GDP_ME,141429.0
+Àmbit,AT01,Metropolità,2014,GDP_E_INH,29949.0
+Àmbit,AT02,Comarques Gironines,2014,GDP_ME,17342.1
+Àmbit,AT02,Comarques Gironines,2014,GDP_E_INH,23861.0
+Àmbit,AT03,Camp de Tarragona,2014,GDP_ME,13470.2
+Àmbit,AT03,Camp de Tarragona,2014,GDP_E_INH,26272.0
+Àmbit,AT04,Terres de l'Ebre,2014,GDP_ME,4037.3
+Àmbit,AT04,Terres de l'Ebre,2014,GDP_E_INH,22139.0
+Àmbit,AT05,Ponent,2014,GDP_ME,8764.1
+Àmbit,AT05,Ponent,2014,GDP_E_INH,24432.0
+Àmbit,AT06,Comarques Centrals,2014,GDP_ME,9550.6
+Àmbit,AT06,Comarques Centrals,2014,GDP_E_INH,24605.0
+Àmbit,AT07,Alt Pirineu i Aran,2014,GDP_ME,1655.8
+Àmbit,AT07,Alt Pirineu i Aran,2014,GDP_E_INH,22776.0
+Àmbit,AT08,Penedès,2014,GDP_ME,9262.0
+Àmbit,AT08,Penedès,2014,GDP_E_INH,19898.0
+Àmbit,AT01,Metropolità,2015,GDP_ME,147039.0
+Àmbit,AT01,Metropolità,2015,GDP_E_INH,31051.0
+Àmbit,AT02,Comarques Gironines,2015,GDP_ME,18164.4
+Àmbit,AT02,Comarques Gironines,2015,GDP_E_INH,25056.0
+Àmbit,AT03,Camp de Tarragona,2015,GDP_ME,14852.2
+Àmbit,AT03,Camp de Tarragona,2015,GDP_E_INH,29009.0
+Àmbit,AT04,Terres de l'Ebre,2015,GDP_ME,4359.1
+Àmbit,AT04,Terres de l'Ebre,2015,GDP_E_INH,24141.0
+Àmbit,AT05,Ponent,2015,GDP_ME,8969.0
+Àmbit,AT05,Ponent,2015,GDP_E_INH,25078.0
+Àmbit,AT06,Comarques Centrals,2015,GDP_ME,9909.1
+Àmbit,AT06,Comarques Centrals,2015,GDP_E_INH,25537.0
+Àmbit,AT07,Alt Pirineu i Aran,2015,GDP_ME,1737.2
+Àmbit,AT07,Alt Pirineu i Aran,2015,GDP_E_INH,24075.0
+Àmbit,AT08,Penedès,2015,GDP_ME,9458.3
+Àmbit,AT08,Penedès,2015,GDP_E_INH,20307.0
+Àmbit,AT01,Metropolità,2016,GDP_ME,154086.1
+Àmbit,AT01,Metropolità,2016,GDP_E_INH,32324.0
+Àmbit,AT02,Comarques Gironines,2016,GDP_ME,18849.0
+Àmbit,AT02,Comarques Gironines,2016,GDP_E_INH,25935.0
+Àmbit,AT03,Camp de Tarragona,2016,GDP_ME,15287.8
+Àmbit,AT03,Camp de Tarragona,2016,GDP_E_INH,29831.0
+Àmbit,AT04,Terres de l'Ebre,2016,GDP_ME,4272.2
+Àmbit,AT04,Terres de l'Ebre,2016,GDP_E_INH,23797.0
+Àmbit,AT05,Ponent,2016,GDP_ME,9435.1
+Àmbit,AT05,Ponent,2016,GDP_E_INH,26426.0
+Àmbit,AT06,Comarques Centrals,2016,GDP_ME,10200.6
+Àmbit,AT06,Comarques Centrals,2016,GDP_E_INH,26202.0
+Àmbit,AT07,Alt Pirineu i Aran,2016,GDP_ME,1769.7
+Àmbit,AT07,Alt Pirineu i Aran,2016,GDP_E_INH,24663.0
+Àmbit,AT08,Penedès,2016,GDP_ME,9752.1
+Àmbit,AT08,Penedès,2016,GDP_E_INH,20813.0
+Àmbit,AT01,Metropolità,2017,GDP_ME,159977.7
+Àmbit,AT01,Metropolità,2017,GDP_E_INH,33310.0
+Àmbit,AT02,Comarques Gironines,2017,GDP_ME,19470.5
+Àmbit,AT02,Comarques Gironines,2017,GDP_E_INH,26650.0
+Àmbit,AT03,Camp de Tarragona,2017,GDP_ME,15773.2
+Àmbit,AT03,Camp de Tarragona,2017,GDP_E_INH,30633.0
+Àmbit,AT04,Terres de l'Ebre,2017,GDP_ME,4693.5
+Àmbit,AT04,Terres de l'Ebre,2017,GDP_E_INH,26279.0
+Àmbit,AT05,Ponent,2017,GDP_ME,9931.5
+Àmbit,AT05,Ponent,2017,GDP_E_INH,27823.0
+Àmbit,AT06,Comarques Centrals,2017,GDP_ME,10792.7
+Àmbit,AT06,Comarques Centrals,2017,GDP_E_INH,27546.0
+Àmbit,AT07,Alt Pirineu i Aran,2017,GDP_ME,1867.4
+Àmbit,AT07,Alt Pirineu i Aran,2017,GDP_E_INH,26110.0
+Àmbit,AT08,Penedès,2017,GDP_ME,10293.6
+Àmbit,AT08,Penedès,2017,GDP_E_INH,21763.0
+Àmbit,AT01,Metropolità,2018,GDP_ME,168168.1
+Àmbit,AT01,Metropolità,2018,GDP_E_INH,34727.0
+Àmbit,AT02,Comarques Gironines,2018,GDP_ME,20443.8
+Àmbit,AT02,Comarques Gironines,2018,GDP_E_INH,27748.0
+Àmbit,AT03,Camp de Tarragona,2018,GDP_ME,15675.2
+Àmbit,AT03,Camp de Tarragona,2018,GDP_E_INH,30140.0
+Àmbit,AT04,Terres de l'Ebre,2018,GDP_ME,4820.1
+Àmbit,AT04,Terres de l'Ebre,2018,GDP_E_INH,27032.0
+Àmbit,AT05,Ponent,2018,GDP_ME,10329.6
+Àmbit,AT05,Ponent,2018,GDP_E_INH,28841.0
+Àmbit,AT06,Comarques Centrals,2018,GDP_ME,11386.2
+Àmbit,AT06,Comarques Centrals,2018,GDP_E_INH,28773.0
+Àmbit,AT07,Alt Pirineu i Aran,2018,GDP_ME,2005.8
+Àmbit,AT07,Alt Pirineu i Aran,2018,GDP_E_INH,28009.0
+Àmbit,AT08,Penedès,2018,GDP_ME,10658.5
+Àmbit,AT08,Penedès,2018,GDP_E_INH,22280.0
+Àmbit,AT01,Metropolità,2019,GDP_ME,175490.0
+Àmbit,AT01,Metropolità,2019,GDP_E_INH,35827.0
+Àmbit,AT02,Comarques Gironines,2019,GDP_ME,21126.4
+Àmbit,AT02,Comarques Gironines,2019,GDP_E_INH,28333.0
+Àmbit,AT03,Camp de Tarragona,2019,GDP_ME,16407.7
+Àmbit,AT03,Camp de Tarragona,2019,GDP_E_INH,31113.0
+Àmbit,AT04,Terres de l'Ebre,2019,GDP_ME,4898.5
+Àmbit,AT04,Terres de l'Ebre,2019,GDP_E_INH,27332.0
+Àmbit,AT05,Ponent,2019,GDP_ME,10758.3
+Àmbit,AT05,Ponent,2019,GDP_E_INH,29770.0
+Àmbit,AT06,Comarques Centrals,2019,GDP_ME,11476.5
+Àmbit,AT06,Comarques Centrals,2019,GDP_E_INH,28604.0
+Àmbit,AT07,Alt Pirineu i Aran,2019,GDP_ME,1939.5
+Àmbit,AT07,Alt Pirineu i Aran,2019,GDP_E_INH,26925.0
+Àmbit,AT08,Penedès,2019,GDP_ME,11201.9
+Àmbit,AT08,Penedès,2019,GDP_E_INH,23061.0
+Àmbit,AT01,Metropolità,2020,GDP_ME,155864.4
+Àmbit,AT01,Metropolità,2020,GDP_E_INH,31630.0
+Àmbit,AT02,Comarques Gironines,2020,GDP_ME,19018.8
+Àmbit,AT02,Comarques Gironines,2020,GDP_E_INH,25242.0
+Àmbit,AT03,Camp de Tarragona,2020,GDP_ME,13686.8
+Àmbit,AT03,Camp de Tarragona,2020,GDP_E_INH,25655.0
+Àmbit,AT04,Terres de l'Ebre,2020,GDP_ME,4226.3
+Àmbit,AT04,Terres de l'Ebre,2020,GDP_E_INH,23390.0
+Àmbit,AT05,Ponent,2020,GDP_ME,10100.5
+Àmbit,AT05,Ponent,2020,GDP_E_INH,27770.0
+Àmbit,AT06,Comarques Centrals,2020,GDP_ME,10741.7
+Àmbit,AT06,Comarques Centrals,2020,GDP_E_INH,26508.0
+Àmbit,AT07,Alt Pirineu i Aran,2020,GDP_ME,1724.6
+Àmbit,AT07,Alt Pirineu i Aran,2020,GDP_E_INH,23636.0
+Àmbit,AT08,Penedès,2020,GDP_ME,10136.9
+Àmbit,AT08,Penedès,2020,GDP_E_INH,20533.0
+Àmbit,AT01,Metropolità,2021,GDP_ME,167070.7
+Àmbit,AT01,Metropolità,2021,GDP_E_INH,33988.0
+Àmbit,AT02,Comarques Gironines,2021,GDP_ME,21069.4
+Àmbit,AT02,Comarques Gironines,2021,GDP_E_INH,27291.0
+Àmbit,AT03,Camp de Tarragona,2021,GDP_ME,16503.1
+Àmbit,AT03,Camp de Tarragona,2021,GDP_E_INH,30887.0
+Àmbit,AT04,Terres de l'Ebre,2021,GDP_ME,5195.5
+Àmbit,AT04,Terres de l'Ebre,2021,GDP_E_INH,28616.0
+Àmbit,AT05,Ponent,2021,GDP_ME,11045.4
+Àmbit,AT05,Ponent,2021,GDP_E_INH,30060.0
+Àmbit,AT06,Comarques Centrals,2021,GDP_ME,11571.7
+Àmbit,AT06,Comarques Centrals,2021,GDP_E_INH,28302.0
+Àmbit,AT07,Alt Pirineu i Aran,2021,GDP_ME,1829.1
+Àmbit,AT07,Alt Pirineu i Aran,2021,GDP_E_INH,24585.0
+Àmbit,AT08,Penedès,2021,GDP_ME,11158.4
+Àmbit,AT08,Penedès,2021,GDP_E_INH,22242.0
+Àmbit,AT01,Metropolità,2022,GDP_ME,185367.6
+Àmbit,AT01,Metropolità,2022,GDP_E_INH,37413.0
+Àmbit,AT02,Comarques Gironines,2022,GDP_ME,23676.9
+Àmbit,AT02,Comarques Gironines,2022,GDP_E_INH,30212.0
+Àmbit,AT03,Camp de Tarragona,2022,GDP_ME,18497.1
+Àmbit,AT03,Camp de Tarragona,2022,GDP_E_INH,34123.0
+Àmbit,AT04,Terres de l'Ebre,2022,GDP_ME,5726.4
+Àmbit,AT04,Terres de l'Ebre,2022,GDP_E_INH,31191.0
+Àmbit,AT05,Ponent,2022,GDP_ME,11825.3
+Àmbit,AT05,Ponent,2022,GDP_E_INH,31889.0
+Àmbit,AT06,Comarques Centrals,2022,GDP_ME,12684.0
+Àmbit,AT06,Comarques Centrals,2022,GDP_E_INH,30752.0
+Àmbit,AT07,Alt Pirineu i Aran,2022,GDP_ME,2146.3
+Àmbit,AT07,Alt Pirineu i Aran,2022,GDP_E_INH,28511.0
+Àmbit,AT08,Penedès,2022,GDP_ME,12344.7
+Àmbit,AT08,Penedès,2022,GDP_E_INH,24236.0
+Àmbit,AT01,Metropolità,2023,GDP_ME,202709.8
+Àmbit,AT01,Metropolità,2023,GDP_E_INH,40284.0
+Àmbit,AT02,Comarques Gironines,2023,GDP_ME,25853.5
+Àmbit,AT02,Comarques Gironines,2023,GDP_E_INH,32368.0
+Àmbit,AT03,Camp de Tarragona,2023,GDP_ME,19444.1
+Àmbit,AT03,Camp de Tarragona,2023,GDP_E_INH,35234.0
+Àmbit,AT04,Terres de l'Ebre,2023,GDP_ME,5865.1
+Àmbit,AT04,Terres de l'Ebre,2023,GDP_E_INH,31497.0
+Àmbit,AT05,Ponent,2023,GDP_ME,12795.0
+Àmbit,AT05,Ponent,2023,GDP_E_INH,34074.0
+Àmbit,AT06,Comarques Centrals,2023,GDP_ME,13996.5
+Àmbit,AT06,Comarques Centrals,2023,GDP_E_INH,33481.0
+Àmbit,AT07,Alt Pirineu i Aran,2023,GDP_ME,2226.9
+Àmbit,AT07,Alt Pirineu i Aran,2023,GDP_E_INH,29229.0
+Àmbit,AT08,Penedès,2023,GDP_ME,13585.8
+Àmbit,AT08,Penedès,2023,GDP_E_INH,26201.0
+Catalunya,CAT,Catalunya,2011,GDP_ME,208272.2
+Catalunya,CAT,Catalunya,2011,GDP_E_INH,27738.0
+Catalunya,CAT,Catalunya,2012,GDP_ME,201755.6
+Catalunya,CAT,Catalunya,2012,GDP_E_INH,26911.0
+Catalunya,CAT,Catalunya,2013,GDP_ME,201023.3
+Catalunya,CAT,Catalunya,2013,GDP_E_INH,26960.0
+Catalunya,CAT,Catalunya,2014,GDP_ME,205511.1
+Catalunya,CAT,Catalunya,2014,GDP_E_INH,27662.0
+Catalunya,CAT,Catalunya,2015,GDP_ME,214488.5
+Catalunya,CAT,Catalunya,2015,GDP_E_INH,28842.0
+Catalunya,CAT,Catalunya,2016,GDP_ME,223652.6
+Catalunya,CAT,Catalunya,2016,GDP_E_INH,29931.0
+Catalunya,CAT,Catalunya,2017,GDP_ME,232800.0
+Catalunya,CAT,Catalunya,2017,GDP_E_INH,30957.0
+Catalunya,CAT,Catalunya,2018,GDP_ME,243487.3
+Catalunya,CAT,Catalunya,2018,GDP_E_INH,32115.0
+Catalunya,CAT,Catalunya,2019,GDP_ME,253298.8
+Catalunya,CAT,Catalunya,2019,GDP_E_INH,33021.0
+Catalunya,CAT,Catalunya,2020,GDP_ME,225499.9
+Catalunya,CAT,Catalunya,2020,GDP_E_INH,29168.0
+Catalunya,CAT,Catalunya,2021,GDP_ME,245443.3
+Catalunya,CAT,Catalunya,2021,GDP_E_INH,31646.0
+Catalunya,CAT,Catalunya,2022,GDP_ME,272268.3
+Catalunya,CAT,Catalunya,2022,GDP_E_INH,34764.0
+Catalunya,CAT,Catalunya,2023,GDP_ME,296476.8
+Catalunya,CAT,Catalunya,2023,GDP_E_INH,37259.0
+Catalunya,CAT,Catalunya,2024,GDP_ME,316728.3
+Catalunya,CAT,Catalunya,2024,GDP_E_INH,39531.0
+Àmbit,AT01,Metropolità,1981,POP,4233900.0
+Àmbit,AT02,Comarques Gironines,1981,POP,456475.0
+Àmbit,AT03,Camp de Tarragona,1981,POP,358230.0
+Àmbit,AT04,Terres de l'Ebre,1981,POP,154215.0
+Àmbit,AT05,Ponent,1981,POP,289794.0
+Àmbit,AT06,Comarques Centrals,1981,POP,395813.0
+Àmbit,AT07,Alt Pirineu i Aran,1981,POP,61402.0
+Àmbit,AT08,Penedès,1981,POP,
+Àmbit,AT01,Metropolità,1982,POP,4238646.0
+Àmbit,AT02,Comarques Gironines,1982,POP,461109.0
+Àmbit,AT03,Camp de Tarragona,1982,POP,360779.0
+Àmbit,AT04,Terres de l'Ebre,1982,POP,154568.0
+Àmbit,AT05,Ponent,1982,POP,290224.0
+Àmbit,AT06,Comarques Centrals,1982,POP,396236.0
+Àmbit,AT07,Alt Pirineu i Aran,1982,POP,61161.0
+Àmbit,AT08,Penedès,1982,POP,
+Àmbit,AT01,Metropolità,1983,POP,4242079.0
+Àmbit,AT02,Comarques Gironines,1983,POP,465853.0
+Àmbit,AT03,Camp de Tarragona,1983,POP,363284.0
+Àmbit,AT04,Terres de l'Ebre,1983,POP,155070.0
+Àmbit,AT05,Ponent,1983,POP,290706.0
+Àmbit,AT06,Comarques Centrals,1983,POP,396795.0
+Àmbit,AT07,Alt Pirineu i Aran,1983,POP,61034.0
+Àmbit,AT08,Penedès,1983,POP,
+Àmbit,AT01,Metropolità,1984,POP,4239625.0
+Àmbit,AT02,Comarques Gironines,1984,POP,470031.0
+Àmbit,AT03,Camp de Tarragona,1984,POP,365173.0
+Àmbit,AT04,Terres de l'Ebre,1984,POP,155203.0
+Àmbit,AT05,Ponent,1984,POP,290851.0
+Àmbit,AT06,Comarques Centrals,1984,POP,396741.0
+Àmbit,AT07,Alt Pirineu i Aran,1984,POP,60802.0
+Àmbit,AT08,Penedès,1984,POP,
+Àmbit,AT01,Metropolità,1985,POP,4235881.0
+Àmbit,AT02,Comarques Gironines,1985,POP,474050.0
+Àmbit,AT03,Camp de Tarragona,1985,POP,366827.0
+Àmbit,AT04,Terres de l'Ebre,1985,POP,155476.0
+Àmbit,AT05,Ponent,1985,POP,290848.0
+Àmbit,AT06,Comarques Centrals,1985,POP,396773.0
+Àmbit,AT07,Alt Pirineu i Aran,1985,POP,60467.0
+Àmbit,AT08,Penedès,1985,POP,
+Àmbit,AT01,Metropolità,1986,POP,4228743.0
+Àmbit,AT02,Comarques Gironines,1986,POP,477989.0
+Àmbit,AT03,Camp de Tarragona,1986,POP,368114.0
+Àmbit,AT04,Terres de l'Ebre,1986,POP,155680.0
+Àmbit,AT05,Ponent,1986,POP,290588.0
+Àmbit,AT06,Comarques Centrals,1986,POP,396864.0
+Àmbit,AT07,Alt Pirineu i Aran,1986,POP,60054.0
+Àmbit,AT08,Penedès,1986,POP,
+Àmbit,AT01,Metropolità,1987,POP,4241290.0
+Àmbit,AT02,Comarques Gironines,1987,POP,481717.0
+Àmbit,AT03,Camp de Tarragona,1987,POP,371781.0
+Àmbit,AT04,Terres de l'Ebre,1987,POP,155647.0
+Àmbit,AT05,Ponent,1987,POP,291006.0
+Àmbit,AT06,Comarques Centrals,1987,POP,397943.0
+Àmbit,AT07,Alt Pirineu i Aran,1987,POP,59936.0
+Àmbit,AT08,Penedès,1987,POP,
+Àmbit,AT01,Metropolità,1988,POP,4251234.0
+Àmbit,AT02,Comarques Gironines,1988,POP,486840.0
+Àmbit,AT03,Camp de Tarragona,1988,POP,376834.0
+Àmbit,AT04,Terres de l'Ebre,1988,POP,155598.0
+Àmbit,AT05,Ponent,1988,POP,291605.0
+Àmbit,AT06,Comarques Centrals,1988,POP,399224.0
+Àmbit,AT07,Alt Pirineu i Aran,1988,POP,59890.0
+Àmbit,AT08,Penedès,1988,POP,
+Àmbit,AT01,Metropolità,1989,POP,4260809.0
+Àmbit,AT02,Comarques Gironines,1989,POP,491838.0
+Àmbit,AT03,Camp de Tarragona,1989,POP,381589.0
+Àmbit,AT04,Terres de l'Ebre,1989,POP,155437.0
+Àmbit,AT05,Ponent,1989,POP,292028.0
+Àmbit,AT06,Comarques Centrals,1989,POP,400093.0
+Àmbit,AT07,Alt Pirineu i Aran,1989,POP,59675.0
+Àmbit,AT08,Penedès,1989,POP,
+Àmbit,AT01,Metropolità,1990,POP,4268780.0
+Àmbit,AT02,Comarques Gironines,1990,POP,498091.0
+Àmbit,AT03,Camp de Tarragona,1990,POP,386224.0
+Àmbit,AT04,Terres de l'Ebre,1990,POP,155364.0
+Àmbit,AT05,Ponent,1990,POP,292493.0
+Àmbit,AT06,Comarques Centrals,1990,POP,401579.0
+Àmbit,AT07,Alt Pirineu i Aran,1990,POP,59742.0
+Àmbit,AT08,Penedès,1990,POP,
+Àmbit,AT01,Metropolità,1991,POP,4275859.0
+Àmbit,AT02,Comarques Gironines,1991,POP,502484.0
+Àmbit,AT03,Camp de Tarragona,1991,POP,391210.0
+Àmbit,AT04,Terres de l'Ebre,1991,POP,155260.0
+Àmbit,AT05,Ponent,1991,POP,293270.0
+Àmbit,AT06,Comarques Centrals,1991,POP,402855.0
+Àmbit,AT07,Alt Pirineu i Aran,1991,POP,59813.0
+Àmbit,AT08,Penedès,1991,POP,
+Àmbit,AT01,Metropolità,1992,POP,4274054.0
+Àmbit,AT02,Comarques Gironines,1992,POP,504972.0
+Àmbit,AT03,Camp de Tarragona,1992,POP,395546.0
+Àmbit,AT04,Terres de l'Ebre,1992,POP,155126.0
+Àmbit,AT05,Ponent,1992,POP,293317.0
+Àmbit,AT06,Comarques Centrals,1992,POP,404416.0
+Àmbit,AT07,Alt Pirineu i Aran,1992,POP,59908.0
+Àmbit,AT08,Penedès,1992,POP,
+Àmbit,AT01,Metropolità,1993,POP,4271430.0
+Àmbit,AT02,Comarques Gironines,1993,POP,508319.0
+Àmbit,AT03,Camp de Tarragona,1993,POP,401255.0
+Àmbit,AT04,Terres de l'Ebre,1993,POP,155403.0
+Àmbit,AT05,Ponent,1993,POP,293975.0
+Àmbit,AT06,Comarques Centrals,1993,POP,406463.0
+Àmbit,AT07,Alt Pirineu i Aran,1993,POP,60054.0
+Àmbit,AT08,Penedès,1993,POP,
+Àmbit,AT01,Metropolità,1994,POP,4264008.0
+Àmbit,AT02,Comarques Gironines,1994,POP,511498.0
+Àmbit,AT03,Camp de Tarragona,1994,POP,406843.0
+Àmbit,AT04,Terres de l'Ebre,1994,POP,155556.0
+Àmbit,AT05,Ponent,1994,POP,294300.0
+Àmbit,AT06,Comarques Centrals,1994,POP,408018.0
+Àmbit,AT07,Alt Pirineu i Aran,1994,POP,60213.0
+Àmbit,AT08,Penedès,1994,POP,
+Àmbit,AT01,Metropolità,1995,POP,4253677.0
+Àmbit,AT02,Comarques Gironines,1995,POP,515017.0
+Àmbit,AT03,Camp de Tarragona,1995,POP,412074.0
+Àmbit,AT04,Terres de l'Ebre,1995,POP,155510.0
+Àmbit,AT05,Ponent,1995,POP,294123.0
+Àmbit,AT06,Comarques Centrals,1995,POP,410123.0
+Àmbit,AT07,Alt Pirineu i Aran,1995,POP,60459.0
+Àmbit,AT08,Penedès,1995,POP,
+Àmbit,AT01,Metropolità,1996,POP,4246002.0
+Àmbit,AT02,Comarques Gironines,1996,POP,518782.0
+Àmbit,AT03,Camp de Tarragona,1996,POP,417393.0
+Àmbit,AT04,Terres de l'Ebre,1996,POP,155717.0
+Àmbit,AT05,Ponent,1996,POP,294047.0
+Àmbit,AT06,Comarques Centrals,1996,POP,411892.0
+Àmbit,AT07,Alt Pirineu i Aran,1996,POP,60896.0
+Àmbit,AT08,Penedès,1996,POP,
+Àmbit,AT01,Metropolità,1997,POP,4246159.0
+Àmbit,AT02,Comarques Gironines,1997,POP,520583.0
+Àmbit,AT03,Camp de Tarragona,1997,POP,420496.0
+Àmbit,AT04,Terres de l'Ebre,1997,POP,155194.0
+Àmbit,AT05,Ponent,1997,POP,293733.0
+Àmbit,AT06,Comarques Centrals,1997,POP,412744.0
+Àmbit,AT07,Alt Pirineu i Aran,1997,POP,61091.0
+Àmbit,AT08,Penedès,1997,POP,
+Àmbit,AT01,Metropolità,1998,POP,4251711.0
+Àmbit,AT02,Comarques Gironines,1998,POP,524841.0
+Àmbit,AT03,Camp de Tarragona,1998,POP,425031.0
+Àmbit,AT04,Terres de l'Ebre,1998,POP,154891.0
+Àmbit,AT05,Ponent,1998,POP,293737.0
+Àmbit,AT06,Comarques Centrals,1998,POP,413727.0
+Àmbit,AT07,Alt Pirineu i Aran,1998,POP,61401.0
+Àmbit,AT08,Penedès,1998,POP,
+Àmbit,AT01,Metropolità,1999,POP,4261809.0
+Àmbit,AT02,Comarques Gironines,1999,POP,530120.0
+Àmbit,AT03,Camp de Tarragona,1999,POP,430226.0
+Àmbit,AT04,Terres de l'Ebre,1999,POP,154772.0
+Àmbit,AT05,Ponent,1999,POP,294068.0
+Àmbit,AT06,Comarques Centrals,1999,POP,415045.0
+Àmbit,AT07,Alt Pirineu i Aran,1999,POP,61677.0
+Àmbit,AT08,Penedès,1999,POP,
+Àmbit,AT01,Metropolità,2000,POP,4274477.0
+Àmbit,AT02,Comarques Gironines,2000,POP,536201.0
+Àmbit,AT03,Camp de Tarragona,2000,POP,435415.0
+Àmbit,AT04,Terres de l'Ebre,2000,POP,154457.0
+Àmbit,AT05,Ponent,2000,POP,294921.0
+Àmbit,AT06,Comarques Centrals,2000,POP,417295.0
+Àmbit,AT07,Alt Pirineu i Aran,2000,POP,61781.0
+Àmbit,AT08,Penedès,2000,POP,
+Àmbit,AT01,Metropolità,2001,POP,4325380.0
+Àmbit,AT02,Comarques Gironines,2001,POP,546214.0
+Àmbit,AT03,Camp de Tarragona,2001,POP,445080.0
+Àmbit,AT04,Terres de l'Ebre,2001,POP,156378.0
+Àmbit,AT05,Ponent,2001,POP,295966.0
+Àmbit,AT06,Comarques Centrals,2001,POP,422295.0
+Àmbit,AT07,Alt Pirineu i Aran,2001,POP,61992.0
+Àmbit,AT08,Penedès,2001,POP,
+Àmbit,AT01,Metropolità,2002,POP,4422882.0
+Àmbit,AT02,Comarques Gironines,2002,POP,562313.0
+Àmbit,AT03,Camp de Tarragona,2002,POP,457932.0
+Àmbit,AT04,Terres de l'Ebre,2002,POP,159322.0
+Àmbit,AT05,Ponent,2002,POP,301530.0
+Àmbit,AT06,Comarques Centrals,2002,POP,430487.0
+Àmbit,AT07,Alt Pirineu i Aran,2002,POP,63700.0
+Àmbit,AT08,Penedès,2002,POP,
+Àmbit,AT01,Metropolità,2003,POP,4529078.0
+Àmbit,AT02,Comarques Gironines,2003,POP,582026.0
+Àmbit,AT03,Camp de Tarragona,2003,POP,473478.0
+Àmbit,AT04,Terres de l'Ebre,2003,POP,162150.0
+Àmbit,AT05,Ponent,2003,POP,306580.0
+Àmbit,AT06,Comarques Centrals,2003,POP,440261.0
+Àmbit,AT07,Alt Pirineu i Aran,2003,POP,65167.0
+Àmbit,AT08,Penedès,2003,POP,
+Àmbit,AT01,Metropolità,2004,POP,4602626.0
+Àmbit,AT02,Comarques Gironines,2004,POP,604090.0
+Àmbit,AT03,Camp de Tarragona,2004,POP,490426.0
+Àmbit,AT04,Terres de l'Ebre,2004,POP,164702.0
+Àmbit,AT05,Ponent,2004,POP,312967.0
+Àmbit,AT06,Comarques Centrals,2004,POP,451226.0
+Àmbit,AT07,Alt Pirineu i Aran,2004,POP,67260.0
+Àmbit,AT08,Penedès,2004,POP,
+Àmbit,AT01,Metropolità,2005,POP,4677170.0
+Àmbit,AT02,Comarques Gironines,2005,POP,630058.0
+Àmbit,AT03,Camp de Tarragona,2005,POP,513605.0
+Àmbit,AT04,Terres de l'Ebre,2005,POP,170004.0
+Àmbit,AT05,Ponent,2005,POP,323421.0
+Àmbit,AT06,Comarques Centrals,2005,POP,463253.0
+Àmbit,AT07,Alt Pirineu i Aran,2005,POP,69181.0
+Àmbit,AT08,Penedès,2005,POP,
+Àmbit,AT01,Metropolità,2006,POP,4750431.0
+Àmbit,AT02,Comarques Gironines,2006,POP,653935.0
+Àmbit,AT03,Camp de Tarragona,2006,POP,539245.0
+Àmbit,AT04,Terres de l'Ebre,2006,POP,174589.0
+Àmbit,AT05,Ponent,2006,POP,330528.0
+Àmbit,AT06,Comarques Centrals,2006,POP,475672.0
+Àmbit,AT07,Alt Pirineu i Aran,2006,POP,70537.0
+Àmbit,AT08,Penedès,2006,POP,
+Àmbit,AT01,Metropolità,2007,POP,4821068.0
+Àmbit,AT02,Comarques Gironines,2007,POP,681055.0
+Àmbit,AT03,Camp de Tarragona,2007,POP,565445.0
+Àmbit,AT04,Terres de l'Ebre,2007,POP,180114.0
+Àmbit,AT05,Ponent,2007,POP,339136.0
+Àmbit,AT06,Comarques Centrals,2007,POP,487239.0
+Àmbit,AT07,Alt Pirineu i Aran,2007,POP,72677.0
+Àmbit,AT08,Penedès,2007,POP,
+Àmbit,AT01,Metropolità,2008,POP,4891594.0
+Àmbit,AT02,Comarques Gironines,2008,POP,705446.0
+Àmbit,AT03,Camp de Tarragona,2008,POP,590469.0
+Àmbit,AT04,Terres de l'Ebre,2008,POP,187468.0
+Àmbit,AT05,Ponent,2008,POP,349547.0
+Àmbit,AT06,Comarques Centrals,2008,POP,499040.0
+Àmbit,AT07,Alt Pirineu i Aran,2008,POP,74749.0
+Àmbit,AT08,Penedès,2008,POP,
+Àmbit,AT01,Metropolità,2009,POP,4959239.0
+Àmbit,AT02,Comarques Gironines,2009,POP,722965.0
+Àmbit,AT03,Camp de Tarragona,2009,POP,604441.0
+Àmbit,AT04,Terres de l'Ebre,2009,POP,189457.0
+Àmbit,AT05,Ponent,2009,POP,357567.0
+Àmbit,AT06,Comarques Centrals,2009,POP,507379.0
+Àmbit,AT07,Alt Pirineu i Aran,2009,POP,75557.0
+Àmbit,AT08,Penedès,2009,POP,
+Àmbit,AT01,Metropolità,2010,POP,4984865.0
+Àmbit,AT02,Comarques Gironines,2010,POP,729928.0
+Àmbit,AT03,Camp de Tarragona,2010,POP,611093.0
+Àmbit,AT04,Terres de l'Ebre,2010,POP,189120.0
+Àmbit,AT05,Ponent,2010,POP,360928.0
+Àmbit,AT06,Comarques Centrals,2010,POP,510572.0
+Àmbit,AT07,Alt Pirineu i Aran,2010,POP,75538.0
+Àmbit,AT08,Penedès,2010,POP,
+Àmbit,AT01,Metropolità,2011,POP,5009581.0
+Àmbit,AT02,Comarques Gironines,2011,POP,734705.0
+Àmbit,AT03,Camp de Tarragona,2011,POP,615736.0
+Àmbit,AT04,Terres de l'Ebre,2011,POP,189244.0
+Àmbit,AT05,Ponent,2011,POP,363650.0
+Àmbit,AT06,Comarques Centrals,2011,POP,512615.0
+Àmbit,AT07,Alt Pirineu i Aran,2011,POP,76322.0
+Àmbit,AT08,Penedès,2011,POP,
+Àmbit,AT01,Metropolità,2012,POP,4769527.0
+Àmbit,AT02,Comarques Gironines,2012,POP,736352.0
+Àmbit,AT03,Camp de Tarragona,2012,POP,517641.0
+Àmbit,AT04,Terres de l'Ebre,2012,POP,188462.0
+Àmbit,AT05,Ponent,2012,POP,363744.0
+Àmbit,AT06,Comarques Centrals,2012,POP,394221.0
+Àmbit,AT07,Alt Pirineu i Aran,2012,POP,75462.0
+Àmbit,AT08,Penedès,2012,POP,469989.0
+Àmbit,AT01,Metropolità,2013,POP,4745967.0
+Àmbit,AT02,Comarques Gironines,2013,POP,735253.0
+Àmbit,AT03,Camp de Tarragona,2013,POP,515724.0
+Àmbit,AT04,Terres de l'Ebre,2013,POP,186249.0
+Àmbit,AT05,Ponent,2013,POP,362862.0
+Àmbit,AT06,Comarques Centrals,2013,POP,392041.0
+Àmbit,AT07,Alt Pirineu i Aran,2013,POP,74247.0
+Àmbit,AT08,Penedès,2013,POP,468839.0
+Àmbit,AT01,Metropolità,2014,POP,4721018.0
+Àmbit,AT02,Comarques Gironines,2014,POP,732012.0
+Àmbit,AT03,Camp de Tarragona,2014,POP,513077.0
+Àmbit,AT04,Terres de l'Ebre,2014,POP,183487.0
+Àmbit,AT05,Ponent,2014,POP,359997.0
+Àmbit,AT06,Comarques Centrals,2014,POP,389049.0
+Àmbit,AT07,Alt Pirineu i Aran,2014,POP,73068.0
+Àmbit,AT08,Penedès,2014,POP,466402.0
+Àmbit,AT01,Metropolità,2015,POP,4723793.0
+Àmbit,AT02,Comarques Gironines,2015,POP,729214.0
+Àmbit,AT03,Camp de Tarragona,2015,POP,511091.0
+Àmbit,AT04,Terres de l'Ebre,2015,POP,180984.0
+Àmbit,AT05,Ponent,2015,POP,359231.0
+Àmbit,AT06,Comarques Centrals,2015,POP,393672.0
+Àmbit,AT07,Alt Pirineu i Aran,2015,POP,72621.0
+Àmbit,AT08,Penedès,2015,POP,460140.0
+Àmbit,AT01,Metropolità,2016,POP,4746618.0
+Àmbit,AT02,Comarques Gironines,2016,POP,731219.0
+Àmbit,AT03,Camp de Tarragona,2016,POP,511008.0
+Àmbit,AT04,Terres de l'Ebre,2016,POP,179780.0
+Àmbit,AT05,Ponent,2016,POP,358500.0
+Àmbit,AT06,Comarques Centrals,2016,POP,394454.0
+Àmbit,AT07,Alt Pirineu i Aran,2016,POP,72082.0
+Àmbit,AT08,Penedès,2016,POP,462047.0
+Àmbit,AT01,Metropolità,2017,POP,4785760.0
+Àmbit,AT02,Comarques Gironines,2017,POP,735733.0
+Àmbit,AT03,Camp de Tarragona,2017,POP,511369.0
+Àmbit,AT04,Terres de l'Ebre,2017,POP,178748.0
+Àmbit,AT05,Ponent,2017,POP,358653.0
+Àmbit,AT06,Comarques Centrals,2017,POP,396650.0
+Àmbit,AT07,Alt Pirineu i Aran,2017,POP,71894.0
+Àmbit,AT08,Penedès,2017,POP,465970.0
+Àmbit,AT01,Metropolità,2018,POP,4817194.0
+Àmbit,AT02,Comarques Gironines,2018,POP,741748.0
+Àmbit,AT03,Camp de Tarragona,2018,POP,515189.0
+Àmbit,AT04,Terres de l'Ebre,2018,POP,177812.0
+Àmbit,AT05,Ponent,2018,POP,358972.0
+Àmbit,AT06,Comarques Centrals,2018,POP,399970.0
+Àmbit,AT07,Alt Pirineu i Aran,2018,POP,71743.0
+Àmbit,AT08,Penedès,2018,POP,471154.0
+Àmbit,AT01,Metropolità,2019,POP,4863969.0
+Àmbit,AT02,Comarques Gironines,2019,POP,750953.0
+Àmbit,AT03,Camp de Tarragona,2019,POP,520958.0
+Àmbit,AT04,Terres de l'Ebre,2019,POP,178027.0
+Àmbit,AT05,Ponent,2019,POP,361616.0
+Àmbit,AT06,Comarques Centrals,2019,POP,405056.0
+Àmbit,AT07,Alt Pirineu i Aran,2019,POP,72211.0
+Àmbit,AT08,Penedès,2019,POP,477120.0
+Àmbit,AT01,Metropolità,2020,POP,4925860.0
+Àmbit,AT02,Comarques Gironines,2020,POP,762260.0
+Àmbit,AT03,Camp de Tarragona,2020,POP,528937.0
+Àmbit,AT04,Terres de l'Ebre,2020,POP,179465.0
+Àmbit,AT05,Ponent,2020,POP,365925.0
+Àmbit,AT06,Comarques Centrals,2020,POP,411513.0
+Àmbit,AT07,Alt Pirineu i Aran,2020,POP,72710.0
+Àmbit,AT08,Penedès,2020,POP,486115.0
+Àmbit,AT01,Metropolità,2021,POP,4919300.0
+Àmbit,AT02,Comarques Gironines,2021,POP,769322.0
+Àmbit,AT03,Camp de Tarragona,2021,POP,532484.0
+Àmbit,AT04,Terres de l'Ebre,2021,POP,180794.0
+Àmbit,AT05,Ponent,2021,POP,366772.0
+Àmbit,AT06,Comarques Centrals,2021,POP,413673.0
+Àmbit,AT07,Alt Pirineu i Aran,2021,POP,74241.0
+Àmbit,AT08,Penedès,2021,POP,493310.0
+Àmbit,AT01,Metropolità,2022,POP,4911829.0
+Àmbit,AT02,Comarques Gironines,2022,POP,774729.0
+Àmbit,AT03,Camp de Tarragona,2022,POP,536357.0
+Àmbit,AT04,Terres de l'Ebre,2022,POP,182289.0
+Àmbit,AT05,Ponent,2022,POP,368082.0
+Àmbit,AT06,Comarques Centrals,2022,POP,414826.0
+Àmbit,AT07,Alt Pirineu i Aran,2022,POP,74630.0
+Àmbit,AT08,Penedès,2022,POP,499081.0
+Àmbit,AT01,Metropolità,2023,POP,4997394.0
+Àmbit,AT02,Comarques Gironines,2023,POP,792661.0
+Àmbit,AT03,Camp de Tarragona,2023,POP,547800.0
+Àmbit,AT04,Terres de l'Ebre,2023,POP,185091.0
+Àmbit,AT05,Ponent,2023,POP,373613.0
+Àmbit,AT06,Comarques Centrals,2023,POP,420892.0
+Àmbit,AT07,Alt Pirineu i Aran,2023,POP,75859.0
+Àmbit,AT08,Penedès,2023,POP,508653.0
+Àmbit,AT01,Metropolità,2024,POP,5066684.0
+Àmbit,AT02,Comarques Gironines,2024,POP,804851.0
+Àmbit,AT03,Camp de Tarragona,2024,POP,555957.0
+Àmbit,AT04,Terres de l'Ebre,2024,POP,187437.0
+Àmbit,AT05,Ponent,2024,POP,375964.0
+Àmbit,AT06,Comarques Centrals,2024,POP,427296.0
+Àmbit,AT07,Alt Pirineu i Aran,2024,POP,76543.0
+Àmbit,AT08,Penedès,2024,POP,517499.0
+Àmbit,AT01,Metropolità,2025,POP,5138392.0
+Àmbit,AT02,Comarques Gironines,2025,POP,814218.0
+Àmbit,AT03,Camp de Tarragona,2025,POP,564162.0
+Àmbit,AT04,Terres de l'Ebre,2025,POP,190648.0
+Àmbit,AT05,Ponent,2025,POP,381531.0
+Àmbit,AT06,Comarques Centrals,2025,POP,432380.0
+Àmbit,AT07,Alt Pirineu i Aran,2025,POP,77215.0
+Àmbit,AT08,Penedès,2025,POP,525580.0
+Catalunya,CAT,Catalunya,1981,POP,5949829.0
+Catalunya,CAT,Catalunya,1982,POP,5962723.0
+Catalunya,CAT,Catalunya,1983,POP,5974821.0
+Catalunya,CAT,Catalunya,1984,POP,5978426.0
+Catalunya,CAT,Catalunya,1985,POP,5980322.0
+Catalunya,CAT,Catalunya,1986,POP,5978032.0
+Catalunya,CAT,Catalunya,1987,POP,5999320.0
+Catalunya,CAT,Catalunya,1988,POP,6021225.0
+Catalunya,CAT,Catalunya,1989,POP,6041469.0
+Catalunya,CAT,Catalunya,1990,POP,6062273.0
+Catalunya,CAT,Catalunya,1991,POP,6080751.0
+Catalunya,CAT,Catalunya,1992,POP,6087339.0
+Catalunya,CAT,Catalunya,1993,POP,6096899.0
+Catalunya,CAT,Catalunya,1994,POP,6100436.0
+Catalunya,CAT,Catalunya,1995,POP,6100983.0
+Catalunya,CAT,Catalunya,1996,POP,6104729.0
+Catalunya,CAT,Catalunya,1997,POP,6110000.0
+Catalunya,CAT,Catalunya,1998,POP,6125339.0
+Catalunya,CAT,Catalunya,1999,POP,6147717.0
+Catalunya,CAT,Catalunya,2000,POP,6174547.0
+Catalunya,CAT,Catalunya,2001,POP,6253305.0
+Catalunya,CAT,Catalunya,2002,POP,6398166.0
+Catalunya,CAT,Catalunya,2003,POP,6558740.0
+Catalunya,CAT,Catalunya,2004,POP,6693297.0
+Catalunya,CAT,Catalunya,2005,POP,6846692.0
+Catalunya,CAT,Catalunya,2006,POP,6994937.0
+Catalunya,CAT,Catalunya,2007,POP,7146734.0
+Catalunya,CAT,Catalunya,2008,POP,7298313.0
+Catalunya,CAT,Catalunya,2009,POP,7416605.0
+Catalunya,CAT,Catalunya,2010,POP,7462044.0
+Catalunya,CAT,Catalunya,2011,POP,7501853.0
+Catalunya,CAT,Catalunya,2012,POP,7515398.0
+Catalunya,CAT,Catalunya,2013,POP,7481158.0
+Catalunya,CAT,Catalunya,2014,POP,7438060.0
+Catalunya,CAT,Catalunya,2015,POP,7430638.0
+Catalunya,CAT,Catalunya,2016,POP,7455671.0
+Catalunya,CAT,Catalunya,2017,POP,7504764.0
+Catalunya,CAT,Catalunya,2018,POP,7553681.0
+Catalunya,CAT,Catalunya,2019,POP,7629889.0
+Catalunya,CAT,Catalunya,2020,POP,7732756.0
+Catalunya,CAT,Catalunya,2021,POP,7749896.0
+Catalunya,CAT,Catalunya,2022,POP,7761823.0
+Catalunya,CAT,Catalunya,2023,POP,7901963.0
+Catalunya,CAT,Catalunya,2024,POP,8012231.0
+Catalunya,CAT,Catalunya,2025,POP,8124126.0
+Catalunya,CAT,Catalunya,2026,POP,8210710.0

@@ -1,0 +1,44 @@
+comarca_code,comarca,ambit_code,ambit
+11,Baix Llobregat,AT01,Metropolità
+13,Barcelonès,AT01,Metropolità
+21,Maresme,AT01,Metropolità
+40,Vallès Occidental,AT01,Metropolità
+41,Vallès Oriental,AT01,Metropolità
+02,Alt Empordà,AT02,Comarques Gironines
+10,Baix Empordà,AT02,Comarques Gironines
+19,Garrotxa,AT02,Comarques Gironines
+20,Gironès,AT02,Comarques Gironines
+28,Pla de l'Estany,AT02,Comarques Gironines
+31,Ripollès,AT02,Comarques Gironines
+34,Selva,AT02,Comarques Gironines
+01,Alt Camp,AT03,Camp de Tarragona
+08,Baix Camp,AT03,Camp de Tarragona
+16,Conca de Barberà,AT03,Camp de Tarragona
+29,Priorat,AT03,Camp de Tarragona
+36,Tarragonès,AT03,Camp de Tarragona
+09,Baix Ebre,AT04,Terres de l'Ebre
+22,Montsià,AT04,Terres de l'Ebre
+30,Ribera d'Ebre,AT04,Terres de l'Ebre
+37,Terra Alta,AT04,Terres de l'Ebre
+18,Garrigues,AT05,Ponent
+23,Noguera,AT05,Ponent
+27,Pla d'Urgell,AT05,Ponent
+32,Segarra,AT05,Ponent
+33,Segrià,AT05,Ponent
+38,Urgell,AT05,Ponent
+07,Bages,AT06,Comarques Centrals
+14,Berguedà,AT06,Comarques Centrals
+43,Lluçanès,AT06,Comarques Centrals
+42,Moianès,AT06,Comarques Centrals
+24,Osona,AT06,Comarques Centrals
+35,Solsonès,AT06,Comarques Centrals
+04,Alt Urgell,AT07,Alt Pirineu i Aran
+05,Alta Ribagorça,AT07,Alt Pirineu i Aran
+39,Aran,AT07,Alt Pirineu i Aran
+15,Cerdanya,AT07,Alt Pirineu i Aran
+25,Pallars Jussà,AT07,Alt Pirineu i Aran
+26,Pallars Sobirà,AT07,Alt Pirineu i Aran
+03,Alt Penedès,AT08,Penedès
+06,Anoia,AT08,Penedès
+12,Baix Penedès,AT08,Penedès
+17,Garraf,AT08,Penedès
