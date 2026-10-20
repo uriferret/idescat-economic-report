@@ -18,7 +18,7 @@ Adaptació a Catalunya del projecte *World Economic Report* (Maven Analytics): e
 
 | Carpeta | Eines | Resultat |
 |---|---|---|
-| [`claude/`](claude/) | Python (pandas, matplotlib, seaborn) | Infografia d'una pàgina, com l'original |
+| [`python/`](python/) | Python (pandas, matplotlib, seaborn) | Infografia d'una pàgina, com l'original |
 | [`powerbi/`](powerbi/) | Power BI Desktop (`.pbip`) · Microsoft Fabric | Informe interactiu |
 
 Totes dues comparteixen la mateixa capa de dades (`src/`).
@@ -30,7 +30,7 @@ src/            client de l'API, catàleg de taules, extracció i controls de qu
 config/         correspondència comarca → àmbit territorial
 data/raw/       respostes JSON de l'API (no es versionen)
 data/processed/ taules netes en CSV + informe de qualitat
-claude/         versió Python
+python/         versió Python
 powerbi/        versió Power BI / Fabric
 tests/          proves del parser JSON-stat (sense connexió)
 ```
