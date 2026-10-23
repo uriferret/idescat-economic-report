@@ -1,0 +1,9 @@
+DEFINE
+    /// PIB en milers de milions d'euros (per als eixos dels gràfics).
+    MEASURE fact_indicadors[PIB (mil M€)] = DIVIDE ( [PIB (M€)], 1000 )
+
+    /// Diferència de l'IST respecte a Catalunya (= 100). Positiu: per sobre de la mitjana.
+    MEASURE fact_indicadors[IST vs Catalunya] = [IST (Catalunya 100)] - 100
+
+EVALUATE
+    SUMMARIZECOLUMNS ( dim_territori[ambit], "PIB", [PIB (mil M€)], "IST vs Cat", [IST vs Catalunya] )

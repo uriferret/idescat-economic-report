@@ -30,6 +30,17 @@ table dim_territori
 		lineageTag: 72c26421-7a91-4cad-bf58-abb17b2e7a10
 		summarizeBy: none
 		sourceColumn: ambit
+		sortByColumn: ambit_ordre
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column ambit_ordre
+		dataType: string
+		lineageTag: 1c5c789c-8819-40e3-805b-5d94cc87d941
+		summarizeBy: none
+		sourceColumn: ambit_ordre
 
 		annotation SummarizationSetBy = Automatic
 

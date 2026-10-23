@@ -1,7 +1,8 @@
 {
   "version": "1.0.0",
   "tabOrder": [
-    "Validacio"
+    "Validacio",
+    "Consulta 1"
   ],
-  "defaultTab": "Validacio"
+  "defaultTab": "Consulta 1"
 }

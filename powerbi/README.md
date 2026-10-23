@@ -2,7 +2,9 @@
 
 Informe de Power BI amb les mateixes dades de l'Idescat que la versió Python, organitzades com a **model en estrella**. Està desat en format `.pbip` (model en TMDL, informe en PBIR), perquè Git pugui versionar-ne cada canvi.
 
-> **Estat:** model semàntic i mesures fets i validats. Pàgines de l'informe en construcció.
+> **Estat:** model, mesures i pàgina Resum fets. Pàgines Comarques i Mercat laboral pendents.
+
+![Pàgina Resum](captures/resum.png)
 
 ## Com obrir-lo
 
@@ -52,7 +54,7 @@ La consulta `Validacio` de la vista de consultes DAX ha de donar els mateixos va
 
 | Pàgina | Contingut | Estat |
 |---|---|---|
-| 1. Resum | Les 5 visualitzacions de la infografia Python, amb segmentadors d'any i d'àmbit | pendent |
+| 1. Resum | KPI de l'any i les 5 visualitzacions de la infografia Python | fet |
 | 2. Comarques | Taula i mapa per comarca, amb detall Àmbit → Comarca | pendent |
 | 3. Mercat laboral | Atur i afiliacions | pendent |
 
@@ -61,3 +63,4 @@ La consulta `Validacio` de la vista de consultes DAX ha de donar els mateixos va
 - **Power Query:** una funció `fnCsv` llegeix cada CSV en UTF-8 des de la ruta del paràmetre `RutaDades` (URL de GitHub o carpeta local). Cada taula és una crida a la funció amb els tipus de columna explícits. Els codis de comarca es carreguen com a text, per conservar el zero inicial.
 - **Configuració regional:** anglès (Estats Units), perquè els CSV fan servir el punt com a separador decimal.
 - **Mesures:** es van escriure i provar amb `DEFINE MEASURE` a la vista de consultes DAX abans d'afegir-les al model.
+- **Format:** projecte `.pbip` amb TMDL i PBIR. La memòria cau (`cache.abf`) i la configuració local (`localSettings.json`) queden fora de Git.
