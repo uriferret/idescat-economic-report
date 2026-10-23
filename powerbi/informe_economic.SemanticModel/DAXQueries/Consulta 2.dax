@@ -1,0 +1,52 @@
+DEFINE
+	/// Valor de l'indicador triat al segmentador "Selector indicador" (per defecte, PIB per habitant).
+	MEASURE fact_indicadors[Valor seleccionat] =
+		SWITCH(
+			SELECTEDVALUE(
+				'Selector indicador'[Ordre],
+				1
+			),
+			1, [PIB per habitant (€)],
+			2, [Renda mitjana per persona (€)],
+			3, [IST (Catalunya 100)],
+			4, [Pes indústria al VAB (%)],
+			5, [Població]
+		)
+
+	/// Posició de la comarca entre totes les de Catalunya segons l'indicador triat (1 = el valor més alt).
+	MEASURE fact_indicadors[Rànquing] =
+		IF(
+			HASONEVALUE(dim_territori[comarca]) && NOT ISBLANK([Valor seleccionat]),
+			RANKX(
+				FILTER(
+					ALL(dim_territori),
+					NOT ISBLANK([Valor seleccionat])
+				),
+				[Valor seleccionat],
+				,
+				DESC,
+				DENSE
+			)
+		)
+
+	/// Text de la fitxa: nom de la comarca i posició ("Alt Penedès · 14a de 42").
+	MEASURE fact_indicadors[Títol fitxa] =
+		VAR _n = COUNTROWS(FILTER(
+			ALL(dim_territori),
+			NOT ISBLANK([Valor seleccionat])
+		))
+		RETURN
+			IF(
+				HASONEVALUE(dim_territori[comarca]),
+				SELECTEDVALUE(dim_territori[comarca]) & " · " & [Rànquing] & "a de " & _n,
+				"Catalunya · selecciona una comarca al mapa"
+			)
+
+EVALUATE
+	SUMMARIZECOLUMNS(
+		dim_territori[comarca],
+		"Valor", [Valor seleccionat],
+		"Rànquing", [Rànquing],
+		"Títol", [Títol fitxa]
+	)
+	ORDER BY [Rànquing]

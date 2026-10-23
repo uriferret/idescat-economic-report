@@ -1,2 +1,3443 @@
 cultureInfo en-US
 
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "dim_territori": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_territori"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim territori": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_territori": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_territori.comarca_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_territori",
+			          "ConceptualProperty": "comarca_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "comarca code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "comarca_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "comarca id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "comarca key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_territori.comarca": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_territori",
+			          "ConceptualProperty": "comarca"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "comarca": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_territori.ambit_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_territori",
+			          "ConceptualProperty": "ambit_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ambit code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ambit_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "ambit id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "ambit key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_territori.ambit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_territori",
+			          "ConceptualProperty": "ambit"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ambit": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Àmbit": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_territori.ambit_ordre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_territori",
+			          "ConceptualProperty": "ambit_ordre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ambit ordre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ambit_ordre": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_any": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_any"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim any": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_any": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_any.any": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_any",
+			          "ConceptualProperty": "any"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "any": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_indicador"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim indicador": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_indicador": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_indicador.indicador_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_indicador",
+			          "ConceptualProperty": "indicador_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicador code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "indicador_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "indicador id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "indicador key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_indicador.indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_indicador",
+			          "ConceptualProperty": "indicador"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicador": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_indicador.unitat": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_indicador",
+			          "ConceptualProperty": "unitat"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "unitat": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_indicador.agregacio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_indicador",
+			          "ConceptualProperty": "agregacio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "agregacio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_indicador.font_idescat": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_indicador",
+			          "ConceptualProperty": "font_idescat"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "font idescat": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "font_idescat": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_sector": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_sector"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim sector": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_sector": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim subdivision": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dim division": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dim segment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "dim area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "dim part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "dim region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "dim zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "dim quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "dim district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "dim_sector.sector_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_sector",
+			          "ConceptualProperty": "sector_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sector code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sector_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "sector id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "sector key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_sector.sector": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_sector",
+			          "ConceptualProperty": "sector"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sector": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "subdivision": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "division": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "segment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "dim_sector.ordre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_sector",
+			          "ConceptualProperty": "ordre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ordre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fact indicador": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fact_indicadors": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador.comarca_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "comarca_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "comarca code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "comarca_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "comarca id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "comarca key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador.any": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "any"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "any": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador.indicador_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "indicador_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "indicador code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "indicador_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "indicador id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "indicador key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador.valor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "valor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "courage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "bravery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "heroism": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "fearlessness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "boldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "gallantry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lionheartedness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pluck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "spirit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "nerve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador.estat": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "estat"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "estat": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador.pib_m": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "PIB (M€)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pib (m€)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pib": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador.població": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "Població"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "població": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador.vab_m": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "VAB (M€)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vab (m€)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vab": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador.PIB_per_habitant": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "PIB per habitant (€)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PIB per habitant": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PIB per habitant (€)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PIB": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "euro",
+			        "€"
+			      ]
+			    },
+			    "fact_indicador.pes_indústria_al_VAB": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "Pes indústria al VAB (%)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pes indústria al VAB": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pes indústria al VAB (%)": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "percentage",
+			        "%"
+			      ]
+			    },
+			    "fact_indicador.renda___PIB_per_habitant": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "Renda / PIB per habitant"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "renda / PIB per habitant": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "renda": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "renda PIB per habitant": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "PIB": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador.IST_catalunya_100": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "IST (Catalunya 100)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IST (catalunya 100)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "IST": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador.renda_mitjana_per_persona": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "Renda mitjana per persona (€)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "renda mitjana per persona": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "renda mitjana per persona (€)": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "euro",
+			        "€"
+			      ]
+			    },
+			    "fact_indicador.creixement_població_des_de_1981": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "Creixement població des de 1981 (%)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "creixement població des de 1981": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "creixement població des de 1981 (%)": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "percentage",
+			        "%"
+			      ]
+			    },
+			    "fact_indicador.pes_sobre_el_total_de_catalunya_PIB_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "Pes sobre el total de Catalunya (PIB %)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pes sobre el total de catalunya (PIB %)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pes sobre el total de catalunya": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador.pes_sobre_el_total_de_catalunya_població_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "Pes sobre el total de Catalunya (població %)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pes sobre el total de catalunya (població %)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pes sobre el total de catalunya": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador.PIB_mil_m": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "PIB (mil M€)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PIB (mil m€)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PIB": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador.IST_vs_catalunya": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "IST vs Catalunya"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IST vs catalunya": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador.valor_seleccionat": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "Valor seleccionat"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor seleccionat": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Valor": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador.rànquing": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "Rànquing"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rànquing": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador.títol_fitxa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "Títol fitxa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "títol fitxa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador.entity__valor_seleccionat_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "_Valor seleccionat FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_valor seleccionat FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fact_vab": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_vab"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fact vab": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fact_vab": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fact_vab.comarca_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_vab",
+			          "ConceptualProperty": "comarca_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "comarca code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "comarca_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "comarca id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "comarca key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "fact_vab.any": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_vab",
+			          "ConceptualProperty": "any"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "any": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fact_vab.sector_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_vab",
+			          "ConceptualProperty": "sector_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "sector code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sector_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "sector id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "sector key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "fact_vab.vab_meur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_vab",
+			          "ConceptualProperty": "vab_meur"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vab meur": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vab_meur": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fact_vab.estat": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_vab",
+			          "ConceptualProperty": "estat"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "estat": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ref_oficial": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ref_oficial"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ref oficial": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ref_oficial": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "ref_oficial.nivell": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ref_oficial",
+			          "ConceptualProperty": "nivell"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nivell": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ref_oficial.codi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ref_oficial",
+			          "ConceptualProperty": "codi"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codi": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ref_oficial.nom": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ref_oficial",
+			          "ConceptualProperty": "nom"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nom": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ref_oficial.any": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ref_oficial",
+			          "ConceptualProperty": "any"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "any": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ref_oficial.indicador_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ref_oficial",
+			          "ConceptualProperty": "indicador_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicador code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "indicador_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "indicador id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "indicador key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "ref_oficial.valor_oficial": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ref_oficial",
+			          "ConceptualProperty": "valor_oficial"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor oficial": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "valor_oficial": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "selector_indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Selector indicador"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "selector indicador": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "selector_indicador.indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Selector indicador",
+			          "ConceptualProperty": "Indicador"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicador": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "selector_indicador.ordre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Selector indicador",
+			          "ConceptualProperty": "Ordre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ordre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicador.títol_mapa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "Títol mapa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "títol mapa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "fact_vab_has_dim_territori": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_vab"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_vab": {
+			          "Target": {
+			            "Entity": "fact_vab"
+			          }
+			        },
+			        "dim_territori": {
+			          "Target": {
+			            "Entity": "dim_territori"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_vab"
+			            },
+			            "Object": {
+			              "Role": "dim_territori"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_vabs_have_dim_territoris"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_territori"
+			            },
+			            "Object": {
+			              "Role": "fact_vab"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_territoris_have_fact_vabs"
+			        }
+			      ]
+			    },
+			    "fact_indicador_has_dim_indicador": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_indicadors"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_indicador": {
+			          "Target": {
+			            "Entity": "fact_indicador"
+			          }
+			        },
+			        "dim_indicador": {
+			          "Target": {
+			            "Entity": "dim_indicador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_indicador"
+			            },
+			            "Object": {
+			              "Role": "dim_indicador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_indicadors_have_dim_indicadors"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_indicador"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_indicadors_have_fact_indicadors"
+			        }
+			      ]
+			    },
+			    "fact_indicador_has_dim_any": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_indicadors"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_indicador": {
+			          "Target": {
+			            "Entity": "fact_indicador"
+			          }
+			        },
+			        "dim_any": {
+			          "Target": {
+			            "Entity": "dim_any"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_indicador"
+			            },
+			            "Object": {
+			              "Role": "dim_any"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_indicadors_have_dim_any"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_any"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_any_have_fact_indicadors"
+			        }
+			      ]
+			    },
+			    "fact_indicador_has_dim_territori": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_indicadors"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_indicador": {
+			          "Target": {
+			            "Entity": "fact_indicador"
+			          }
+			        },
+			        "dim_territori": {
+			          "Target": {
+			            "Entity": "dim_territori"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_indicador"
+			            },
+			            "Object": {
+			              "Role": "dim_territori"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_indicadors_have_dim_territoris"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_territori"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_territoris_have_fact_indicadors"
+			        }
+			      ]
+			    },
+			    "dim_any_has_fact_indicador_títol_mapa": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_any"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_any": {
+			          "Target": {
+			            "Entity": "dim_any"
+			          }
+			        },
+			        "fact_indicador.títol_mapa": {
+			          "Target": {
+			            "Entity": "fact_indicador.títol_mapa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_any"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.títol_mapa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_any_have_títol_mapa"
+			        }
+			      ]
+			    },
+			    "selector_indicador_has_fact_indicador_títol_mapa": {
+			      "Binding": {
+			        "ConceptualEntity": "Selector indicador"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "selector_indicador": {
+			          "Target": {
+			            "Entity": "selector_indicador"
+			          }
+			        },
+			        "fact_indicador.títol_mapa": {
+			          "Target": {
+			            "Entity": "fact_indicador.títol_mapa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "selector_indicador"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.títol_mapa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "selector_indicadors_have_títol_mapa"
+			        }
+			      ]
+			    },
+			    "selector_indicador_has_ordre": {
+			      "Binding": {
+			        "ConceptualEntity": "Selector indicador"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "selector_indicador": {
+			          "Target": {
+			            "Entity": "selector_indicador"
+			          }
+			        },
+			        "selector_indicador.ordre": {
+			          "Target": {
+			            "Entity": "selector_indicador.ordre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "selector_indicador"
+			            },
+			            "Object": {
+			              "Role": "selector_indicador.ordre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "selector_indicadors_have_ordres"
+			        }
+			      ]
+			    },
+			    "selector_indicador_has_indicador": {
+			      "Binding": {
+			        "ConceptualEntity": "Selector indicador"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "selector_indicador": {
+			          "Target": {
+			            "Entity": "selector_indicador"
+			          }
+			        },
+			        "selector_indicador.indicador": {
+			          "Target": {
+			            "Entity": "selector_indicador.indicador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "selector_indicador"
+			            },
+			            "Object": {
+			              "Role": "selector_indicador.indicador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "selector_indicadors_have_indicadors"
+			        }
+			      ]
+			    },
+			    "ref_oficial_has_valor_oficial": {
+			      "Binding": {
+			        "ConceptualEntity": "ref_oficial"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ref_oficial": {
+			          "Target": {
+			            "Entity": "ref_oficial"
+			          }
+			        },
+			        "ref_oficial.valor_oficial": {
+			          "Target": {
+			            "Entity": "ref_oficial.valor_oficial"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ref_oficial"
+			            },
+			            "Object": {
+			              "Role": "ref_oficial.valor_oficial"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ref_oficials_have_valor_oficials"
+			        }
+			      ]
+			    },
+			    "ref_oficial_has_indicador_code": {
+			      "Binding": {
+			        "ConceptualEntity": "ref_oficial"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ref_oficial": {
+			          "Target": {
+			            "Entity": "ref_oficial"
+			          }
+			        },
+			        "ref_oficial.indicador_code": {
+			          "Target": {
+			            "Entity": "ref_oficial.indicador_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ref_oficial"
+			            },
+			            "Object": {
+			              "Role": "ref_oficial.indicador_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ref_oficials_have_indicador_codes"
+			        }
+			      ]
+			    },
+			    "ref_oficial_has_any": {
+			      "Binding": {
+			        "ConceptualEntity": "ref_oficial"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ref_oficial": {
+			          "Target": {
+			            "Entity": "ref_oficial"
+			          }
+			        },
+			        "ref_oficial.any": {
+			          "Target": {
+			            "Entity": "ref_oficial.any"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ref_oficial"
+			            },
+			            "Object": {
+			              "Role": "ref_oficial.any"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ref_oficials_have_any"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "ref_oficial"
+			            },
+			            "Adjectives": [
+			              {
+			                "any": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "ref_oficial.any"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "any_indicates_how_any_ref_oficials_are"
+			        }
+			      ]
+			    },
+			    "ref_oficial_has_nom": {
+			      "Binding": {
+			        "ConceptualEntity": "ref_oficial"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ref_oficial": {
+			          "Target": {
+			            "Entity": "ref_oficial"
+			          }
+			        },
+			        "ref_oficial.nom": {
+			          "Target": {
+			            "Entity": "ref_oficial.nom"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ref_oficial"
+			            },
+			            "Object": {
+			              "Role": "ref_oficial.nom"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ref_oficials_have_nom"
+			        }
+			      ]
+			    },
+			    "ref_oficial_has_codi": {
+			      "Binding": {
+			        "ConceptualEntity": "ref_oficial"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ref_oficial": {
+			          "Target": {
+			            "Entity": "ref_oficial"
+			          }
+			        },
+			        "ref_oficial.codi": {
+			          "Target": {
+			            "Entity": "ref_oficial.codi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ref_oficial"
+			            },
+			            "Object": {
+			              "Role": "ref_oficial.codi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ref_oficials_have_codis"
+			        }
+			      ]
+			    },
+			    "ref_oficial_has_nivell": {
+			      "Binding": {
+			        "ConceptualEntity": "ref_oficial"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ref_oficial": {
+			          "Target": {
+			            "Entity": "ref_oficial"
+			          }
+			        },
+			        "ref_oficial.nivell": {
+			          "Target": {
+			            "Entity": "ref_oficial.nivell"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ref_oficial"
+			            },
+			            "Object": {
+			              "Role": "ref_oficial.nivell"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ref_oficials_have_nivells"
+			        }
+			      ]
+			    },
+			    "fact_vab_has_estat": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_vab"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_vab": {
+			          "Target": {
+			            "Entity": "fact_vab"
+			          }
+			        },
+			        "fact_vab.estat": {
+			          "Target": {
+			            "Entity": "fact_vab.estat"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_vab"
+			            },
+			            "Object": {
+			              "Role": "fact_vab.estat"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_vabs_have_estats"
+			        }
+			      ]
+			    },
+			    "fact_vab_has_vab_meur": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_vab"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_vab": {
+			          "Target": {
+			            "Entity": "fact_vab"
+			          }
+			        },
+			        "fact_vab.vab_meur": {
+			          "Target": {
+			            "Entity": "fact_vab.vab_meur"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_vab"
+			            },
+			            "Object": {
+			              "Role": "fact_vab.vab_meur"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_vabs_have_vab_meurs"
+			        }
+			      ]
+			    },
+			    "fact_indicador_has_títol_fitxa": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_indicadors"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_indicador": {
+			          "Target": {
+			            "Entity": "fact_indicador"
+			          }
+			        },
+			        "fact_indicador.títol_fitxa": {
+			          "Target": {
+			            "Entity": "fact_indicador.títol_fitxa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_indicador"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.títol_fitxa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_indicadors_have_títol_fitxa"
+			        }
+			      ]
+			    },
+			    "fact_indicador_has_rànquing": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_indicadors"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_indicador": {
+			          "Target": {
+			            "Entity": "fact_indicador"
+			          }
+			        },
+			        "fact_indicador.rànquing": {
+			          "Target": {
+			            "Entity": "fact_indicador.rànquing"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_indicador"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.rànquing"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_indicadors_have_rànquing"
+			        }
+			      ]
+			    },
+			    "fact_indicador_has_valor_seleccionat": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_indicadors"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_indicador": {
+			          "Target": {
+			            "Entity": "fact_indicador"
+			          }
+			        },
+			        "fact_indicador.valor_seleccionat": {
+			          "Target": {
+			            "Entity": "fact_indicador.valor_seleccionat"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_indicador"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.valor_seleccionat"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_indicadors_have_valor_seleccionat"
+			        }
+			      ]
+			    },
+			    "fact_indicador_has_IST_vs_catalunya": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_indicadors"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_indicador": {
+			          "Target": {
+			            "Entity": "fact_indicador"
+			          }
+			        },
+			        "fact_indicador.IST_vs_catalunya": {
+			          "Target": {
+			            "Entity": "fact_indicador.IST_vs_catalunya"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_indicador"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.IST_vs_catalunya"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_indicadors_have_IST_vs_catalunya"
+			        }
+			      ]
+			    },
+			    "fact_indicador_has_PIB_mil_m": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_indicadors"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_indicador": {
+			          "Target": {
+			            "Entity": "fact_indicador"
+			          }
+			        },
+			        "fact_indicador.PIB_mil_m": {
+			          "Target": {
+			            "Entity": "fact_indicador.PIB_mil_m"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_indicador"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.PIB_mil_m"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_indicadors_have_PIB_mil_m"
+			        }
+			      ]
+			    },
+			    "fact_indicador_has_pes_sobre_el_total_de_catalunya_població_": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_indicadors"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_indicador": {
+			          "Target": {
+			            "Entity": "fact_indicador"
+			          }
+			        },
+			        "fact_indicador.pes_sobre_el_total_de_catalunya_població_": {
+			          "Target": {
+			            "Entity": "fact_indicador.pes_sobre_el_total_de_catalunya_població_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_indicador"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.pes_sobre_el_total_de_catalunya_població_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_indicadors_have_pes_sobre_el_total_de_catalunya_població_"
+			        }
+			      ]
+			    },
+			    "fact_indicador_has_pes_sobre_el_total_de_catalunya_PIB_": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_indicadors"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_indicador": {
+			          "Target": {
+			            "Entity": "fact_indicador"
+			          }
+			        },
+			        "fact_indicador.pes_sobre_el_total_de_catalunya_PIB_": {
+			          "Target": {
+			            "Entity": "fact_indicador.pes_sobre_el_total_de_catalunya_PIB_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_indicador"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.pes_sobre_el_total_de_catalunya_PIB_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_indicadors_have_pes_sobre_el_total_de_catalunya_PIB_"
+			        }
+			      ]
+			    },
+			    "fact_indicador_has_creixement_població_des_de_1981": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_indicadors"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_indicador": {
+			          "Target": {
+			            "Entity": "fact_indicador"
+			          }
+			        },
+			        "fact_indicador.creixement_població_des_de_1981": {
+			          "Target": {
+			            "Entity": "fact_indicador.creixement_població_des_de_1981"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_indicador"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.creixement_població_des_de_1981"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_indicadors_have_creixement_població_des_de_1981"
+			        }
+			      ]
+			    },
+			    "fact_indicador_has_renda_mitjana_per_persona": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_indicadors"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_indicador": {
+			          "Target": {
+			            "Entity": "fact_indicador"
+			          }
+			        },
+			        "fact_indicador.renda_mitjana_per_persona": {
+			          "Target": {
+			            "Entity": "fact_indicador.renda_mitjana_per_persona"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_indicador"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.renda_mitjana_per_persona"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_indicadors_have_renda_mitjana_per_persona"
+			        }
+			      ]
+			    },
+			    "fact_indicador_has_IST_catalunya_100": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_indicadors"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_indicador": {
+			          "Target": {
+			            "Entity": "fact_indicador"
+			          }
+			        },
+			        "fact_indicador.IST_catalunya_100": {
+			          "Target": {
+			            "Entity": "fact_indicador.IST_catalunya_100"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_indicador"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.IST_catalunya_100"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_indicadors_have_IST_catalunya_100"
+			        }
+			      ]
+			    },
+			    "fact_indicador_has_renda___PIB_per_habitant": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_indicadors"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_indicador": {
+			          "Target": {
+			            "Entity": "fact_indicador"
+			          }
+			        },
+			        "fact_indicador.renda___PIB_per_habitant": {
+			          "Target": {
+			            "Entity": "fact_indicador.renda___PIB_per_habitant"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_indicador"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.renda___PIB_per_habitant"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_indicadors_have_renda___PIB_per_habitant"
+			        }
+			      ]
+			    },
+			    "fact_vab_has_fact_indicador_pes_indústria_al_VAB": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_vab"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_vab": {
+			          "Target": {
+			            "Entity": "fact_vab"
+			          }
+			        },
+			        "fact_indicador.pes_indústria_al_VAB": {
+			          "Target": {
+			            "Entity": "fact_indicador.pes_indústria_al_VAB"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_vab"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.pes_indústria_al_VAB"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_vabs_have_pes_indústria_al_VAB"
+			        }
+			      ]
+			    },
+			    "fact_indicador_has_PIB_per_habitant": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_indicadors"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_indicador": {
+			          "Target": {
+			            "Entity": "fact_indicador"
+			          }
+			        },
+			        "fact_indicador.PIB_per_habitant": {
+			          "Target": {
+			            "Entity": "fact_indicador.PIB_per_habitant"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_indicador"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.PIB_per_habitant"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_indicadors_have_PIB_per_habitant"
+			        }
+			      ]
+			    },
+			    "fact_vab_has_fact_indicador_vab_m": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_vab"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_vab": {
+			          "Target": {
+			            "Entity": "fact_vab"
+			          }
+			        },
+			        "fact_indicador.vab_m": {
+			          "Target": {
+			            "Entity": "fact_indicador.vab_m"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_vab"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.vab_m"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_vabs_have_vab_m"
+			        }
+			      ]
+			    },
+			    "fact_indicador_has_població": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_indicadors"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_indicador": {
+			          "Target": {
+			            "Entity": "fact_indicador"
+			          }
+			        },
+			        "fact_indicador.població": {
+			          "Target": {
+			            "Entity": "fact_indicador.població"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_indicador"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.població"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_indicadors_have_població"
+			        }
+			      ]
+			    },
+			    "fact_indicador_has_pib_m": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_indicadors"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_indicador": {
+			          "Target": {
+			            "Entity": "fact_indicador"
+			          }
+			        },
+			        "fact_indicador.pib_m": {
+			          "Target": {
+			            "Entity": "fact_indicador.pib_m"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_indicador"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.pib_m"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_indicadors_have_pib_m"
+			        }
+			      ]
+			    },
+			    "fact_indicador_has_estat": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_indicadors"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_indicador": {
+			          "Target": {
+			            "Entity": "fact_indicador"
+			          }
+			        },
+			        "fact_indicador.estat": {
+			          "Target": {
+			            "Entity": "fact_indicador.estat"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_indicador"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.estat"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_indicadors_have_estats"
+			        }
+			      ]
+			    },
+			    "fact_indicador_has_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_indicadors"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_indicador": {
+			          "Target": {
+			            "Entity": "fact_indicador"
+			          }
+			        },
+			        "fact_indicador.valor": {
+			          "Target": {
+			            "Entity": "fact_indicador.valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_indicador"
+			            },
+			            "Object": {
+			              "Role": "fact_indicador.valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_indicadors_have_valor"
+			        }
+			      ]
+			    },
+			    "dim_sector_has_ordre": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_sector"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_sector": {
+			          "Target": {
+			            "Entity": "dim_sector"
+			          }
+			        },
+			        "dim_sector.ordre": {
+			          "Target": {
+			            "Entity": "dim_sector.ordre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_sector"
+			            },
+			            "Object": {
+			              "Role": "dim_sector.ordre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_sectors_have_ordres"
+			        }
+			      ]
+			    },
+			    "dim_sector_has_sector": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_sector"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_sector": {
+			          "Target": {
+			            "Entity": "dim_sector"
+			          }
+			        },
+			        "dim_sector.sector": {
+			          "Target": {
+			            "Entity": "dim_sector.sector"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_sector"
+			            },
+			            "Object": {
+			              "Role": "dim_sector.sector"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_sectors_have_sectors"
+			        }
+			      ]
+			    },
+			    "dim_sector_has_sector_code": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_sector"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_sector": {
+			          "Target": {
+			            "Entity": "dim_sector"
+			          }
+			        },
+			        "dim_sector.sector_code": {
+			          "Target": {
+			            "Entity": "dim_sector.sector_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_sector"
+			            },
+			            "Object": {
+			              "Role": "dim_sector.sector_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_sectors_have_sector_codes"
+			        }
+			      ]
+			    },
+			    "dim_indicador_has_font_idescat": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_indicador"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_indicador": {
+			          "Target": {
+			            "Entity": "dim_indicador"
+			          }
+			        },
+			        "dim_indicador.font_idescat": {
+			          "Target": {
+			            "Entity": "dim_indicador.font_idescat"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_indicador"
+			            },
+			            "Object": {
+			              "Role": "dim_indicador.font_idescat"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_indicadors_have_font_idescats"
+			        }
+			      ]
+			    },
+			    "dim_indicador_has_agregacio": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_indicador"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_indicador": {
+			          "Target": {
+			            "Entity": "dim_indicador"
+			          }
+			        },
+			        "dim_indicador.agregacio": {
+			          "Target": {
+			            "Entity": "dim_indicador.agregacio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_indicador"
+			            },
+			            "Object": {
+			              "Role": "dim_indicador.agregacio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_indicadors_have_agregacios"
+			        }
+			      ]
+			    },
+			    "dim_indicador_has_unitat": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_indicador"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_indicador": {
+			          "Target": {
+			            "Entity": "dim_indicador"
+			          }
+			        },
+			        "dim_indicador.unitat": {
+			          "Target": {
+			            "Entity": "dim_indicador.unitat"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_indicador"
+			            },
+			            "Object": {
+			              "Role": "dim_indicador.unitat"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_indicadors_have_unitats"
+			        }
+			      ]
+			    },
+			    "dim_indicador_has_indicador": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_indicador"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_indicador": {
+			          "Target": {
+			            "Entity": "dim_indicador"
+			          }
+			        },
+			        "dim_indicador.indicador": {
+			          "Target": {
+			            "Entity": "dim_indicador.indicador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_indicador"
+			            },
+			            "Object": {
+			              "Role": "dim_indicador.indicador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_indicadors_have_indicadors"
+			        }
+			      ]
+			    },
+			    "dim_indicador_has_indicador_code": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_indicador"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_indicador": {
+			          "Target": {
+			            "Entity": "dim_indicador"
+			          }
+			        },
+			        "dim_indicador.indicador_code": {
+			          "Target": {
+			            "Entity": "dim_indicador.indicador_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_indicador"
+			            },
+			            "Object": {
+			              "Role": "dim_indicador.indicador_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_indicadors_have_indicador_codes"
+			        }
+			      ]
+			    },
+			    "dim_any_has_any": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_any"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_any": {
+			          "Target": {
+			            "Entity": "dim_any"
+			          }
+			        },
+			        "dim_any.any": {
+			          "Target": {
+			            "Entity": "dim_any.any"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_any"
+			            },
+			            "Object": {
+			              "Role": "dim_any.any"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_any_have_any"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "dim_any"
+			            },
+			            "Adjectives": [
+			              {
+			                "any": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "dim_any.any"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "any_indicates_how_any_dim_any_are"
+			        }
+			      ]
+			    },
+			    "dim_territori_has_ambit_ordre": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_territori"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_territori": {
+			          "Target": {
+			            "Entity": "dim_territori"
+			          }
+			        },
+			        "dim_territori.ambit_ordre": {
+			          "Target": {
+			            "Entity": "dim_territori.ambit_ordre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_territori"
+			            },
+			            "Object": {
+			              "Role": "dim_territori.ambit_ordre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_territoris_have_ambit_ordres"
+			        }
+			      ]
+			    },
+			    "dim_territori_has_ambit": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_territori"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_territori": {
+			          "Target": {
+			            "Entity": "dim_territori"
+			          }
+			        },
+			        "dim_territori.ambit": {
+			          "Target": {
+			            "Entity": "dim_territori.ambit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_territori"
+			            },
+			            "Object": {
+			              "Role": "dim_territori.ambit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_territoris_have_ambits"
+			        }
+			      ]
+			    },
+			    "dim_territori_has_ambit_code": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_territori"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_territori": {
+			          "Target": {
+			            "Entity": "dim_territori"
+			          }
+			        },
+			        "dim_territori.ambit_code": {
+			          "Target": {
+			            "Entity": "dim_territori.ambit_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_territori"
+			            },
+			            "Object": {
+			              "Role": "dim_territori.ambit_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_territoris_have_ambit_codes"
+			        }
+			      ]
+			    },
+			    "dim_territori_has_comarca": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_territori"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_territori": {
+			          "Target": {
+			            "Entity": "dim_territori"
+			          }
+			        },
+			        "dim_territori.comarca": {
+			          "Target": {
+			            "Entity": "dim_territori.comarca"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_territori"
+			            },
+			            "Object": {
+			              "Role": "dim_territori.comarca"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_territoris_have_comarca"
+			        }
+			      ]
+			    },
+			    "dim_territori_has_comarca_code": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_territori"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_territori": {
+			          "Target": {
+			            "Entity": "dim_territori"
+			          }
+			        },
+			        "dim_territori.comarca_code": {
+			          "Target": {
+			            "Entity": "dim_territori.comarca_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_territori"
+			            },
+			            "Object": {
+			              "Role": "dim_territori.comarca_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_territoris_have_comarca_codes"
+			        }
+			      ]
+			    },
+			    "fact_vab_has_dim_any": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_vab"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_vab": {
+			          "Target": {
+			            "Entity": "fact_vab"
+			          }
+			        },
+			        "dim_any": {
+			          "Target": {
+			            "Entity": "dim_any"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_vab"
+			            },
+			            "Object": {
+			              "Role": "dim_any"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_vabs_have_dim_any"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_any"
+			            },
+			            "Object": {
+			              "Role": "fact_vab"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_any_have_fact_vabs"
+			        }
+			      ]
+			    },
+			    "fact_vab_has_dim_sector": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_vab"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_vab": {
+			          "Target": {
+			            "Entity": "fact_vab"
+			          }
+			        },
+			        "dim_sector": {
+			          "Target": {
+			            "Entity": "dim_sector"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_vab"
+			            },
+			            "Object": {
+			              "Role": "dim_sector"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_vabs_have_dim_sectors"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_sector"
+			            },
+			            "Object": {
+			              "Role": "fact_vab"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_sectors_have_fact_vabs"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

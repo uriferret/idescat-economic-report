@@ -1,66 +1,64 @@
-# Versió Power BI
+# Informe de Power BI
 
-Informe de Power BI amb les mateixes dades de l'Idescat que la versió Python, organitzades com a **model en estrella**. Està desat en format `.pbip` (model en TMDL, informe en PBIR), perquè Git pugui versionar-ne cada canvi.
-
-> **Estat:** model, mesures i pàgina Resum fets. Pàgines Comarques i Mercat laboral pendents.
-
-![Pàgina Resum](captures/resum.png)
+Informe interactiu sobre la producció, la població i el benestar de les comarques i els àmbits territorials de Catalunya, amb dades oficials de l'Idescat.
 
 ## Com obrir-lo
 
-1. Obre `informe_economic.pbip` amb Power BI Desktop.
-2. Si et demana credencials per a `raw.githubusercontent.com`, tria **Anònim** amb nivell de privacitat **Públic**.
-3. Fes clic a **Actualitza**.
+1. Instal·la [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (gratuït, per a Windows).
+2. Descarrega o clona aquest repositori i obre `powerbi/informe_economic.pbip`.
+3. Si et demana credencials per a `raw.githubusercontent.com`, tria **Anònim**. Si et demana el nivell de privadesa, tria **Públic**.
+4. Fes clic a **Actualitza** per carregar les últimes dades del repositori.
 
-Les dades es llegeixen de `data/model/` d'aquest repositori a GitHub (paràmetre `RutaDades`). Per treballar amb fitxers locals, canvia el paràmetre per la ruta de la carpeta `data\model\` acabada en `\`.
+No cal cap compte de Microsoft ni cap llicència de pagament. Si en obrir-lo surt una finestra d'inici de sessió, la pots tancar.
 
-## Model
+## Pàgina 1 · Resum
 
-| Taula | Gra | Contingut |
+![Pàgina Resum](captures/resum.png)
+
+Visió general de Catalunya per àmbits territorials.
+
+- **Any** (a dalt a la dreta): tria l'any de les targetes i dels gràfics comarcals (2015–2023). Els dos gràfics d'evolució mostren sempre tota la sèrie.
+- **Targetes:** PIB, població, PIB per habitant i renda per persona de Catalunya per a l'any triat.
+- **El PIB ha crescut un 42% des del 2011** i **La població ha passat de 5,9 a 8,1 milions:** evolució de cada àmbit, apilat. L'etiqueta de la dreta indica quin àmbit és cada franja.
+- **On es produeix la riquesa no és on viu la gent:** cada bombolla és una comarca, i la mida indica la població. Les línies discontínues marquen la mitjana i divideixen el gràfic en quatre quadrants:
+  - **a la dreta i a baix:** comarques que produeixen molt però on els residents ingressen poc (per exemple, la Ribera d'Ebre);
+  - **a l'esquerra i a dalt:** comarques residencials, on part dels residents treballen fora (per exemple, el Garraf o el Maresme).
+- **Només el Metropolità supera la mitjana:** diferència de l'IST de cada àmbit respecte a Catalunya (= 100).
+- **La indústria impulsa el PIB, no el benestar:** cada punt és una comarca. El color indica l'IST: blau per sobre de la mitjana i taronja per sota.
+
+Passa el ratolí per sobre de qualsevol punt o barra per veure'n el detall. Fes-hi clic per filtrar la resta de la pàgina, i torna-hi a fer clic per treure el filtre.
+
+## Pàgina 2 · Comarques
+
+![Pàgina Comarques](captures/comarques.png)
+
+Detall de les 42 comarques i l'Aran.
+
+1. **Tria un indicador** amb els botons de dalt a la dreta: PIB per habitant, renda per persona, IST, pes de la indústria o població. El mapa, la taula i el títol del mapa canvien.
+2. **Llegeix el mapa:** com més fosc és el color, més amunt és la comarca en el rànquing de l'indicador triat. El color indica la **posició** i no el valor, perquè així es poden comparar els cinc indicadors amb la mateixa escala. Passa el ratolí per sobre d'una comarca per veure'n el valor i la posició.
+3. **Fes clic en una comarca** del mapa o de la taula. La fitxa mostra el nom de la comarca, la seva posició en el rànquing i els seus quatre indicadors principals. Torna-hi a fer clic per tornar a veure Catalunya.
+4. **Filtra per àmbit** amb el segmentador de dalt per veure només les comarques d'un àmbit.
+
+La taula s'ordena per posició. Fes clic a la capçalera d'una columna per ordenar-la d'una altra manera.
+
+## Indicadors
+
+| Indicador | Què mesura | Font (Idescat) |
 |---|---|---|
-| `dim_territori` | comarca | comarca i àmbit territorial (jerarquia Àmbit → Comarca) |
-| `dim_any` | any | 1981–2026 |
-| `dim_indicador` | indicador | nom, unitat i com s'agrega |
-| `dim_sector` | sector | agricultura, indústria, construcció, serveis |
-| `fact_indicadors` | comarca × any × indicador | PIB, població, IST, renda i components de l'IST |
-| `fact_vab` | comarca × any × sector | VAB en milions € |
-| `ref_oficial` | àmbit/Catalunya × any × indicador | valors oficials, per conciliar (desconnectada) |
+| PIB | Producte interior brut a preus corrents, en milions d'euros. Es comptabilitza on es produeix | PIB territorial (revisió 2024) |
+| Població | Població a 1 de gener | Estimacions de població |
+| PIB per habitant | PIB dividit per la població a 1 de gener | Calculat |
+| Renda per persona | Renda mitjana per persona dels residents | Índex socioeconòmic territorial |
+| IST | Índex socioeconòmic territorial (Catalunya = 100): ocupació, estudis, qualificació laboral, origen i renda | Índex socioeconòmic territorial |
+| Pes de la indústria | Part del valor afegit brut que generen la indústria i l'energia | PIB territorial, VAB per sectors |
 
-Les dimensions filtren els fets en una sola direcció (1 → *). Les taules es generen amb `python src/model.py`.
+## Coses a tenir en compte
 
-## Decisions de disseny
+- **Anys:** el PIB arriba fins al 2023, i la renda i l'IST comencen el 2015. Per això l'any es pot triar entre el 2015 i el 2023.
+- **PIB per habitant:** pot diferir lleugerament del valor que publica l'Idescat, perquè aquí es divideix per la població a 1 de gener i l'Idescat fa servir la població mitjana de l'any.
+- **Àmbits:** les xifres d'un àmbit són la suma de les seves comarques. Respecte de les xifres oficials per àmbit, la diferència és inferior a l'1%, perquè alguns municipis pertanyen a un àmbit diferent del de la seva comarca. L'IST i la renda d'un àmbit són la mitjana de les seves comarques ponderada per població.
+- **Lluçanès:** és comarca des del 2023 i encara no té dades de renda ni d'IST, per això surt en gris al mapa.
 
-- **Fets a nivell de comarca.** Els àmbits i Catalunya s'obtenen sumant comarques, així tota la sèrie (1981–2025) fa servir la mateixa divisió de 8 àmbits. Respecte de les xifres oficials per àmbit, la diferència és inferior a l'1%, perquè alguns municipis pertanyen a un àmbit diferent del de la seva comarca.
-- **Indicadors no additius.** Per a un àmbit o per a Catalunya, l'IST i la renda es calculen com la mitjana de les comarques ponderada per la població del mateix any.
-- **Últim any amb dades.** Si el context inclou diversos anys (per exemple, una targeta sense filtre d'any), cada mesura mostra l'últim any disponible. El PIB per habitant fa servir el mateix any per al PIB i per a la població.
-- Cada mesura té la seva **descripció** al model, que es veu en passar el ratolí per sobre al panell *Data*.
+## Fonts
 
-## Validació
-
-La consulta `Validacio` de la vista de consultes DAX ha de donar els mateixos valors que pandas a partir dels mateixos CSV. Cada mesura agafa l'últim any amb dades: PIB i VAB 2023, població 2025, renda 2023 i IST 2024.
-
-| Àmbit | PIB (M€) | Població | PIB per habitant (€) | Renda (€) | IST | Pes indústria |
-|---|---:|---:|---:|---:|---:|---:|
-| Alt Pirineu i Aran | 2.227 | 77.215 | 29.357 | 15.806 | 97,0 | 9,3% |
-| Camp de Tarragona | 19.444 | 564.162 | 35.495 | 15.091 | 95,6 | 28,9% |
-| Comarques Centrals | 14.136 | 431.254 | 33.675 | 15.826 | 96,1 | 34,0% |
-| Comarques Gironines | 25.854 | 814.218 | 32.616 | 15.097 | 90,3 | 19,8% |
-| Metropolità | 202.615 | 5.134.100 | 40.579 | 17.232 | 102,1 | 16,3% |
-| Penedès | 13.586 | 530.997 | 26.430 | 15.711 | 98,8 | 24,7% |
-| Ponent | 12.750 | 381.531 | 34.127 | 14.557 | 89,0 | 20,9% |
-| Terres de l'Ebre | 5.865 | 190.648 | 31.688 | 13.342 | 86,2 | 34,1% |
-
-## Pàgines
-
-| Pàgina | Contingut | Estat |
-|---|---|---|
-| 1. Resum | KPI de l'any i les 5 visualitzacions de la infografia Python | fet |
-| 2. Comarques | Taula i mapa per comarca, amb detall Àmbit → Comarca | pendent |
-| 3. Mercat laboral | Atur i afiliacions | pendent |
-
-## Com s'ha construït
-
-- **Power Query:** una funció `fnCsv` llegeix cada CSV en UTF-8 des de la ruta del paràmetre `RutaDades` (URL de GitHub o carpeta local). Cada taula és una crida a la funció amb els tipus de columna explícits. Els codis de comarca es carreguen com a text, per conservar el zero inicial.
-- **Configuració regional:** anglès (Estats Units), perquè els CSV fan servir el punt com a separador decimal.
-- **Mesures:** es van escriure i provar amb `DEFINE MEASURE` a la vista de consultes DAX abans d'afegir-les al model.
-- **Format:** projecte `.pbip` amb TMDL i PBIR. La memòria cau (`cache.abf`) i la configuració local (`localSettings.json`) queden fora de Git.
+Dades: [Idescat](https://www.idescat.cat), API Taules v2. Cartografia: © Instituto Geográfico Nacional (CC BY 4.0). Aquest informe no té cap relació ni aval de l'Idescat.
