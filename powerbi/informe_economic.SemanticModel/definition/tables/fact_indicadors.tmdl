@@ -9,8 +9,8 @@ table fact_indicadors
 			            CALCULATE ( SUM ( fact_indicadors[valor] ),
 			                        dim_indicador[indicador_code] = "GDP_ME", dim_any[any] = _any )
 			```
-		lineageTag: 77d3983d-1f1f-483c-9c73-91efc60e0cfa
 		formatString: #,0
+		lineageTag: 77d3983d-1f1f-483c-9c73-91efc60e0cfa
 
 	/// Població a 1 de gener (estimacions de població de l'Idescat). Suma de comarques. Si el context inclou diversos anys, mostra l'últim amb dades.
 	measure Població = ```
@@ -20,8 +20,8 @@ table fact_indicadors
 			            CALCULATE ( SUM ( fact_indicadors[valor] ),
 			                        dim_indicador[indicador_code] = "POP", dim_any[any] = _any )
 			```
-		lineageTag: 00aaff0a-01c4-43f8-bd82-aac2602905fa
 		formatString: #,0
+		lineageTag: 00aaff0a-01c4-43f8-bd82-aac2602905fa
 
 	/// Valor afegit brut en milions d'euros, filtrable per sector. Si el context inclou diversos anys, mostra l'últim amb dades.
 	measure 'VAB (M€)' = ```
@@ -29,8 +29,8 @@ table fact_indicadors
 			        VAR _any = CALCULATE ( MAX ( fact_vab[any] ) )
 			        RETURN CALCULATE ( SUM ( fact_vab[vab_meur] ), dim_any[any] = _any )
 			```
-		lineageTag: 2e671650-a878-4d0a-8f03-e146f81797a5
 		formatString: #,0
+		lineageTag: 2e671650-a878-4d0a-8f03-e146f81797a5
 
 	/// PIB / població a 1 de gener del mateix any (l'any del PIB). Pot diferir lleugerament del valor oficial, que fa servir la població mitjana de l'any.
 	measure 'PIB per habitant (€)' = ```
@@ -38,8 +38,8 @@ table fact_indicadors
 			        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = "GDP_ME" )
 			        RETURN CALCULATE ( DIVIDE ( [PIB (M€)] * 1000000, [Població] ), dim_any[any] = _any )
 			```
-		lineageTag: ae2e504a-ae0f-494a-9c82-08d1a2aa3704
 		formatString: #,0
+		lineageTag: ae2e504a-ae0f-494a-9c82-08d1a2aa3704
 
 	/// Pes del VAB de la indústria i l'energia (CCAE-2009 B-E) sobre el VAB total.
 	measure 'Pes indústria al VAB (%)' = ```
@@ -49,16 +49,16 @@ table fact_indicadors
 			            CALCULATE ( [VAB (M€)], REMOVEFILTERS ( dim_sector ) )
 			        )
 			```
-		lineageTag: 86cac90d-73dd-471d-97fd-a0fc3a1be67c
 		formatString: 0.0%
+		lineageTag: 86cac90d-73dd-471d-97fd-a0fc3a1be67c
 
 	/// Renda mitjana per persona dividida pel PIB per habitant. Valors alts: territoris residencials; valors baixos: territoris on es produeix molt més del que hi ingressen els residents.
 	measure 'Renda / PIB per habitant' = ```
 			
 			        DIVIDE ( [Renda mitjana per persona (€)], [PIB per habitant (€)] )
 			```
-		lineageTag: 513e087b-fdd0-4564-b85c-f6457ffc988f
 		formatString: 0.00
+		lineageTag: 513e087b-fdd0-4564-b85c-f6457ffc988f
 
 	/// Índex socioeconòmic territorial (Catalunya = 100). Per a un àmbit o Catalunya, mitjana de les comarques ponderada per la població del mateix any. Últim any amb dades si n'hi ha diversos.
 	measure 'IST (Catalunya 100)' = ```
@@ -77,8 +77,8 @@ table fact_indicadors
 			                dim_any[any] = _any
 			            )
 			```
-		lineageTag: a2be95d3-f24e-4fd2-bd7b-e5a359a82592
 		formatString: 0.0
+		lineageTag: a2be95d3-f24e-4fd2-bd7b-e5a359a82592
 
 	/// Renda mitjana per persona (component de l'IST). Per a un àmbit o Catalunya, mitjana de les comarques ponderada per la població del mateix any. Últim any amb dades si n'hi ha diversos.
 	measure 'Renda mitjana per persona (€)' = ```
@@ -97,8 +97,8 @@ table fact_indicadors
 			                dim_any[any] = _any
 			            )
 			```
-		lineageTag: d7b8318b-0f70-40c0-a805-70b15c6387c8
 		formatString: #,0
+		lineageTag: d7b8318b-0f70-40c0-a805-70b15c6387c8
 
 	/// Variació de la població respecte a 1981 (primer any de la sèrie).
 	measure 'Creixement població des de 1981 (%)' = ```
@@ -107,24 +107,36 @@ table fact_indicadors
 			        VAR _ini = CALCULATE ( [Població], dim_any[any] = 1981 )
 			        RETURN DIVIDE ( _ara - _ini, _ini )
 			```
-		lineageTag: 9a8af92f-9222-4f47-bd83-4fa826e46029
 		formatString: 0.0%
+		lineageTag: 9a8af92f-9222-4f47-bd83-4fa826e46029
 
 	/// Pes del territori seleccionat sobre el PIB de Catalunya (suma de comarques).
 	measure 'Pes sobre el total de Catalunya (PIB %)' = ```
 			
 			        DIVIDE ( [PIB (M€)], CALCULATE ( [PIB (M€)], REMOVEFILTERS ( dim_territori ) ) )
 			```
-		lineageTag: 2a1aa07b-5c09-4b44-a8ed-6b0c204e2de5
 		formatString: 0.0%
+		lineageTag: 2a1aa07b-5c09-4b44-a8ed-6b0c204e2de5
 
 	/// Pes del territori seleccionat sobre la població de Catalunya (suma de comarques).
 	measure 'Pes sobre el total de Catalunya (població %)' = ```
 			
 			        DIVIDE ( [Població], CALCULATE ( [Població], REMOVEFILTERS ( dim_territori ) ) )
 			```
-		lineageTag: 71119c03-e959-4c4c-8a33-7be8792ade91
 		formatString: 0.0%
+		lineageTag: 71119c03-e959-4c4c-8a33-7be8792ade91
+
+	/// PIB en milers de milions d'euros (per als eixos dels gràfics).
+	measure 'PIB (mil M€)' = DIVIDE ( [PIB (M€)], 1000 )
+		lineageTag: 92b9b557-f22d-452f-9c40-b6e6679f0852
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	/// Diferència de l'IST respecte a Catalunya (= 100). Positiu: per sobre de la mitjana.
+	measure 'IST vs Catalunya' = [IST (Catalunya 100)] - 100
+		lineageTag: 5eb34f37-361a-4211-8308-f979c5e3207c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column comarca_code
 		dataType: string
