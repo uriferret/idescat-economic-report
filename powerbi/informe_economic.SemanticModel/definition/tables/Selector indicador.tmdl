@@ -1,0 +1,38 @@
+table 'Selector indicador'
+	lineageTag: 15dfa900-dcdf-4cc6-8095-a0e64612018f
+
+	column Indicador
+		lineageTag: b76733f2-e2b0-4936-95ab-363c3e309d87
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Indicador]
+		sortByColumn: Ordre
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ordre
+		formatString: 0
+		lineageTag: 98689ba9-8053-4026-b951-2153ddfc9fbf
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Ordre]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Selector indicador' = calculated
+		mode: import
+		source =
+				
+				DATATABLE (
+				    "Indicador", STRING, "Ordre", INTEGER,
+				    {
+				        { "PIB per habitant", 1 },
+				        { "Renda per persona", 2 },
+				        { "IST", 3 },
+				        { "Pes de la indústria", 4 },
+				        { "Població", 5 }
+				    }
+				)
+
+	annotation PBI_Id = 6a2451d90ff242419caa8c1c1e540ab4
+

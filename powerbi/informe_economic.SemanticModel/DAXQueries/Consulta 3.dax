@@ -1,0 +1,7 @@
+DEFINE
+    /// Posició relativa de la comarca segons l'indicador triat: 1 = la primera, 0 = l'última. Serveix per acolorir el mapa.
+    MEASURE fact_indicadors[Posició relativa] =
+        VAR _n = COUNTROWS ( FILTER ( ALL ( dim_territori ), NOT ISBLANK ( [Valor seleccionat] ) ) )
+        RETURN DIVIDE ( _n - [Rànquing], _n - 1 )
+EVALUATE
+    SUMMARIZECOLUMNS ( dim_territori[comarca], "Rànquing", [Rànquing], "Posició", [Posició relativa] )

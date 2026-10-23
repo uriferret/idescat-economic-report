@@ -20,6 +20,7 @@ ref table dim_sector
 ref table fact_indicadors
 ref table fact_vab
 ref table ref_oficial
+ref table 'Selector indicador'
 
 ref cultureInfo en-US
 

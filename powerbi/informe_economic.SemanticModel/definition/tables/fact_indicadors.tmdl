@@ -138,6 +138,55 @@ table fact_indicadors
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	/// Valor de l'indicador triat al segmentador "Selector indicador" (per defecte, PIB per habitant).
+	measure 'Valor seleccionat' = ```
+			
+			        SWITCH ( SELECTEDVALUE ( 'Selector indicador'[Ordre], 1 ),
+			            1, [PIB per habitant (€)],
+			            2, [Renda mitjana per persona (€)],
+			            3, [IST (Catalunya 100)],
+			            4, [Pes indústria al VAB (%)],
+			            5, [Població]
+			        )
+			```
+		lineageTag: 43922f35-4722-461f-8b92-2bb0f80ef0c0
+
+		formatStringDefinition = SWITCH ( SELECTEDVALUE ( 'Selector indicador'[Ordre], 1 ), 3, "0.0", 4, "0.0%", "#,0" )
+
+	/// Posició de la comarca entre totes les de Catalunya segons l'indicador triat (1 = el valor més alt).
+	measure Rànquing = ```
+			
+			        IF ( HASONEVALUE ( dim_territori[comarca] ) && NOT ISBLANK ( [Valor seleccionat] ),
+			            RANKX ( FILTER ( ALL ( dim_territori ), NOT ISBLANK ( [Valor seleccionat] ) ),
+			                    [Valor seleccionat], , DESC, DENSE ) )
+			```
+		formatString: 0
+		lineageTag: 9c939fe0-7f29-4ecf-a60a-d4b8df64db2f
+
+	/// Text de la fitxa: nom de la comarca i posició ("Alt Penedès · 14a de 42").
+	measure 'Títol fitxa' = ```
+			
+			        VAR _n = COUNTROWS ( FILTER ( ALL ( dim_territori ), NOT ISBLANK ( [Valor seleccionat] ) ) )
+			        RETURN
+			            IF ( HASONEVALUE ( dim_territori[comarca] ),
+			                SELECTEDVALUE ( dim_territori[comarca] ) & " · " & [Rànquing] & "a de " & _n,
+			                "Catalunya · selecciona una comarca al mapa" )
+			```
+		lineageTag: 64d080a2-b7bf-4f47-b9be-9bda7bc81466
+
+	measure 'Títol mapa' = SELECTEDVALUE ( 'Selector indicador'[Indicador], "PIB per habitant" ) & " per comarca · " & SELECTEDVALUE ( dim_any[any] )
+		lineageTag: 32ef79bf-fae0-477b-9514-a74fb19ee56d
+
+	/// Posició relativa de la comarca segons l'indicador triat: 1 = la primera, 0 = l'última. Serveix per acolorir el mapa.
+	measure 'Posició relativa' = ```
+			
+			        VAR _n = COUNTROWS ( FILTER ( ALL ( dim_territori ), NOT ISBLANK ( [Valor seleccionat] ) ) )
+			        RETURN DIVIDE ( _n - [Rànquing], _n - 1 )
+			```
+		lineageTag: 893214fa-3fb0-4d33-8a12-f0123f42fa10
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column comarca_code
 		dataType: string
 		lineageTag: 584feca0-f15a-451e-8fb3-33e637225367
