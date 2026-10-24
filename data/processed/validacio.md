@@ -1,11 +1,11 @@
 # Validació de les dades
 
-2026-10-24 19:16 UTC · 18 correctes, 0 amb incidències
+2026-10-24 21:11 UTC · 18 correctes, 0 amb incidències
 
 - ✅ pib: suma de comarques = Catalunya. Diferència màxima 0.000%
 - ✅ vab: suma de comarques = Catalunya. Diferència màxima 0.033%
 - ✅ poblacio: suma de comarques = Catalunya. Diferència màxima 0.006%
-- ✅ afiliats_res: suma de comarques = Catalunya (comptant els afiliats sense municipi assignat). Diferència màxima 0.001%
+- ✅ afiliats_res: suma de comarques = Catalunya (comptant els afiliats no residents a Catalunya o sense residència coneguda). Diferència màxima 0.001%
 - ✅ PIB per habitant 2023 (PIB / població a 1 de juliol) = oficial a totes les comarques. Diferència màxima 0.03% (Alta Ribagorça)
 - ✅ PIB per habitant 2023: totes les comarques amb valor oficial tenen valor calculat
 - ✅ PIB per habitant de Catalunya 2023: 37,259 € (oficial 37,259 €)

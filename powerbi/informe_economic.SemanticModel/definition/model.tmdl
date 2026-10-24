@@ -23,9 +23,9 @@ ref table ref_oficial
 ref table 'Selector indicador'
 ref table fact_afiliacions_sector
 ref table fact_mercat_cat
-ref table fact_ambit_oficial
 ref table DateTableTemplate_d585d953-b2a5-4b56-95e2-488b876ac919
 ref table LocalDateTable_7e000482-a35e-434b-93ab-b594209222c6
+ref table fact_ambit_oficial
 
 ref cultureInfo en-US
 

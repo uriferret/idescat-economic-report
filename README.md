@@ -16,11 +16,11 @@ On es genera la riquesa a Catalunya, on viu la gent i com hi viu. Aquest informe
 
 ## Principals conclusions
 
-- **El PIB ha crescut un 42%** entre el 2011 i el 2023, en termes nominals. L'àmbit Metropolità genera el 68% del PIB i hi viu el 63% de la població.
+- **El PIB ha crescut un 42%** entre el 2011 i el 2023 en termes nominals, i un 19% descomptant la inflació. L'àmbit Metropolità genera el 68% del PIB i hi viu el 63% de la població.
 - **El Penedès és l'àmbit que més ha crescut** en població des del 1981 (+120%).
-- **On es produeix la riquesa no és on viu la gent.** La Ribera d'Ebre té el PIB per habitant més alt de Catalunya, per l'energia nuclear, però una renda per persona per sota de la mitjana. El Garraf és la segona comarca en renda i una de les últimes en PIB per habitant.
-- **El PIB per habitant no explica el benestar.** Entre comarques, la correlació amb l'índex socioeconòmic territorial (IST) és pràcticament nul·la (r = 0,01). La renda, en canvi, hi està molt relacionada (r = 0,85).
-- **On es treballa no sempre és on es viu.** Només 6 comarques tenen més llocs de treball que residents afiliats; el Barcelonès és la que en té més (1,39 llocs per cada resident afiliat, el 2025). Al Moianès i al Garraf, en canvi, n'hi ha menys de la meitat.
+- **On es produeix la riquesa no és on viu la gent.** La Ribera d'Ebre té el PIB per habitant més alt de Catalunya, per la central nuclear d'Ascó, però una renda per persona per sota de la mitjana. El Garraf és la segona comarca en renda i una de les últimes en PIB per habitant.
+- **El PIB per habitant no explica la situació socioeconòmica dels residents.** Entre comarques, no té relació amb l'índex socioeconòmic territorial (IST, r = 0,01) ni amb els seus components d'ocupació, estudis i qualificació, i amb la renda per persona la relació és feble (r = 0,16). La Ribera d'Ebre és un valor extrem, però sense aquesta comarca les relacions continuen sent febles (r = 0,15 amb l'IST i 0,30 amb la renda).
+- **On es treballa no sempre és on es viu.** Només 6 comarques tenen més llocs de treball que residents afiliats al règim general; el Barcelonès és la que en té més (1,39 llocs per cada resident afiliat, el 2025). Al Moianès i al Garraf, en canvi, n'hi ha menys de la meitat.
 
 ## Dashboard web
 
@@ -62,7 +62,7 @@ tests/    proves
 
 ## Fonts
 
-Dades: **[Idescat](https://www.idescat.cat)**, Institut d'Estadística de Catalunya, a través de l'[API Taules v2](https://www.idescat.cat/dev/api/taules/): PIB territorial, estimacions de població, índex socioeconòmic territorial, afiliacions a la Seguretat Social i estimació mensual de la població activa. Les dades no s'han modificat. Cartografia: © Instituto Geográfico Nacional (CC BY 4.0).
+Dades: **[Idescat](https://www.idescat.cat)**, Institut d'Estadística de Catalunya, a través de l'[API Taules v2](https://www.idescat.cat/dev/api/taules/): PIB territorial i comptes econòmics anuals, estimacions de població, índex socioeconòmic territorial, afiliacions a la Seguretat Social i estimació mensual de la població activa. Les dades no s'han modificat. Cartografia: © Instituto Geográfico Nacional (CC BY 4.0).
 
 Aquest projecte no té cap relació ni aval de l'Idescat.
 
@@ -94,11 +94,11 @@ It is a Catalan adaptation of Maven Analytics' *World Economic Report*, which ma
 
 ### Key findings
 
-- **GDP grew by 42%** in nominal terms between 2011 and 2023. The Metropolitan area produces 68% of GDP and is home to 63% of the population.
+- **GDP grew by 42%** in nominal terms between 2011 and 2023, and by 19% after inflation. The Metropolitan area produces 68% of GDP and is home to 63% of the population.
 - **Penedès is the fastest-growing area** in population since 1981 (+120%).
-- **Wealth is not produced where people live.** Ribera d'Ebre has the highest GDP per capita in Catalonia, driven by nuclear power, yet its income per person is below average. Garraf ranks second in income and among the last in GDP per capita.
-- **GDP per capita does not explain well-being.** Across comarques, its correlation with the territorial socioeconomic index (IST) is practically zero (r = 0.01), while income is strongly related to it (r = 0.85).
-- **People don't always work where they live.** Only 6 comarques have more jobs than employed residents, led by Barcelonès (1.39 jobs per employed resident in 2025). In Moianès and Garraf there are fewer than half.
+- **Wealth is not produced where people live.** Ribera d'Ebre has the highest GDP per capita in Catalonia, driven by the Ascó nuclear power plant, yet its income per person is below average. Garraf ranks second in income and among the last in GDP per capita.
+- **GDP per capita does not explain residents' socioeconomic conditions.** Across comarques, it is unrelated to the territorial socioeconomic index (IST, r = 0.01) and to its employment, education and skills components, and only weakly related to income per person (r = 0.16). Ribera d'Ebre is an outlier, but without it the relationships are still weak (r = 0.15 with the IST and 0.30 with income).
+- **People don't always work where they live.** Only 6 comarques have more jobs than employed residents (general Social Security scheme), led by Barcelonès (1.39 jobs per employed resident in 2025). In Moianès and Garraf there are fewer than half.
 
 ### Web dashboard
 
@@ -127,7 +127,7 @@ Then run the notebook [`python/informe_economic.ipynb`](python/informe_economic.
 
 ### Sources
 
-Data: **[Idescat](https://www.idescat.cat)**, via the [Tables API v2](https://www.idescat.cat/dev/api/taules/): territorial GDP, population estimates, territorial socioeconomic index, Social Security affiliations and monthly labour force estimates. Data has not been modified. Maps: © Instituto Geográfico Nacional (CC BY 4.0). This project is not affiliated with or endorsed by Idescat.
+Data: **[Idescat](https://www.idescat.cat)**, via the [Tables API v2](https://www.idescat.cat/dev/api/taules/): territorial GDP and annual economic accounts, population estimates, territorial socioeconomic index, Social Security affiliations and monthly labour force estimates. Data has not been modified. Maps: © Instituto Geográfico Nacional (CC BY 4.0). This project is not affiliated with or endorsed by Idescat.
 
 
 ### Author

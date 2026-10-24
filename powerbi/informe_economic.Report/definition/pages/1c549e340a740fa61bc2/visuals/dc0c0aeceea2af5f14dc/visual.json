@@ -212,5 +212,65 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "63553cfa2140add21a78",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_territori"
+              }
+            },
+            "Property": "comarca"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "58293832a94497511d31",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_territori"
+              }
+            },
+            "Property": "ambit"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "7c751a58eca33fdc72ba",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fact_indicadors"
+              }
+            },
+            "Property": "Valor seleccionat"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "ae2b24244e65cfa047ae",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fact_indicadors"
+              }
+            },
+            "Property": "Rànquing"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

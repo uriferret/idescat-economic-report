@@ -21,6 +21,13 @@ SOURCES = {
         "geos": ["cat", "at", "com"],
         "description": "PIB i PIB per habitant. Revisió estadística 2024",
     },
+    # PIB de Catalunya en volum (índex encadenat 2020=100): creixement real, sense l'efecte dels preus.
+    "pib_volum": {
+        "stat": "piba", "node": 21912, "table": 24923,
+        "geos": ["cat"],
+        "filters": {"CONCEPT": "GDP", "INDICATOR": "VALUE"},
+        "description": "PIB oferta. Índexs de volum encadenats (2020=100). Revisió estadística 2024",
+    },
     # VAB (milions €) per sectors: A agricultura, B-E indústria, F construcció, G-U serveis.
     "vab": {
         "stat": "pibc", "node": 21926, "table": 26070,

@@ -36,7 +36,7 @@ def load(name: str) -> pd.DataFrame:
 
 
 def comarques(df: pd.DataFrame) -> pd.DataFrame:
-    """Només comarques: treu el total de Catalunya i el codi 99 (sense municipi assignat)."""
+    """Només comarques: treu el total de Catalunya i el codi 99 (no residents a Catalunya o altres)."""
     return df[df["geo_code"].str.fullmatch(r"\d\d") & (df["geo_code"] != "99")]
 
 
@@ -55,12 +55,12 @@ def suma_comarques_catalunya() -> None:
         com, cat = com[com["CONCEPT"] == concept], cat[cat["CONCEPT"] == concept]
         g = com.groupby(["period_code", *keys])["value"].sum().rename("comarques").reset_index()
         g = g.merge(cat[["period_code", *keys, "value"]], on=["period_code", *keys])
-        if len(sense):  # afiliats sense municipi de residència assignat
+        if len(sense):  # codi 99: afiliats no residents a Catalunya o sense residència coneguda
             g = g.merge(sense.groupby(["period_code", *keys])["value"].sum().rename("sense_assignar").reset_index(),
                         on=["period_code", *keys], how="left").fillna({"sense_assignar": 0})
             g["comarques"] += g["sense_assignar"]
         rel = (g["comarques"] / g["value"] - 1).abs().max()
-        nota = " (comptant els afiliats sense municipi assignat)" if len(sense) else ""
+        nota = " (comptant els afiliats no residents a Catalunya o sense residència coneguda)" if len(sense) else ""
         ok(rel <= TOL_TOTAL, f"{src}: suma de comarques = Catalunya{nota}. Diferència màxima {rel:.3%}")
 
 

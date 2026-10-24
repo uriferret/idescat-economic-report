@@ -241,5 +241,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "0452321ff7cce86f1fbf",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_territori"
+              }
+            },
+            "Property": "comarca"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "db65a34e5a9bebfd3a59",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fact_indicadors"
+              }
+            },
+            "Property": "Afiliats residents"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "fd7f8200ec3a44298336",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fact_indicadors"
+              }
+            },
+            "Property": "Índex d'atracció laboral"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

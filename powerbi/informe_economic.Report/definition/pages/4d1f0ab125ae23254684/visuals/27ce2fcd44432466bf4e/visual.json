@@ -134,5 +134,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "34b77362ea2737bb575f",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_any"
+              }
+            },
+            "Property": "any"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e4e7f68cb97c9a23b099",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_territori"
+              }
+            },
+            "Property": "ambit"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "92ed99dbe0061572d8e3",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fact_indicadors"
+              }
+            },
+            "Property": "Afiliats residents"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

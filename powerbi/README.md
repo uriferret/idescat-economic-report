@@ -1,6 +1,6 @@
 # Informe de Power BI
 
-Informe interactiu sobre la producció, la població i el benestar de les comarques i els àmbits territorials de Catalunya, amb dades oficials de l'Idescat.
+Informe interactiu sobre la producció, la població i la situació socioeconòmica de les comarques i els àmbits territorials de Catalunya, amb dades oficials de l'Idescat.
 
 ## Com obrir-lo
 
@@ -24,7 +24,7 @@ Visió general de Catalunya per àmbits territorials.
   - **a la dreta i a baix:** comarques que produeixen molt però on els residents ingressen poc (per exemple, la Ribera d'Ebre);
   - **a l'esquerra i a dalt:** comarques residencials, on part dels residents treballen fora (per exemple, el Garraf o el Maresme).
 - **Només el Metropolità supera la mitjana:** diferència de l'IST de cada àmbit respecte a Catalunya (= 100).
-- **La indústria impulsa el PIB, no el benestar:** cada punt és una comarca. El color indica l'IST: blau per sobre de la mitjana i taronja per sota.
+- **La indústria explica part del PIB, no la situació socioeconòmica:** cada punt és una comarca. El color indica l'IST: blau per sobre de la mitjana i taronja per sota.
 
 Passa el ratolí per sobre de qualsevol punt o barra per veure'n el detall. Fes-hi clic per filtrar la resta de la pàgina, i torna-hi a fer clic per treure el filtre.
 
@@ -78,9 +78,9 @@ Ocupació, atur i desplaçaments per feina.
 - **Anys:** el PIB arriba fins al 2023, i la renda i l'IST comencen el 2015. Per això l'any es pot triar entre el 2015 i el 2023.
 - **PIB per habitant:** es divideix el PIB per la població a 1 de juliol, igual que l'Idescat, i per això coincideix amb el valor oficial. La població que es mostra a la resta de l'informe és la de l'1 de gener.
 - **Àmbits:** 12 municipis pertanyen a un àmbit diferent del de la seva comarca: Castellcir, Castellterçol, Granera i Sant Quirze Safaja (Moianès) són de l'àmbit Metropolità, i els 8 municipis de l'Alta Segarra (Anoia) són de les Comarques Centrals. Per això, des del 2015 la població i els afiliats d'un àmbit són les xifres oficials de l'àmbit, i la suma de les comarques d'un àmbit pot no coincidir exactament amb el total. El PIB i el VAB d'un àmbit són la suma de les seves comarques, perquè l'Idescat no publica el PIB dels municipis petits; la diferència amb el PIB oficial per àmbit és inferior a l'1%. Els creixements des del 1981 i des del 2012 es calculen amb els límits de les comarques, perquè els dos anys siguin comparables. L'IST i la renda d'un àmbit són la mitjana de les seves comarques ponderada per població.
-- **Mercat laboral:** l'índex d'atracció només inclou el règim general (assalariats), no els autònoms. Les dades per lloc de treball comencen el desembre del 2020.
-- **Afiliats de Catalunya:** el total de Catalunya és la xifra oficial. És una mica més alt que la suma de les comarques, perquè inclou uns 130.000 afiliats sense municipi de residència assignat.
-- **Canvis de límits comarcals:** el 2015 es va crear el Moianès i el 2023 el Lluçanès, i el 2023 Torà va passar de la Segarra al Solsonès. Les sèries de les comarques afectades (Bages, Berguedà, Lluçanès, Moianès, Osona, Segarra, Solsonès i Vallès Oriental) canvien de cop aquells anys, i per això el creixement de població des del 1981 i el d'afiliats des del 2012 surten en blanc per a aquestes comarques.
+- **Mercat laboral:** l'índex d'atracció només inclou el règim general (assalariats), no els autònoms, i compta afiliacions, no persones. Les afiliacions s'assignen al municipi del compte de cotització de l'empresa, que no sempre és el lloc on es treballa; per això les comarques amb seus d'empreses, com el Barcelonès, poden sortir amb un índex més alt. Les dades per lloc de treball comencen el desembre del 2020.
+- **Afiliats:** són els afiliats que viuen al territori. L'Idescat publica uns 120.000 afiliats més com a "no residents a Catalunya o altres", que no són de cap comarca i no es compten en el total de Catalunya.
+- **Canvis de límits comarcals:** el 2015 es va crear el Moianès i el 2023 el Lluçanès; el 2023 Biosca i Torà van passar de la Segarra al Solsonès, i el 2025 Aiguafreda, del Vallès Oriental a Osona. Les sèries de les comarques afectades (Bages, Lluçanès, Moianès, Osona, Segarra, Solsonès i Vallès Oriental) canvien de cop aquells anys, i per això el creixement de població des del 1981 i el d'afiliats des del 2012 surten en blanc per a aquestes comarques.
 - **Lluçanès:** és comarca des del 2023 i encara no té dades de renda ni d'IST, per això surt en gris al mapa.
 
 ## Fonts

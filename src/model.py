@@ -178,16 +178,6 @@ def main() -> None:
             if geo == "cat":
                 d = d.assign(geo_code="CAT", geo_label="Catalunya")
             ref.append(d.loc[d["geo_code"] != "TOTAL"].assign(nivell=nivell))
-    # Afiliats de Catalunya: el total oficial inclou els afiliats sense municipi de residència
-    # assignat, que no són a cap comarca. Les mesures DAX el fan servir quan no hi ha filtre territorial.
-    for code in ("AFI_RES", "AFI_RG_RES", "AFI_RG_LLOC"):
-        src, *_rest, concept = INDICADORS[code][:5]
-        filtres = INDICADORS[code][5] if len(INDICADORS[code]) > 5 else {}
-        d = to_year(load(f"{src}_cat"))
-        d = d[d["CONCEPT"] == concept]
-        for col, val in filtres.items():
-            d = d[d[col] == val]
-        ref.append(d.assign(geo_code="CAT", geo_label="Catalunya", CONCEPT=code, nivell="Catalunya"))
     (pd.concat(ref).rename(columns={"geo_code": "codi", "geo_label": "nom", "CONCEPT": "indicador_code",
                                     "value": "valor_oficial"})
      [["nivell", "codi", "nom", "any", "indicador_code", "valor_oficial"]]

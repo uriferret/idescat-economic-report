@@ -30,6 +30,19 @@
     "rows": 1716
   },
   {
+    "source": "pib_volum",
+    "geo": "cat",
+    "file": "data/processed/pib_volum_cat.csv",
+    "label": "PIB oferta. Índexs en volum encadenats (any 2020=100). Catalunya",
+    "updated": "2026-03-20",
+    "url": "https://api.idescat.cat/taules/v2/piba/21912/24923/cat/data",
+    "filters": {
+      "CONCEPT": "GDP",
+      "INDICATOR": "VALUE"
+    },
+    "rows": 26
+  },
+  {
     "source": "vab",
     "geo": "cat",
     "file": "data/processed/vab_cat.csv",

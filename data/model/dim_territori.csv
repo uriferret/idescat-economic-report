@@ -3,7 +3,7 @@ comarca_code,comarca,ambit_code,ambit,ambit_ordre,canvi_limits,serie_comparable
 13,Barcelonès,AT01,Metropolità,1,,True
 21,Maresme,AT01,Metropolità,1,,True
 40,Vallès Occidental,AT01,Metropolità,1,,True
-41,Vallès Oriental,AT01,Metropolità,1,El 2015 va cedir municipis al Moianès.,False
+41,Vallès Oriental,AT01,Metropolità,1,El 2015 va cedir municipis al Moianès. El 2025 va cedir Aiguafreda a Osona.,False
 02,Alt Empordà,AT02,Comarques Gironines,2,,True
 10,Baix Empordà,AT02,Comarques Gironines,2,,True
 19,Garrotxa,AT02,Comarques Gironines,2,,True
@@ -23,15 +23,15 @@ comarca_code,comarca,ambit_code,ambit,ambit_ordre,canvi_limits,serie_comparable
 18,Garrigues,AT05,Ponent,6,,True
 23,Noguera,AT05,Ponent,6,,True
 27,Pla d'Urgell,AT05,Ponent,6,,True
-32,Segarra,AT05,Ponent,6,El 2023 va cedir Torà al Solsonès.,False
+32,Segarra,AT05,Ponent,6,El 2023 va cedir Biosca i Torà al Solsonès.,False
 33,Segrià,AT05,Ponent,6,,True
 38,Urgell,AT05,Ponent,6,,True
-07,Bages,AT06,Comarques Centrals,4,El 2015 va cedir municipis al Moianès.,False
-14,Berguedà,AT06,Comarques Centrals,4,El 2023 va cedir Santa Maria de Merlès al Lluçanès.,False
-43,Lluçanès,AT06,Comarques Centrals,4,Comarca creada el 2023 amb municipis d'Osona i el Berguedà.,False
+07,Bages,AT06,Comarques Centrals,4,El 2015 va cedir municipis al Moianès. El 2023 va cedir municipis al Lluçanès.,False
+14,Berguedà,AT06,Comarques Centrals,4,,True
+43,Lluçanès,AT06,Comarques Centrals,4,Comarca creada el 2023 amb municipis d'Osona i el Bages.,False
 42,Moianès,AT06,Comarques Centrals,4,"Comarca creada el 2015 amb municipis del Bages, el Vallès Oriental i Osona.",False
-24,Osona,AT06,Comarques Centrals,4,El 2015 va cedir Collsuspina al Moianès. El 2023 va cedir municipis al Lluçanès.,False
-35,Solsonès,AT06,Comarques Centrals,4,El 2023 va incorporar Torà (de la Segarra).,False
+24,Osona,AT06,Comarques Centrals,4,El 2015 va cedir Collsuspina al Moianès. El 2023 va cedir municipis al Lluçanès. El 2025 va incorporar Aiguafreda (del Vallès Oriental).,False
+35,Solsonès,AT06,Comarques Centrals,4,El 2023 va incorporar Biosca i Torà (de la Segarra).,False
 04,Alt Urgell,AT07,Alt Pirineu i Aran,8,,True
 05,Alta Ribagorça,AT07,Alt Pirineu i Aran,8,,True
 39,Aran,AT07,Alt Pirineu i Aran,8,,True

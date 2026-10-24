@@ -1,12 +1,13 @@
 # Informe de qualitat de les dades
 
-Extracció: 2026-10-24 19:15 UTC · Font: Idescat
+Extracció: 2026-10-24 21:11 UTC · Font: Idescat
 
 ## Resum per taula
 
 - **pib/cat**: 42 files, 0 valors buits (0.0%) | períodes 2011–2024 (14), estats: {'p': 9}
 - **pib/at**: 351 files, 0 valors buits (0.0%) | períodes 2011–2023 (13), estats: {'p': 54}
 - **pib/com**: 1716 files, 36 valors buits (2.1%) | períodes 2011–2023 (13), estats: {'p': 261, '..': 36}
+- **pib_volum/cat**: 26 files, 0 valors buits (0.0%) | períodes 2000–2025 (26), estats: {'p': 3}
 - **vab/cat**: 65 files, 0 valors buits (0.0%) | períodes 2011–2023 (13), estats: {'p': 10}
 - **vab/at**: 585 files, 0 valors buits (0.0%) | períodes 2011–2023 (13), estats: {'p': 90}
 - **vab/com**: 2860 files, 60 valors buits (2.1%) | períodes 2011–2023 (13), estats: {'p': 435, '..': 60}
