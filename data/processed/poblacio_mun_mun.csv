@@ -1,0 +1,937 @@
+source,period_code,period_label,geo_code,geo_label,SEX,SEX_label,CONCEPT,CONCEPT_label,value,status
+poblacio_mun,1986S2,S2/1986,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1986S2,S2/1986,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1986S2,S2/1986,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1986S2,S2/1986,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1986S2,S2/1986,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1986S2,S2/1986,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1986S2,S2/1986,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1986S2,S2/1986,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1986S2,S2/1986,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1986S2,S2/1986,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1986S2,S2/1986,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1986S2,S2/1986,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1987S1,S1/1987,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1987S1,S1/1987,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1987S1,S1/1987,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1987S1,S1/1987,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1987S1,S1/1987,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1987S1,S1/1987,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1987S1,S1/1987,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1987S1,S1/1987,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1987S1,S1/1987,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1987S1,S1/1987,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1987S1,S1/1987,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1987S1,S1/1987,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1987S2,S2/1987,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1987S2,S2/1987,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1987S2,S2/1987,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1987S2,S2/1987,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1987S2,S2/1987,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1987S2,S2/1987,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1987S2,S2/1987,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1987S2,S2/1987,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1987S2,S2/1987,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1987S2,S2/1987,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1987S2,S2/1987,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1987S2,S2/1987,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1988S1,S1/1988,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1988S1,S1/1988,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1988S1,S1/1988,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1988S1,S1/1988,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1988S1,S1/1988,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1988S1,S1/1988,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1988S1,S1/1988,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1988S1,S1/1988,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1988S1,S1/1988,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1988S1,S1/1988,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1988S1,S1/1988,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1988S1,S1/1988,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1988S2,S2/1988,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1988S2,S2/1988,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1988S2,S2/1988,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1988S2,S2/1988,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1988S2,S2/1988,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1988S2,S2/1988,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1988S2,S2/1988,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1988S2,S2/1988,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1988S2,S2/1988,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1988S2,S2/1988,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1988S2,S2/1988,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1988S2,S2/1988,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1989S1,S1/1989,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1989S1,S1/1989,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1989S1,S1/1989,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1989S1,S1/1989,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1989S1,S1/1989,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1989S1,S1/1989,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1989S1,S1/1989,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1989S1,S1/1989,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1989S1,S1/1989,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1989S1,S1/1989,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1989S1,S1/1989,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1989S1,S1/1989,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1989S2,S2/1989,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1989S2,S2/1989,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1989S2,S2/1989,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1989S2,S2/1989,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1989S2,S2/1989,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1989S2,S2/1989,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1989S2,S2/1989,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1989S2,S2/1989,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1989S2,S2/1989,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1989S2,S2/1989,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1989S2,S2/1989,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1989S2,S2/1989,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1990S1,S1/1990,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1990S1,S1/1990,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1990S1,S1/1990,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1990S1,S1/1990,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1990S1,S1/1990,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1990S1,S1/1990,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1990S1,S1/1990,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1990S1,S1/1990,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1990S1,S1/1990,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1990S1,S1/1990,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1990S1,S1/1990,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1990S1,S1/1990,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1990S2,S2/1990,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1990S2,S2/1990,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1990S2,S2/1990,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1990S2,S2/1990,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1990S2,S2/1990,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1990S2,S2/1990,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1990S2,S2/1990,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1990S2,S2/1990,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1990S2,S2/1990,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1990S2,S2/1990,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1990S2,S2/1990,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1990S2,S2/1990,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1991S1,S1/1991,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1991S1,S1/1991,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1991S1,S1/1991,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1991S1,S1/1991,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1991S1,S1/1991,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1991S1,S1/1991,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1991S1,S1/1991,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1991S1,S1/1991,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1991S1,S1/1991,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1991S1,S1/1991,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1991S1,S1/1991,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1991S1,S1/1991,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1991S2,S2/1991,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1991S2,S2/1991,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1991S2,S2/1991,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1991S2,S2/1991,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1991S2,S2/1991,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1991S2,S2/1991,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1991S2,S2/1991,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1991S2,S2/1991,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1991S2,S2/1991,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1991S2,S2/1991,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1991S2,S2/1991,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1991S2,S2/1991,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1992S1,S1/1992,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1992S1,S1/1992,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1992S1,S1/1992,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1992S1,S1/1992,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1992S1,S1/1992,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1992S1,S1/1992,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1992S1,S1/1992,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1992S1,S1/1992,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1992S1,S1/1992,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1992S1,S1/1992,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1992S1,S1/1992,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1992S1,S1/1992,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1992S2,S2/1992,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1992S2,S2/1992,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1992S2,S2/1992,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1992S2,S2/1992,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1992S2,S2/1992,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1992S2,S2/1992,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1992S2,S2/1992,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1992S2,S2/1992,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1992S2,S2/1992,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1992S2,S2/1992,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1992S2,S2/1992,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1992S2,S2/1992,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1993S1,S1/1993,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1993S1,S1/1993,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1993S1,S1/1993,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1993S1,S1/1993,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1993S1,S1/1993,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1993S1,S1/1993,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1993S1,S1/1993,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1993S1,S1/1993,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1993S1,S1/1993,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1993S1,S1/1993,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1993S1,S1/1993,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1993S1,S1/1993,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1993S2,S2/1993,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1993S2,S2/1993,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1993S2,S2/1993,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1993S2,S2/1993,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1993S2,S2/1993,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1993S2,S2/1993,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1993S2,S2/1993,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1993S2,S2/1993,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1993S2,S2/1993,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1993S2,S2/1993,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1993S2,S2/1993,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1993S2,S2/1993,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1994S1,S1/1994,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1994S1,S1/1994,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1994S1,S1/1994,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1994S1,S1/1994,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1994S1,S1/1994,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1994S1,S1/1994,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1994S1,S1/1994,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1994S1,S1/1994,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1994S1,S1/1994,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1994S1,S1/1994,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1994S1,S1/1994,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1994S1,S1/1994,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1994S2,S2/1994,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1994S2,S2/1994,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1994S2,S2/1994,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1994S2,S2/1994,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1994S2,S2/1994,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1994S2,S2/1994,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1994S2,S2/1994,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1994S2,S2/1994,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1994S2,S2/1994,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1994S2,S2/1994,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1994S2,S2/1994,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1994S2,S2/1994,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1995S1,S1/1995,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1995S1,S1/1995,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1995S1,S1/1995,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1995S1,S1/1995,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1995S1,S1/1995,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1995S1,S1/1995,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1995S1,S1/1995,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1995S1,S1/1995,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1995S1,S1/1995,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1995S1,S1/1995,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1995S1,S1/1995,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1995S1,S1/1995,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1995S2,S2/1995,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1995S2,S2/1995,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1995S2,S2/1995,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1995S2,S2/1995,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1995S2,S2/1995,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1995S2,S2/1995,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1995S2,S2/1995,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1995S2,S2/1995,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1995S2,S2/1995,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1995S2,S2/1995,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1995S2,S2/1995,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1995S2,S2/1995,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1996S1,S1/1996,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1996S1,S1/1996,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1996S1,S1/1996,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1996S1,S1/1996,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1996S1,S1/1996,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1996S1,S1/1996,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1996S1,S1/1996,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1996S1,S1/1996,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1996S1,S1/1996,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1996S1,S1/1996,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1996S1,S1/1996,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1996S1,S1/1996,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1996S2,S2/1996,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1996S2,S2/1996,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1996S2,S2/1996,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1996S2,S2/1996,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1996S2,S2/1996,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1996S2,S2/1996,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1996S2,S2/1996,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1996S2,S2/1996,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1996S2,S2/1996,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1996S2,S2/1996,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1996S2,S2/1996,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1996S2,S2/1996,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1997S1,S1/1997,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1997S1,S1/1997,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1997S1,S1/1997,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1997S1,S1/1997,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1997S1,S1/1997,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1997S1,S1/1997,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1997S1,S1/1997,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1997S1,S1/1997,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1997S1,S1/1997,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1997S1,S1/1997,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1997S1,S1/1997,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1997S1,S1/1997,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1997S2,S2/1997,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1997S2,S2/1997,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1997S2,S2/1997,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1997S2,S2/1997,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1997S2,S2/1997,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1997S2,S2/1997,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1997S2,S2/1997,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1997S2,S2/1997,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1997S2,S2/1997,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1997S2,S2/1997,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1997S2,S2/1997,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1997S2,S2/1997,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1998S1,S1/1998,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1998S1,S1/1998,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1998S1,S1/1998,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1998S1,S1/1998,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1998S1,S1/1998,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1998S1,S1/1998,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1998S1,S1/1998,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1998S1,S1/1998,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1998S1,S1/1998,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1998S1,S1/1998,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1998S1,S1/1998,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1998S1,S1/1998,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1998S2,S2/1998,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1998S2,S2/1998,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1998S2,S2/1998,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1998S2,S2/1998,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1998S2,S2/1998,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1998S2,S2/1998,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1998S2,S2/1998,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1998S2,S2/1998,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1998S2,S2/1998,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1998S2,S2/1998,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1998S2,S2/1998,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1998S2,S2/1998,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1999S1,S1/1999,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1999S1,S1/1999,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1999S1,S1/1999,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1999S1,S1/1999,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1999S1,S1/1999,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1999S1,S1/1999,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1999S1,S1/1999,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1999S1,S1/1999,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1999S1,S1/1999,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1999S1,S1/1999,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1999S1,S1/1999,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1999S1,S1/1999,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,1999S2,S2/1999,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,1999S2,S2/1999,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,1999S2,S2/1999,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,1999S2,S2/1999,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,1999S2,S2/1999,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,1999S2,S2/1999,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,1999S2,S2/1999,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,1999S2,S2/1999,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,1999S2,S2/1999,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,1999S2,S2/1999,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,1999S2,S2/1999,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,1999S2,S2/1999,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2000S1,S1/2000,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2000S1,S1/2000,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2000S1,S1/2000,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2000S1,S1/2000,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2000S1,S1/2000,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2000S1,S1/2000,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2000S1,S1/2000,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2000S1,S1/2000,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2000S1,S1/2000,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2000S1,S1/2000,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2000S1,S1/2000,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2000S1,S1/2000,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2000S2,S2/2000,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2000S2,S2/2000,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2000S2,S2/2000,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2000S2,S2/2000,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2000S2,S2/2000,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2000S2,S2/2000,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2000S2,S2/2000,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2000S2,S2/2000,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2000S2,S2/2000,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2000S2,S2/2000,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2000S2,S2/2000,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2000S2,S2/2000,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2001S1,S1/2001,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2001S1,S1/2001,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2001S1,S1/2001,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2001S1,S1/2001,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2001S1,S1/2001,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2001S1,S1/2001,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2001S1,S1/2001,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2001S1,S1/2001,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2001S1,S1/2001,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2001S1,S1/2001,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2001S1,S1/2001,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2001S1,S1/2001,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2001S2,S2/2001,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2001S2,S2/2001,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2001S2,S2/2001,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2001S2,S2/2001,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2001S2,S2/2001,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2001S2,S2/2001,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2001S2,S2/2001,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2001S2,S2/2001,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2001S2,S2/2001,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2001S2,S2/2001,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2001S2,S2/2001,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2001S2,S2/2001,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2002S1,S1/2002,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2002S1,S1/2002,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2002S1,S1/2002,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2002S1,S1/2002,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2002S1,S1/2002,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2002S1,S1/2002,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2002S1,S1/2002,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2002S1,S1/2002,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2002S1,S1/2002,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2002S1,S1/2002,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2002S1,S1/2002,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2002S1,S1/2002,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2002S2,S2/2002,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2002S2,S2/2002,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2002S2,S2/2002,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2002S2,S2/2002,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2002S2,S2/2002,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2002S2,S2/2002,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2002S2,S2/2002,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2002S2,S2/2002,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2002S2,S2/2002,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2002S2,S2/2002,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2002S2,S2/2002,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2002S2,S2/2002,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2003S1,S1/2003,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2003S1,S1/2003,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2003S1,S1/2003,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2003S1,S1/2003,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2003S1,S1/2003,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2003S1,S1/2003,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2003S1,S1/2003,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2003S1,S1/2003,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2003S1,S1/2003,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2003S1,S1/2003,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2003S1,S1/2003,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2003S1,S1/2003,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2003S2,S2/2003,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2003S2,S2/2003,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2003S2,S2/2003,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2003S2,S2/2003,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2003S2,S2/2003,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2003S2,S2/2003,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2003S2,S2/2003,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2003S2,S2/2003,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2003S2,S2/2003,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2003S2,S2/2003,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2003S2,S2/2003,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2003S2,S2/2003,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2004S1,S1/2004,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2004S1,S1/2004,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2004S1,S1/2004,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2004S1,S1/2004,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2004S1,S1/2004,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2004S1,S1/2004,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2004S1,S1/2004,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2004S1,S1/2004,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2004S1,S1/2004,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2004S1,S1/2004,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2004S1,S1/2004,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2004S1,S1/2004,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2004S2,S2/2004,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2004S2,S2/2004,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2004S2,S2/2004,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2004S2,S2/2004,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2004S2,S2/2004,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2004S2,S2/2004,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2004S2,S2/2004,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2004S2,S2/2004,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2004S2,S2/2004,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2004S2,S2/2004,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2004S2,S2/2004,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2004S2,S2/2004,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2005S1,S1/2005,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2005S1,S1/2005,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2005S1,S1/2005,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2005S1,S1/2005,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2005S1,S1/2005,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2005S1,S1/2005,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2005S1,S1/2005,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2005S1,S1/2005,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2005S1,S1/2005,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2005S1,S1/2005,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2005S1,S1/2005,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2005S1,S1/2005,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2005S2,S2/2005,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2005S2,S2/2005,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2005S2,S2/2005,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2005S2,S2/2005,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2005S2,S2/2005,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2005S2,S2/2005,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2005S2,S2/2005,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2005S2,S2/2005,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2005S2,S2/2005,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2005S2,S2/2005,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2005S2,S2/2005,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2005S2,S2/2005,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2006S1,S1/2006,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2006S1,S1/2006,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2006S1,S1/2006,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2006S1,S1/2006,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2006S1,S1/2006,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2006S1,S1/2006,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2006S1,S1/2006,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2006S1,S1/2006,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2006S1,S1/2006,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2006S1,S1/2006,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2006S1,S1/2006,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2006S1,S1/2006,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2006S2,S2/2006,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2006S2,S2/2006,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2006S2,S2/2006,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2006S2,S2/2006,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2006S2,S2/2006,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2006S2,S2/2006,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2006S2,S2/2006,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2006S2,S2/2006,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2006S2,S2/2006,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2006S2,S2/2006,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2006S2,S2/2006,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2006S2,S2/2006,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2007S1,S1/2007,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2007S1,S1/2007,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2007S1,S1/2007,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2007S1,S1/2007,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2007S1,S1/2007,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2007S1,S1/2007,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2007S1,S1/2007,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2007S1,S1/2007,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2007S1,S1/2007,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2007S1,S1/2007,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2007S1,S1/2007,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2007S1,S1/2007,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2007S2,S2/2007,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2007S2,S2/2007,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2007S2,S2/2007,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2007S2,S2/2007,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2007S2,S2/2007,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2007S2,S2/2007,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2007S2,S2/2007,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2007S2,S2/2007,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2007S2,S2/2007,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2007S2,S2/2007,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2007S2,S2/2007,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2007S2,S2/2007,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2008S1,S1/2008,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2008S1,S1/2008,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2008S1,S1/2008,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2008S1,S1/2008,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2008S1,S1/2008,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2008S1,S1/2008,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2008S1,S1/2008,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2008S1,S1/2008,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2008S1,S1/2008,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2008S1,S1/2008,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2008S1,S1/2008,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2008S1,S1/2008,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2008S2,S2/2008,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2008S2,S2/2008,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2008S2,S2/2008,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2008S2,S2/2008,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2008S2,S2/2008,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2008S2,S2/2008,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2008S2,S2/2008,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2008S2,S2/2008,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2008S2,S2/2008,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2008S2,S2/2008,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2008S2,S2/2008,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2008S2,S2/2008,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2009S1,S1/2009,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2009S1,S1/2009,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2009S1,S1/2009,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2009S1,S1/2009,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2009S1,S1/2009,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2009S1,S1/2009,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2009S1,S1/2009,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2009S1,S1/2009,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2009S1,S1/2009,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2009S1,S1/2009,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2009S1,S1/2009,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2009S1,S1/2009,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2009S2,S2/2009,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2009S2,S2/2009,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2009S2,S2/2009,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2009S2,S2/2009,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2009S2,S2/2009,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2009S2,S2/2009,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2009S2,S2/2009,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2009S2,S2/2009,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2009S2,S2/2009,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2009S2,S2/2009,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2009S2,S2/2009,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2009S2,S2/2009,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2010S1,S1/2010,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2010S1,S1/2010,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2010S1,S1/2010,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2010S1,S1/2010,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2010S1,S1/2010,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2010S1,S1/2010,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2010S1,S1/2010,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2010S1,S1/2010,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2010S1,S1/2010,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2010S1,S1/2010,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2010S1,S1/2010,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2010S1,S1/2010,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2010S2,S2/2010,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2010S2,S2/2010,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2010S2,S2/2010,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2010S2,S2/2010,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2010S2,S2/2010,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2010S2,S2/2010,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2010S2,S2/2010,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2010S2,S2/2010,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2010S2,S2/2010,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2010S2,S2/2010,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2010S2,S2/2010,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2010S2,S2/2010,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2011S1,S1/2011,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2011S1,S1/2011,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2011S1,S1/2011,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2011S1,S1/2011,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2011S1,S1/2011,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2011S1,S1/2011,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2011S1,S1/2011,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2011S1,S1/2011,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2011S1,S1/2011,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2011S1,S1/2011,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2011S1,S1/2011,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2011S1,S1/2011,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2011S2,S2/2011,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2011S2,S2/2011,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2011S2,S2/2011,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2011S2,S2/2011,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2011S2,S2/2011,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2011S2,S2/2011,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2011S2,S2/2011,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2011S2,S2/2011,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2011S2,S2/2011,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2011S2,S2/2011,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2011S2,S2/2011,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2011S2,S2/2011,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2012S1,S1/2012,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2012S1,S1/2012,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2012S1,S1/2012,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2012S1,S1/2012,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2012S1,S1/2012,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2012S1,S1/2012,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2012S1,S1/2012,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2012S1,S1/2012,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2012S1,S1/2012,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2012S1,S1/2012,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2012S1,S1/2012,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2012S1,S1/2012,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2012S2,S2/2012,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2012S2,S2/2012,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2012S2,S2/2012,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2012S2,S2/2012,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2012S2,S2/2012,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2012S2,S2/2012,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2012S2,S2/2012,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2012S2,S2/2012,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2012S2,S2/2012,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2012S2,S2/2012,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2012S2,S2/2012,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2012S2,S2/2012,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2013S1,S1/2013,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2013S1,S1/2013,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2013S1,S1/2013,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2013S1,S1/2013,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2013S1,S1/2013,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2013S1,S1/2013,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2013S1,S1/2013,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2013S1,S1/2013,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2013S1,S1/2013,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2013S1,S1/2013,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2013S1,S1/2013,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2013S1,S1/2013,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2013S2,S2/2013,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2013S2,S2/2013,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2013S2,S2/2013,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2013S2,S2/2013,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2013S2,S2/2013,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2013S2,S2/2013,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2013S2,S2/2013,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2013S2,S2/2013,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2013S2,S2/2013,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2013S2,S2/2013,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2013S2,S2/2013,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2013S2,S2/2013,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2014S1,S1/2014,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2014S1,S1/2014,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2014S1,S1/2014,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2014S1,S1/2014,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2014S1,S1/2014,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2014S1,S1/2014,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2014S1,S1/2014,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2014S1,S1/2014,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2014S1,S1/2014,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2014S1,S1/2014,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2014S1,S1/2014,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2014S1,S1/2014,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2014S2,S2/2014,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2014S2,S2/2014,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2014S2,S2/2014,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2014S2,S2/2014,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2014S2,S2/2014,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2014S2,S2/2014,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2014S2,S2/2014,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2014S2,S2/2014,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2014S2,S2/2014,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2014S2,S2/2014,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2014S2,S2/2014,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2014S2,S2/2014,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2015S1,S1/2015,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2015S1,S1/2015,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2015S1,S1/2015,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2015S1,S1/2015,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2015S1,S1/2015,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2015S1,S1/2015,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2015S1,S1/2015,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2015S1,S1/2015,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2015S1,S1/2015,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2015S1,S1/2015,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2015S1,S1/2015,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2015S1,S1/2015,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2015S2,S2/2015,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2015S2,S2/2015,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2015S2,S2/2015,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2015S2,S2/2015,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2015S2,S2/2015,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2015S2,S2/2015,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2015S2,S2/2015,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2015S2,S2/2015,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2015S2,S2/2015,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2015S2,S2/2015,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2015S2,S2/2015,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2015S2,S2/2015,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2016S1,S1/2016,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2016S1,S1/2016,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2016S1,S1/2016,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2016S1,S1/2016,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2016S1,S1/2016,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2016S1,S1/2016,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2016S1,S1/2016,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2016S1,S1/2016,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2016S1,S1/2016,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2016S1,S1/2016,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2016S1,S1/2016,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2016S1,S1/2016,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2016S2,S2/2016,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2016S2,S2/2016,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2016S2,S2/2016,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2016S2,S2/2016,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2016S2,S2/2016,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2016S2,S2/2016,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2016S2,S2/2016,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2016S2,S2/2016,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2016S2,S2/2016,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2016S2,S2/2016,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2016S2,S2/2016,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2016S2,S2/2016,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2017S1,S1/2017,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2017S1,S1/2017,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2017S1,S1/2017,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2017S1,S1/2017,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2017S1,S1/2017,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2017S1,S1/2017,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2017S1,S1/2017,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2017S1,S1/2017,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2017S1,S1/2017,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2017S1,S1/2017,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2017S1,S1/2017,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2017S1,S1/2017,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2017S2,S2/2017,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2017S2,S2/2017,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2017S2,S2/2017,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2017S2,S2/2017,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2017S2,S2/2017,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2017S2,S2/2017,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2017S2,S2/2017,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2017S2,S2/2017,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2017S2,S2/2017,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2017S2,S2/2017,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2017S2,S2/2017,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2017S2,S2/2017,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2018S1,S1/2018,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2018S1,S1/2018,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2018S1,S1/2018,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2018S1,S1/2018,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2018S1,S1/2018,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2018S1,S1/2018,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2018S1,S1/2018,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2018S1,S1/2018,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2018S1,S1/2018,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2018S1,S1/2018,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2018S1,S1/2018,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2018S1,S1/2018,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2018S2,S2/2018,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2018S2,S2/2018,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2018S2,S2/2018,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2018S2,S2/2018,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2018S2,S2/2018,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2018S2,S2/2018,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2018S2,S2/2018,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2018S2,S2/2018,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2018S2,S2/2018,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2018S2,S2/2018,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2018S2,S2/2018,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2018S2,S2/2018,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2019S1,S1/2019,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2019S1,S1/2019,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2019S1,S1/2019,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2019S1,S1/2019,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2019S1,S1/2019,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2019S1,S1/2019,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2019S1,S1/2019,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2019S1,S1/2019,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2019S1,S1/2019,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2019S1,S1/2019,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2019S1,S1/2019,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2019S1,S1/2019,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2019S2,S2/2019,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2019S2,S2/2019,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2019S2,S2/2019,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2019S2,S2/2019,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2019S2,S2/2019,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2019S2,S2/2019,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2019S2,S2/2019,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2019S2,S2/2019,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2019S2,S2/2019,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2019S2,S2/2019,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2019S2,S2/2019,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2019S2,S2/2019,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2020S1,S1/2020,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2020S1,S1/2020,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2020S1,S1/2020,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2020S1,S1/2020,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2020S1,S1/2020,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2020S1,S1/2020,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2020S1,S1/2020,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2020S1,S1/2020,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2020S1,S1/2020,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2020S1,S1/2020,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2020S1,S1/2020,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2020S1,S1/2020,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2020S2,S2/2020,080312,Calaf,TOTAL,total,POP,població,,..
+poblacio_mun,2020S2,S2/2020,080364,Calonge de Segarra,TOTAL,total,POP,població,,..
+poblacio_mun,2020S2,S2/2020,080556,Castellcir,TOTAL,total,POP,població,,..
+poblacio_mun,2020S2,S2/2020,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,,..
+poblacio_mun,2020S2,S2/2020,080641,Castellterçol,TOTAL,total,POP,població,,..
+poblacio_mun,2020S2,S2/2020,080958,Granera,TOTAL,total,POP,població,,..
+poblacio_mun,2020S2,S2/2020,081705,"Prats de Rei, els",TOTAL,total,POP,població,,..
+poblacio_mun,2020S2,S2/2020,081764,Pujalt,TOTAL,total,POP,població,,..
+poblacio_mun,2020S2,S2/2020,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,,..
+poblacio_mun,2020S2,S2/2020,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,,..
+poblacio_mun,2020S2,S2/2020,082397,Sant Quirze Safaja,TOTAL,total,POP,població,,..
+poblacio_mun,2020S2,S2/2020,082975,Veciana,TOTAL,total,POP,població,,..
+poblacio_mun,2021S1,S1/2021,080312,Calaf,TOTAL,total,POP,població,3588.0,
+poblacio_mun,2021S1,S1/2021,080364,Calonge de Segarra,TOTAL,total,POP,població,193.0,
+poblacio_mun,2021S1,S1/2021,080556,Castellcir,TOTAL,total,POP,població,744.0,
+poblacio_mun,2021S1,S1/2021,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,163.0,
+poblacio_mun,2021S1,S1/2021,080641,Castellterçol,TOTAL,total,POP,població,2626.0,
+poblacio_mun,2021S1,S1/2021,080958,Granera,TOTAL,total,POP,població,85.0,
+poblacio_mun,2021S1,S1/2021,081705,"Prats de Rei, els",TOTAL,total,POP,població,549.0,
+poblacio_mun,2021S1,S1/2021,081764,Pujalt,TOTAL,total,POP,població,205.0,
+poblacio_mun,2021S1,S1/2021,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,344.0,
+poblacio_mun,2021S1,S1/2021,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,159.0,
+poblacio_mun,2021S1,S1/2021,082397,Sant Quirze Safaja,TOTAL,total,POP,població,661.0,
+poblacio_mun,2021S1,S1/2021,082975,Veciana,TOTAL,total,POP,població,181.0,
+poblacio_mun,2021S2,S2/2021,080312,Calaf,TOTAL,total,POP,població,3586.0,
+poblacio_mun,2021S2,S2/2021,080364,Calonge de Segarra,TOTAL,total,POP,població,204.0,
+poblacio_mun,2021S2,S2/2021,080556,Castellcir,TOTAL,total,POP,població,754.0,
+poblacio_mun,2021S2,S2/2021,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,163.0,
+poblacio_mun,2021S2,S2/2021,080641,Castellterçol,TOTAL,total,POP,població,2632.0,
+poblacio_mun,2021S2,S2/2021,080958,Granera,TOTAL,total,POP,població,79.0,
+poblacio_mun,2021S2,S2/2021,081705,"Prats de Rei, els",TOTAL,total,POP,població,553.0,
+poblacio_mun,2021S2,S2/2021,081764,Pujalt,TOTAL,total,POP,població,211.0,
+poblacio_mun,2021S2,S2/2021,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,353.0,
+poblacio_mun,2021S2,S2/2021,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,167.0,
+poblacio_mun,2021S2,S2/2021,082397,Sant Quirze Safaja,TOTAL,total,POP,població,660.0,
+poblacio_mun,2021S2,S2/2021,082975,Veciana,TOTAL,total,POP,població,179.0,
+poblacio_mun,2022S1,S1/2022,080312,Calaf,TOTAL,total,POP,població,3567.0,
+poblacio_mun,2022S1,S1/2022,080364,Calonge de Segarra,TOTAL,total,POP,població,194.0,
+poblacio_mun,2022S1,S1/2022,080556,Castellcir,TOTAL,total,POP,població,776.0,
+poblacio_mun,2022S1,S1/2022,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,159.0,
+poblacio_mun,2022S1,S1/2022,080641,Castellterçol,TOTAL,total,POP,població,2641.0,
+poblacio_mun,2022S1,S1/2022,080958,Granera,TOTAL,total,POP,població,79.0,
+poblacio_mun,2022S1,S1/2022,081705,"Prats de Rei, els",TOTAL,total,POP,població,555.0,
+poblacio_mun,2022S1,S1/2022,081764,Pujalt,TOTAL,total,POP,població,205.0,
+poblacio_mun,2022S1,S1/2022,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,362.0,
+poblacio_mun,2022S1,S1/2022,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,167.0,
+poblacio_mun,2022S1,S1/2022,082397,Sant Quirze Safaja,TOTAL,total,POP,població,678.0,
+poblacio_mun,2022S1,S1/2022,082975,Veciana,TOTAL,total,POP,població,184.0,
+poblacio_mun,2022S2,S2/2022,080312,Calaf,TOTAL,total,POP,població,3564.0,
+poblacio_mun,2022S2,S2/2022,080364,Calonge de Segarra,TOTAL,total,POP,població,204.0,
+poblacio_mun,2022S2,S2/2022,080556,Castellcir,TOTAL,total,POP,població,773.0,
+poblacio_mun,2022S2,S2/2022,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,160.0,
+poblacio_mun,2022S2,S2/2022,080641,Castellterçol,TOTAL,total,POP,població,2679.0,
+poblacio_mun,2022S2,S2/2022,080958,Granera,TOTAL,total,POP,població,88.0,
+poblacio_mun,2022S2,S2/2022,081705,"Prats de Rei, els",TOTAL,total,POP,població,558.0,
+poblacio_mun,2022S2,S2/2022,081764,Pujalt,TOTAL,total,POP,població,218.0,
+poblacio_mun,2022S2,S2/2022,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,356.0,
+poblacio_mun,2022S2,S2/2022,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,168.0,
+poblacio_mun,2022S2,S2/2022,082397,Sant Quirze Safaja,TOTAL,total,POP,població,673.0,
+poblacio_mun,2022S2,S2/2022,082975,Veciana,TOTAL,total,POP,població,183.0,
+poblacio_mun,2023S1,S1/2023,080312,Calaf,TOTAL,total,POP,població,3549.0,
+poblacio_mun,2023S1,S1/2023,080364,Calonge de Segarra,TOTAL,total,POP,població,188.0,
+poblacio_mun,2023S1,S1/2023,080556,Castellcir,TOTAL,total,POP,població,775.0,
+poblacio_mun,2023S1,S1/2023,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,162.0,
+poblacio_mun,2023S1,S1/2023,080641,Castellterçol,TOTAL,total,POP,població,2729.0,
+poblacio_mun,2023S1,S1/2023,080958,Granera,TOTAL,total,POP,població,93.0,
+poblacio_mun,2023S1,S1/2023,081705,"Prats de Rei, els",TOTAL,total,POP,població,560.0,
+poblacio_mun,2023S1,S1/2023,081764,Pujalt,TOTAL,total,POP,població,220.0,
+poblacio_mun,2023S1,S1/2023,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,359.0,
+poblacio_mun,2023S1,S1/2023,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,162.0,
+poblacio_mun,2023S1,S1/2023,082397,Sant Quirze Safaja,TOTAL,total,POP,població,677.0,
+poblacio_mun,2023S1,S1/2023,082975,Veciana,TOTAL,total,POP,població,184.0,
+poblacio_mun,2023S2,S2/2023,080312,Calaf,TOTAL,total,POP,població,3581.0,
+poblacio_mun,2023S2,S2/2023,080364,Calonge de Segarra,TOTAL,total,POP,població,188.0,
+poblacio_mun,2023S2,S2/2023,080556,Castellcir,TOTAL,total,POP,població,773.0,
+poblacio_mun,2023S2,S2/2023,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,154.0,
+poblacio_mun,2023S2,S2/2023,080641,Castellterçol,TOTAL,total,POP,població,2743.0,
+poblacio_mun,2023S2,S2/2023,080958,Granera,TOTAL,total,POP,població,88.0,
+poblacio_mun,2023S2,S2/2023,081705,"Prats de Rei, els",TOTAL,total,POP,població,556.0,
+poblacio_mun,2023S2,S2/2023,081764,Pujalt,TOTAL,total,POP,població,223.0,
+poblacio_mun,2023S2,S2/2023,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,353.0,
+poblacio_mun,2023S2,S2/2023,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,159.0,
+poblacio_mun,2023S2,S2/2023,082397,Sant Quirze Safaja,TOTAL,total,POP,població,662.0,
+poblacio_mun,2023S2,S2/2023,082975,Veciana,TOTAL,total,POP,població,175.0,
+poblacio_mun,2024S1,S1/2024,080312,Calaf,TOTAL,total,POP,població,3595.0,
+poblacio_mun,2024S1,S1/2024,080364,Calonge de Segarra,TOTAL,total,POP,població,174.0,
+poblacio_mun,2024S1,S1/2024,080556,Castellcir,TOTAL,total,POP,població,778.0,
+poblacio_mun,2024S1,S1/2024,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,151.0,
+poblacio_mun,2024S1,S1/2024,080641,Castellterçol,TOTAL,total,POP,població,2766.0,
+poblacio_mun,2024S1,S1/2024,080958,Granera,TOTAL,total,POP,població,83.0,
+poblacio_mun,2024S1,S1/2024,081705,"Prats de Rei, els",TOTAL,total,POP,població,554.0,
+poblacio_mun,2024S1,S1/2024,081764,Pujalt,TOTAL,total,POP,població,212.0,
+poblacio_mun,2024S1,S1/2024,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,360.0,
+poblacio_mun,2024S1,S1/2024,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,158.0,
+poblacio_mun,2024S1,S1/2024,082397,Sant Quirze Safaja,TOTAL,total,POP,població,671.0,
+poblacio_mun,2024S1,S1/2024,082975,Veciana,TOTAL,total,POP,població,175.0,
+poblacio_mun,2024S2,S2/2024,080312,Calaf,TOTAL,total,POP,població,3615.0,
+poblacio_mun,2024S2,S2/2024,080364,Calonge de Segarra,TOTAL,total,POP,població,184.0,
+poblacio_mun,2024S2,S2/2024,080556,Castellcir,TOTAL,total,POP,població,787.0,
+poblacio_mun,2024S2,S2/2024,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,149.0,
+poblacio_mun,2024S2,S2/2024,080641,Castellterçol,TOTAL,total,POP,població,2747.0,
+poblacio_mun,2024S2,S2/2024,080958,Granera,TOTAL,total,POP,població,88.0,
+poblacio_mun,2024S2,S2/2024,081705,"Prats de Rei, els",TOTAL,total,POP,població,549.0,
+poblacio_mun,2024S2,S2/2024,081764,Pujalt,TOTAL,total,POP,població,212.0,
+poblacio_mun,2024S2,S2/2024,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,355.0,
+poblacio_mun,2024S2,S2/2024,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,162.0,
+poblacio_mun,2024S2,S2/2024,082397,Sant Quirze Safaja,TOTAL,total,POP,població,658.0,
+poblacio_mun,2024S2,S2/2024,082975,Veciana,TOTAL,total,POP,població,166.0,
+poblacio_mun,2025S1,S1/2025,080312,Calaf,TOTAL,total,POP,població,3627.0,
+poblacio_mun,2025S1,S1/2025,080364,Calonge de Segarra,TOTAL,total,POP,població,179.0,
+poblacio_mun,2025S1,S1/2025,080556,Castellcir,TOTAL,total,POP,població,802.0,
+poblacio_mun,2025S1,S1/2025,080608,Castellfollit de Riubregós,TOTAL,total,POP,població,153.0,
+poblacio_mun,2025S1,S1/2025,080641,Castellterçol,TOTAL,total,POP,població,2742.0,
+poblacio_mun,2025S1,S1/2025,080958,Granera,TOTAL,total,POP,població,83.0,
+poblacio_mun,2025S1,S1/2025,081705,"Prats de Rei, els",TOTAL,total,POP,població,553.0,
+poblacio_mun,2025S1,S1/2025,081764,Pujalt,TOTAL,total,POP,població,205.0,
+poblacio_mun,2025S1,S1/2025,082286,Sant Martí Sesgueioles,TOTAL,total,POP,població,353.0,
+poblacio_mun,2025S1,S1/2025,081897,Sant Pere Sallavinera,TOTAL,total,POP,població,177.0,
+poblacio_mun,2025S1,S1/2025,082397,Sant Quirze Safaja,TOTAL,total,POP,població,664.0,
+poblacio_mun,2025S1,S1/2025,082975,Veciana,TOTAL,total,POP,població,170.0,

@@ -2,6 +2,7 @@ indicador_code,indicador,unitat,agregacio,font_idescat
 GDP_ME,PIB,milions €,suma,pib
 GDP_E_INH,PIB per habitant (oficial),€,no agregable,pib
 POP,Població (1 de gener),persones,suma,poblacio
+POP_JUL,Població (1 de juliol),persones,suma,poblacio
 IST_G_IND,Índex socioeconòmic territorial,índex Catalunya=100,mitjana ponderada per població,ist
 AVER_INC_EUR,Renda mitjana per persona,€,mitjana ponderada per població,ist_indicadors
 POP_EMP_PERC,Població ocupada,%,mitjana ponderada per població,ist_indicadors

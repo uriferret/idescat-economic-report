@@ -64,7 +64,7 @@ Ocupació, atur i desplaçaments per feina.
 |---|---|---|
 | PIB | Producte interior brut a preus corrents, en milions d'euros. Es comptabilitza on es produeix | PIB territorial (revisió 2024) |
 | Població | Població a 1 de gener | Estimacions de població |
-| PIB per habitant | PIB dividit per la població a 1 de gener | Calculat |
+| PIB per habitant | PIB dividit per la població a 1 de juliol, com fa l'Idescat | Calculat |
 | Renda per persona | Renda mitjana per persona dels residents | Índex socioeconòmic territorial |
 | IST | Índex socioeconòmic territorial (Catalunya = 100): ocupació, estudis, qualificació laboral, origen i renda | Índex socioeconòmic territorial |
 | Pes de la indústria | Part del valor afegit brut que generen la indústria i l'energia | PIB territorial, VAB per sectors |
@@ -76,9 +76,11 @@ Ocupació, atur i desplaçaments per feina.
 ## Coses a tenir en compte
 
 - **Anys:** el PIB arriba fins al 2023, i la renda i l'IST comencen el 2015. Per això l'any es pot triar entre el 2015 i el 2023.
-- **PIB per habitant:** pot diferir lleugerament del valor que publica l'Idescat, perquè aquí es divideix per la població a 1 de gener i l'Idescat fa servir la població mitjana de l'any.
-- **Àmbits:** les xifres d'un àmbit són la suma de les seves comarques. Respecte de les xifres oficials per àmbit, la diferència és inferior a l'1%, perquè alguns municipis pertanyen a un àmbit diferent del de la seva comarca. L'IST i la renda d'un àmbit són la mitjana de les seves comarques ponderada per població.
+- **PIB per habitant:** es divideix el PIB per la població a 1 de juliol, igual que l'Idescat, i per això coincideix amb el valor oficial. La població que es mostra a la resta de l'informe és la de l'1 de gener.
+- **Àmbits:** 12 municipis pertanyen a un àmbit diferent del de la seva comarca: Castellcir, Castellterçol, Granera i Sant Quirze Safaja (Moianès) són de l'àmbit Metropolità, i els 8 municipis de l'Alta Segarra (Anoia) són de les Comarques Centrals. Per això, des del 2015 la població i els afiliats d'un àmbit són les xifres oficials de l'àmbit, i la suma de les comarques d'un àmbit pot no coincidir exactament amb el total. El PIB i el VAB d'un àmbit són la suma de les seves comarques, perquè l'Idescat no publica el PIB dels municipis petits; la diferència amb el PIB oficial per àmbit és inferior a l'1%. Els creixements des del 1981 i des del 2012 es calculen amb els límits de les comarques, perquè els dos anys siguin comparables. L'IST i la renda d'un àmbit són la mitjana de les seves comarques ponderada per població.
 - **Mercat laboral:** l'índex d'atracció només inclou el règim general (assalariats), no els autònoms. Les dades per lloc de treball comencen el desembre del 2020.
+- **Afiliats de Catalunya:** el total de Catalunya és la xifra oficial. És una mica més alt que la suma de les comarques, perquè inclou uns 130.000 afiliats sense municipi de residència assignat.
+- **Canvis de límits comarcals:** el 2015 es va crear el Moianès i el 2023 el Lluçanès, i el 2023 Torà va passar de la Segarra al Solsonès. Les sèries de les comarques afectades (Bages, Berguedà, Lluçanès, Moianès, Osona, Segarra, Solsonès i Vallès Oriental) canvien de cop aquells anys, i per això el creixement de població des del 1981 i el d'afiliats des del 2012 surten en blanc per a aquestes comarques.
 - **Lluçanès:** és comarca des del 2023 i encara no té dades de renda ni d'IST, per això surt en gris al mapa.
 
 ## Fonts
