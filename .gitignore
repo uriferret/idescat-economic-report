@@ -21,3 +21,6 @@ desktop.ini
 
 # Material de disseny de l'informe (només en local; el .pbip ja inclou el tema, els fons i el mapa)
 powerbi/disseny/
+
+# Fitxers que l'aplicació de Claude desa a la carpeta
+Claude outputs/
