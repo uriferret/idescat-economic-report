@@ -36,6 +36,41 @@ SOURCES = {
         "geos": ["com"],
         "description": "Indicadors socioeconòmics. Valors",
     },
+    # ---- Mercat laboral -------------------------------------------------------
+    # Afiliats (persones) per comarca de residència. Mensual des de 2020 (trimestral abans).
+    "afiliats_res": {
+        "stat": "afi", "node": 8604, "table": 8704,
+        "geos": ["cat", "com"],
+        "filters": {"SEX": "TOTAL"},
+        "description": "Afiliats a la Seguretat Social segons residència. A últim dia del mes",
+    },
+    # Afiliacions al règim general per comarca de residència (per comparar amb el lloc de treball).
+    "afiliacions_rg_res": {
+        "stat": "afi", "node": 8603, "table": 8703,
+        "geos": ["cat", "com"],
+        "filters": {"CON_REG_SS": "REG_GRL_SP_COALMINING"},
+        "description": "Afiliacions al règim general segons residència. A últim dia del mes",
+    },
+    # Afiliacions al règim general per comarca del centre de treball, per sectors (CCAE-2009, 12/2020-12/2025).
+    "afiliacions_rg_lloc": {
+        "stat": "afic", "node": 14983, "table": 15879,
+        "geos": ["cat", "com"],
+        "description": "Afiliacions al règim general per sector d'activitat (lloc de treball). A últim dia del mes",
+    },
+    # Població de 16 a 64 anys (denominador de la taxa d'afiliació).
+    "poblacio_16_64": {
+        "stat": "ep", "node": 17363, "table": 20891,
+        "geos": ["com"],
+        "filters": {"SEX": "TOTAL", "AGE": "Y016_064"},
+        "description": "Estimacions de població de 16 a 64 anys",
+    },
+    # Taxes mensuals d'activitat, ocupació i atur (només Catalunya).
+    "taxes_mercat_cat": {
+        "stat": "e03", "node": 22274, "table": 26671,
+        "geos": ["cat"],
+        "filters": {"INDICATOR": "VALUE_PERC"},
+        "description": "Estimació mensual de la població activa. Taxes d'activitat, ocupació i atur",
+    },
 }
 
 # Conceptes que es poden sumar de comarques a àmbits (per al control de qualitat).

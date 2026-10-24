@@ -10,6 +10,8 @@ Sortida a data/model/:
     dim_any.csv         anys
     fact_indicadors.csv gra: comarca × any × indicador
     fact_vab.csv        gra: comarca × any × sector
+    fact_afiliacions_sector.csv  gra: comarca × any × sector (afiliacions al règim general per lloc de treball)
+    fact_mercat_cat.csv gra: mes (Catalunya): taxes d'activitat, ocupació i atur
     ref_oficial.csv     valors oficials d'àmbit i Catalunya (per conciliar amb la suma de comarques)
 
 Decisió de disseny: els fets són a nivell de comarca i els àmbits s'obtenen sumant
@@ -26,7 +28,8 @@ ROOT = Path(__file__).resolve().parents[1]
 PROCESSED = ROOT / "data" / "processed"
 MODEL = ROOT / "data" / "model"
 
-# codi -> (font, nom, unitat, agregació)
+# codi -> (font, nom, unitat, agregació[, concepte de l'API, filtres addicionals])
+# Si no s'indica el concepte, és el mateix codi.
 INDICADORS = {
     "GDP_ME":          ("pib", "PIB", "milions €", "suma"),
     "GDP_E_INH":       ("pib", "PIB per habitant (oficial)", "€", "no agregable"),
@@ -38,6 +41,14 @@ INDICADORS = {
     "POP_PS_EDU_PERC": ("ist_indicadors", "Població amb estudis baixos", "%", "mitjana ponderada per població"),
     "POP_Y_WSTU_PERC": ("ist_indicadors", "Població jove sense estudis postobligatoris", "%", "mitjana ponderada per població"),
     "POP_INC_LM_PERC": ("ist_indicadors", "Població estrangera de països de renda baixa o mitjana", "%", "mitjana ponderada per població"),
+    # Mercat laboral (dades a 31 de desembre)
+    "AFI_RES":     ("afiliats_res", "Afiliats a la Seguretat Social residents a la comarca", "persones", "suma",
+                    "CONTRIB_SP_SOCIAL_SEC"),
+    "AFI_RG_RES":  ("afiliacions_rg_res", "Afiliacions al règim general de residents a la comarca", "afiliacions", "suma",
+                    "AFFILIAT_SP_SOC_SEC"),
+    "AFI_RG_LLOC": ("afiliacions_rg_lloc", "Afiliacions al règim general en centres de treball de la comarca", "afiliacions", "suma",
+                    "AFFIL_SS_GENRL_CL_REGIME", {"SEC_ACTIV_G": "TOTAL"}),
+    "POP_16_64":   ("poblacio_16_64", "Població de 16 a 64 anys (1 de gener)", "persones", "suma", "POP"),
 }
 
 
@@ -46,9 +57,11 @@ def load(name: str) -> pd.DataFrame:
 
 
 def to_year(df: pd.DataFrame) -> pd.DataFrame:
-    """Anys enters. Per a la població (semestral) ens quedem amb S1 = 1 de gener."""
-    df = df[~df["period_code"].str.endswith("S2")].copy()
-    df["any"] = df["period_code"].str[:4].astype(int)
+    """Anys enters. Semestres: S1 (1 de gener). Mesos: desembre (31 de desembre)."""
+    p = df["period_code"].astype(str)
+    keep = ~p.str.endswith("S2") & (~p.str.contains("M") | p.str.endswith("M12"))
+    df = df[keep].copy()
+    df["any"] = df["period_code"].astype(str).str[:4].astype(int)
     return df
 
 
@@ -72,11 +85,16 @@ def main() -> None:
     dim_territori.to_csv(MODEL / "dim_territori.csv", index=False)
 
     # ---- Fets: indicadors per comarca ------------------------------------------
+    comarques = set(dim_territori["comarca_code"])  # exclou "99: no residents a Catalunya"
     parts = []
-    for code, (src, *_rest) in INDICADORS.items():
+    for code, (src, _nom, _unitat, _agr, *extra) in INDICADORS.items():
+        concept = extra[0] if extra else code
+        filtres = extra[1] if len(extra) > 1 else {}
         d = load(f"{src}_com")
-        d = d[(d["CONCEPT"] == code) & (d["geo_code"] != "TOTAL")]
-        parts.append(to_year(d))
+        d = d[(d["CONCEPT"] == concept) & d["geo_code"].isin(comarques)]
+        for col, val in filtres.items():
+            d = d[d[col] == val]
+        parts.append(to_year(d).assign(CONCEPT=code))
     fact = pd.concat(parts)
     fact = (fact.rename(columns={"geo_code": "comarca_code", "CONCEPT": "indicador_code",
                                  "value": "valor", "status": "estat"})
@@ -92,6 +110,25 @@ def main() -> None:
                 [["comarca_code", "any", "sector_code", "vab_meur", "estat"]]
                 .dropna(subset=["vab_meur"]))
     fact_vab.to_csv(MODEL / "fact_vab.csv", index=False)
+
+    # ---- Fets: afiliacions per lloc de treball i sector ------------------------
+    afs = to_year(load("afiliacions_rg_lloc_com"))
+    afs = afs[afs["geo_code"].isin(comarques) & (afs["SEC_ACTIV_G"] != "TOTAL")]
+    (afs.rename(columns={"geo_code": "comarca_code", "SEC_ACTIV_G": "sector_code",
+                         "value": "afiliacions", "status": "estat"})
+     [["comarca_code", "any", "sector_code", "afiliacions", "estat"]]
+     .dropna(subset=["afiliacions"])
+     .to_csv(MODEL / "fact_afiliacions_sector.csv", index=False))
+
+    # ---- Fets: taxes mensuals del mercat de treball (Catalunya) ----------------
+    mc = load("taxes_mercat_cat_cat")
+    mc = mc[mc["INDICATOR"] == "VALUE_PERC"].copy()
+    mc["any"] = mc["period_code"].str[:4].astype(int)
+    mc["mes"] = mc["period_code"].str[5:].astype(int)
+    mc["data"] = pd.to_datetime(dict(year=mc["any"], month=mc["mes"], day=1)).dt.strftime("%Y-%m-%d")
+    (mc.rename(columns={"CONCEPT": "indicador_code", "CONCEPT_label": "indicador", "value": "valor", "status": "estat"})
+     [["data", "any", "mes", "indicador_code", "indicador", "valor", "estat"]]
+     .to_csv(MODEL / "fact_mercat_cat.csv", index=False))
 
     # ---- Dimensions petites ----------------------------------------------------
     pd.DataFrame([{"indicador_code": k, "indicador": v[1], "unitat": v[2], "agregacio": v[3], "font_idescat": v[0]}

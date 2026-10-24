@@ -9,3 +9,7 @@ WOR_LOWSK _PERC,Treballadors de baixa qualificació,%,mitjana ponderada per pobl
 POP_PS_EDU_PERC,Població amb estudis baixos,%,mitjana ponderada per població,ist_indicadors
 POP_Y_WSTU_PERC,Població jove sense estudis postobligatoris,%,mitjana ponderada per població,ist_indicadors
 POP_INC_LM_PERC,Població estrangera de països de renda baixa o mitjana,%,mitjana ponderada per població,ist_indicadors
+AFI_RES,Afiliats a la Seguretat Social residents a la comarca,persones,suma,afiliats_res
+AFI_RG_RES,Afiliacions al règim general de residents a la comarca,afiliacions,suma,afiliacions_rg_res
+AFI_RG_LLOC,Afiliacions al règim general en centres de treball de la comarca,afiliacions,suma,afiliacions_rg_lloc
+POP_16_64,Població de 16 a 64 anys (1 de gener),persones,suma,poblacio_16_64

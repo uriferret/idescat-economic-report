@@ -1,6 +1,6 @@
 # Informe de qualitat de les dades
 
-Extracció: 2026-10-20 15:00 UTC · Font: Idescat
+Extracció: 2026-10-24 09:30 UTC · Font: Idescat
 
 ## Resum per taula
 
@@ -16,6 +16,14 @@ Extracció: 2026-10-20 15:00 UTC · Font: Idescat
 - **ist/cat**: 10 files, 0 valors buits (0.0%) | períodes 2015–2024 (10), estats: {'p': 1}
 - **ist/com**: 440 files, 9 valors buits (2.0%) | períodes 2015–2024 (10), estats: {'p': 44, '..': 9}
 - **ist_indicadors/com**: 2580 files, 349 valors buits (13.5%) | períodes 2015–2024 (10), estats: {'..': 349, 'b': 126, 'p': 86}
+- **afiliats_res/cat**: 110 files, 0 valors buits (0.0%) | períodes 2012M03–2026M09 (110), estats: {'p': 1}
+- **afiliats_res/com**: 4950 files, 82 valors buits (1.7%) | períodes 2012M03–2026M09 (110), estats: {'..': 82, 'p': 45}
+- **afiliacions_rg_res/cat**: 110 files, 0 valors buits (0.0%) | períodes 2012M03–2026M09 (110), estats: {'p': 1}
+- **afiliacions_rg_res/com**: 4950 files, 82 valors buits (1.7%) | períodes 2012M03–2026M09 (110), estats: {'..': 82, 'p': 45}
+- **afiliacions_rg_lloc/cat**: 105 files, 0 valors buits (0.0%) | períodes 2020M12–2025M12 (21), estats: {'p': 105}
+- **afiliacions_rg_lloc/com**: 4725 files, 50 valors buits (1.1%) | períodes 2020M12–2025M12 (21), estats: {'p': 4675, '..': 50}
+- **poblacio_16_64/com**: 3916 files, 154 valors buits (3.9%) | períodes 1981S1–2025S1 (89), estats: {'..': 154}
+- **taxes_mercat_cat/cat**: 783 files, 0 valors buits (0.0%) | períodes 2005M01–2026M09 (261), estats: {'p': 36, 'a': 9}
 
 ## Mapatge comarca → àmbit
 
