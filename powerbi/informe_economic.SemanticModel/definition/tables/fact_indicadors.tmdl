@@ -12,13 +12,17 @@ table fact_indicadors
 		formatString: #,0
 		lineageTag: 77d3983d-1f1f-483c-9c73-91efc60e0cfa
 
-	/// Població a 1 de gener (estimacions de població de l'Idescat). Suma de comarques. Si el context inclou diversos anys, mostra l'últim amb dades.
+	/// Població a 1 de gener (estimacions de població de l'Idescat). Per a un àmbit, xifra oficial de l'àmbit des del 2015 (assigna cada municipi al seu àmbit); abans, suma de comarques. Si el context inclou diversos anys, mostra l'últim amb dades.
 	measure Població = ```
 			
 			        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = "POP" )
-			        RETURN
-			            CALCULATE ( SUM ( fact_indicadors[valor] ),
-			                        dim_indicador[indicador_code] = "POP", dim_any[any] = _any )
+			        -- Nivell d'àmbit: hi ha filtre d'àmbit però no de comarca
+			        VAR _ambit = ( ISFILTERED ( dim_territori[ambit] ) || ISFILTERED ( dim_territori[ambit_code] ) )
+			            && NOT ( ISFILTERED ( dim_territori[comarca] ) || ISFILTERED ( dim_territori[comarca_code] ) )
+			        VAR _oficial = CALCULATE ( SUM ( fact_ambit_oficial[valor] ), fact_ambit_oficial[indicador_code] = "POP", fact_ambit_oficial[any] = _any,
+			                TREATAS ( VALUES ( dim_territori[ambit_code] ), fact_ambit_oficial[ambit_code] ) )
+			        VAR _comarques = CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "POP", dim_any[any] = _any )
+			        RETURN IF ( _ambit && NOT ISBLANK ( _oficial ), _oficial, _comarques )
 			```
 		formatString: #,0
 		lineageTag: 00aaff0a-01c4-43f8-bd82-aac2602905fa
@@ -32,11 +36,12 @@ table fact_indicadors
 		formatString: #,0
 		lineageTag: 2e671650-a878-4d0a-8f03-e146f81797a5
 
-	/// PIB / població a 1 de gener del mateix any (l'any del PIB). Pot diferir lleugerament del valor oficial, que fa servir la població mitjana de l'any.
+	/// PIB / població a 1 de juliol del mateix any, com fa l'Idescat. Coincideix amb el valor oficial de cada comarca i de Catalunya.
 	measure 'PIB per habitant (€)' = ```
 			
 			        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = "GDP_ME" )
-			        RETURN CALCULATE ( DIVIDE ( [PIB (M€)] * 1000000, [Població] ), dim_any[any] = _any )
+			        RETURN DIVIDE ( CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "GDP_ME", dim_any[any] = _any ) * 1000000,
+			                        CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "POP_JUL", dim_any[any] = _any ) )
 			```
 		formatString: #,0
 		lineageTag: ae2e504a-ae0f-494a-9c82-08d1a2aa3704
@@ -100,12 +105,13 @@ table fact_indicadors
 		formatString: #,0
 		lineageTag: d7b8318b-0f70-40c0-a805-70b15c6387c8
 
-	/// Variació de la població respecte a 1981 (primer any de la sèrie).
+	/// Variació de la població respecte a 1981, amb els límits de les comarques (els dos anys amb la mateixa definició d'àmbit). En blanc per a les comarques amb límits modificats.
 	measure 'Creixement població des de 1981 (%)' = ```
 			
-			        VAR _ara = [Població]
-			        VAR _ini = CALCULATE ( [Població], dim_any[any] = 1981 )
-			        RETURN DIVIDE ( _ara - _ini, _ini )
+			        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = "POP" )
+			        VAR _ara = CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "POP", dim_any[any] = _any )
+			        VAR _ini = CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "POP", dim_any[any] = 1981 )
+			        RETURN IF ( HASONEVALUE ( dim_territori[comarca] ) && NOT SELECTEDVALUE ( dim_territori[serie_comparable], TRUE () ), BLANK (), DIVIDE ( _ara - _ini, _ini ) )
 			```
 		formatString: 0.0%
 		lineageTag: 9a8af92f-9222-4f47-bd83-4fa826e46029
@@ -187,47 +193,71 @@ table fact_indicadors
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	/// Afiliats a la Seguretat Social residents al territori, a 31 de desembre. Últim any amb dades si n'hi ha diversos.
+	/// Afiliats a la Seguretat Social residents al territori, a 31 de desembre. Per a un àmbit, xifra oficial de l'àmbit des del 2015; sense filtre territorial, total oficial de Catalunya (inclou els afiliats sense municipi de residència assignat). Últim any amb dades si n'hi ha diversos.
 	measure 'Afiliats residents' = ```
 			
 			        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = "AFI_RES" )
-			        RETURN CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RES", dim_any[any] = _any )
+			        -- Nivell d'àmbit: hi ha filtre d'àmbit però no de comarca
+			        VAR _ambit = ( ISFILTERED ( dim_territori[ambit] ) || ISFILTERED ( dim_territori[ambit_code] ) )
+			            && NOT ( ISFILTERED ( dim_territori[comarca] ) || ISFILTERED ( dim_territori[comarca_code] ) )
+			        VAR _oficial = CALCULATE ( SUM ( fact_ambit_oficial[valor] ), fact_ambit_oficial[indicador_code] = "AFI_RES", fact_ambit_oficial[any] = _any,
+			                TREATAS ( VALUES ( dim_territori[ambit_code] ), fact_ambit_oficial[ambit_code] ) )
+			        VAR _comarques = CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RES", dim_any[any] = _any )
+			        VAR _catalunya = CALCULATE ( SUM ( ref_oficial[valor_oficial] ), ref_oficial[nivell] = "Catalunya", ref_oficial[indicador_code] = "AFI_RES", ref_oficial[any] = _any )
+			        RETURN SWITCH ( TRUE (),
+			            _ambit && NOT ISBLANK ( _oficial ), _oficial,
+			            ISCROSSFILTERED ( dim_territori ), _comarques,
+			            _catalunya )
 			```
 		lineageTag: 099db7b4-3286-4267-92e1-2b8ed8e9527c
 
 		formatStringDefinition = "#,0"
 
-	/// Afiliats residents dividits per la població de 16 a 64 anys del mateix any.
+	/// Afiliats residents dividits per la població de 16 a 64 anys del mateix any. Per a un àmbit, xifres oficials de l'àmbit des del 2015; sense filtre territorial, total oficial d'afiliats de Catalunya.
 	measure 'Taxa d''afiliació' = ```
 			
 			        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = "AFI_RES" )
-			        RETURN CALCULATE (
-			            DIVIDE ( CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RES" ),
-			                     CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "POP_16_64" ) ),
-			            dim_any[any] = _any )
+			        -- Nivell d'àmbit: hi ha filtre d'àmbit però no de comarca
+			        VAR _ambit = ( ISFILTERED ( dim_territori[ambit] ) || ISFILTERED ( dim_territori[ambit_code] ) )
+			            && NOT ( ISFILTERED ( dim_territori[comarca] ) || ISFILTERED ( dim_territori[comarca_code] ) )
+			        VAR _oficial = CALCULATE ( SUM ( fact_ambit_oficial[valor] ), fact_ambit_oficial[indicador_code] = "POP_16_64", fact_ambit_oficial[any] = _any,
+			                TREATAS ( VALUES ( dim_territori[ambit_code] ), fact_ambit_oficial[ambit_code] ) )
+			        VAR _comarques = CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "POP_16_64", dim_any[any] = _any )
+			        VAR _pob16_64 = IF ( _ambit && NOT ISBLANK ( _oficial ), _oficial, _comarques )
+			        RETURN DIVIDE ( [Afiliats residents], _pob16_64 )
 			```
 		lineageTag: c045ddf1-ce11-4ab7-9f06-e6284bee4ce5
 
 		formatStringDefinition = "0.0%"
 
-	/// Variació dels afiliats residents respecte al 2012 (primer any de la sèrie).
+	/// Variació dels afiliats residents respecte al 2012, amb els límits de les comarques (sense filtre territorial, totals oficials de Catalunya). En blanc per a les comarques amb límits modificats.
 	measure 'Creixement afiliats des de 2012 (%)' = ```
 			
-			        VAR _ini = CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RES", dim_any[any] = 2012 )
-			        RETURN DIVIDE ( [Afiliats residents] - _ini, _ini )
+			        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = "AFI_RES" )
+			        VAR _ara = IF ( ISCROSSFILTERED ( dim_territori ), CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RES", dim_any[any] = _any ), CALCULATE ( SUM ( ref_oficial[valor_oficial] ), ref_oficial[nivell] = "Catalunya", ref_oficial[indicador_code] = "AFI_RES", ref_oficial[any] = _any ) )
+			        VAR _ini = IF ( ISCROSSFILTERED ( dim_territori ), CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RES", dim_any[any] = 2012 ), CALCULATE ( SUM ( ref_oficial[valor_oficial] ), ref_oficial[nivell] = "Catalunya", ref_oficial[indicador_code] = "AFI_RES", ref_oficial[any] = 2012 ) )
+			        RETURN IF ( HASONEVALUE ( dim_territori[comarca] ) && NOT SELECTEDVALUE ( dim_territori[serie_comparable], TRUE () ), BLANK (), DIVIDE ( _ara - _ini, _ini ) )
 			```
 		lineageTag: f0932dce-8006-40cb-a623-6f341b4fbfab
 
 		formatStringDefinition = "0.0%"
 
-	/// Afiliacions al règim general en centres de treball del territori dividides per les dels seus residents. Més d'1: la comarca atrau treballadors; menys d'1: part dels residents treballen fora.
+	/// Afiliacions al règim general en centres de treball del territori dividides per les dels seus residents. Més d'1: el territori atrau treballadors; menys d'1: part dels residents treballen fora. Per a un àmbit, xifres oficials de l'àmbit des del 2015; sense filtre territorial, totals oficials de Catalunya.
 	measure 'Índex d''atracció laboral' = ```
 			
 			        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = "AFI_RG_LLOC" )
-			        RETURN CALCULATE (
-			            DIVIDE ( CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RG_LLOC" ),
-			                     CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RG_RES" ) ),
-			            dim_any[any] = _any )
+			        -- Nivell d'àmbit: hi ha filtre d'àmbit però no de comarca
+			        VAR _ambit = ( ISFILTERED ( dim_territori[ambit] ) || ISFILTERED ( dim_territori[ambit_code] ) )
+			            && NOT ( ISFILTERED ( dim_territori[comarca] ) || ISFILTERED ( dim_territori[comarca_code] ) )
+			        VAR _llocAmbit = CALCULATE ( SUM ( fact_ambit_oficial[valor] ), fact_ambit_oficial[indicador_code] = "AFI_RG_LLOC", fact_ambit_oficial[any] = _any,
+			                TREATAS ( VALUES ( dim_territori[ambit_code] ), fact_ambit_oficial[ambit_code] ) )
+			        VAR _resAmbit = CALCULATE ( SUM ( fact_ambit_oficial[valor] ), fact_ambit_oficial[indicador_code] = "AFI_RG_RES", fact_ambit_oficial[any] = _any,
+			                TREATAS ( VALUES ( dim_territori[ambit_code] ), fact_ambit_oficial[ambit_code] ) )
+			        VAR _lloc = SWITCH ( TRUE (), _ambit && NOT ISBLANK ( _llocAmbit ), _llocAmbit,
+			            ISCROSSFILTERED ( dim_territori ), CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RG_LLOC", dim_any[any] = _any ), CALCULATE ( SUM ( ref_oficial[valor_oficial] ), ref_oficial[nivell] = "Catalunya", ref_oficial[indicador_code] = "AFI_RG_LLOC", ref_oficial[any] = _any ) )
+			        VAR _res = SWITCH ( TRUE (), _ambit && NOT ISBLANK ( _resAmbit ), _resAmbit,
+			            ISCROSSFILTERED ( dim_territori ), CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RG_RES", dim_any[any] = _any ), CALCULATE ( SUM ( ref_oficial[valor_oficial] ), ref_oficial[nivell] = "Catalunya", ref_oficial[indicador_code] = "AFI_RG_RES", ref_oficial[any] = _any ) )
+			        RETURN DIVIDE ( _lloc, _res )
 			```
 		lineageTag: 58e6a12d-3541-4e2d-89fe-3322d72a3930
 

@@ -13,9 +13,17 @@ Sortida a data/model/:
     fact_afiliacions_sector.csv  gra: comarca × any × sector (afiliacions al règim general per lloc de treball)
     fact_mercat_cat.csv gra: mes (Catalunya): taxes d'activitat, ocupació i atur
     ref_oficial.csv     valors oficials d'àmbit i Catalunya (per conciliar amb la suma de comarques)
+    fact_ambit_oficial.csv  població i afiliats oficials per àmbit (gra: àmbit × any × indicador)
 
 Decisió de disseny: els fets són a nivell de comarca i els àmbits s'obtenen sumant
-comarques (vegeu README, "Notes metodològiques"). Els indicadors no additius
+comarques (vegeu README, "Notes metodològiques"). El PIB per habitant es calcula amb la
+població a 1 de juliol (POP_JUL), com fa l'Idescat.
+
+Excepció: 12 municipis pertanyen a un àmbit diferent del de la seva comarca
+(config/municipis_ambit_diferent.csv). Per a la població i els afiliats, les mesures DAX
+d'àmbit fan servir les xifres oficials per àmbit (fact_ambit_oficial), que ja assignen
+cada municipi al seu àmbit. El PIB i el VAB es mantenen com a suma de comarques, perquè
+l'Idescat no publica el PIB dels municipis de menys de 5.000 habitants. Els indicadors no additius
 (renda, IST...) s'agreguen amb mitjana ponderada per població a les mesures DAX.
 """
 from __future__ import annotations
@@ -34,6 +42,8 @@ INDICADORS = {
     "GDP_ME":          ("pib", "PIB", "milions €", "suma"),
     "GDP_E_INH":       ("pib", "PIB per habitant (oficial)", "€", "no agregable"),
     "POP":             ("poblacio", "Població (1 de gener)", "persones", "suma"),
+    # Població a 1 de juliol: és la que fa servir l'Idescat per al PIB per habitant.
+    "POP_JUL":         ("poblacio", "Població (1 de juliol)", "persones", "suma", "POP", {"_semestre": "S2"}),
     "IST_G_IND":       ("ist", "Índex socioeconòmic territorial", "índex Catalunya=100", "mitjana ponderada per població"),
     "AVER_INC_EUR":    ("ist_indicadors", "Renda mitjana per persona", "€", "mitjana ponderada per població"),
     "POP_EMP_PERC":    ("ist_indicadors", "Població ocupada", "%", "mitjana ponderada per població"),
@@ -52,6 +62,12 @@ INDICADORS = {
 }
 
 
+# Indicadors amb xifres oficials per àmbit, i primer any en què l'Idescat assigna els
+# municipis de config/municipis_ambit_diferent.csv al seu àmbit (abans, Alta Segarra al Penedès).
+AMBIT_OFICIAL = {"POP": 2015, "POP_JUL": 2015, "POP_16_64": 2015,
+                 "AFI_RES": 2015, "AFI_RG_RES": 2015, "AFI_RG_LLOC": 2015}
+
+
 def load(name: str) -> pd.DataFrame:
     return pd.read_csv(PROCESSED / f"{name}.csv", dtype={"geo_code": str, "period_code": str})
 
@@ -65,9 +81,17 @@ def to_year(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def to_year_s2(df: pd.DataFrame) -> pd.DataFrame:
+    """Només el segon semestre (1 de juliol), amb l'any com a enter."""
+    df = df[df["period_code"].astype(str).str.endswith("S2")].copy()
+    df["any"] = df["period_code"].astype(str).str[:4].astype(int)
+    return df
+
+
 def main() -> None:
     MODEL.mkdir(parents=True, exist_ok=True)
     ambits = pd.read_csv(ROOT / "config" / "ambits_comarques.csv")
+    canvis = pd.read_csv(ROOT / "config" / "canvis_limits_comarcals.csv")
 
     # ---- Dimensió territori (comarques) ---------------------------------------
     pob = load("poblacio_com")
@@ -82,6 +106,10 @@ def main() -> None:
     pib = pib[pib["period_code"] == pib["period_code"].max()].merge(ambits, left_on="geo_label", right_on="comarca")
     ordre = pib.groupby("ambit")["value"].sum().sort_values(ascending=False)
     dim_territori["ambit_ordre"] = dim_territori["ambit"].map({a: i for i, a in enumerate(ordre.index, 1)})
+    # Comarques amb límits modificats: les seves sèries llargues (1981, 2012) no són comparables.
+    nota = canvis.groupby("comarca")["descripcio"].agg(" ".join)
+    dim_territori["canvi_limits"] = dim_territori["comarca"].map(nota).fillna("")
+    dim_territori["serie_comparable"] = dim_territori["canvi_limits"].eq("")
     dim_territori.to_csv(MODEL / "dim_territori.csv", index=False)
 
     # ---- Fets: indicadors per comarca ------------------------------------------
@@ -89,12 +117,14 @@ def main() -> None:
     parts = []
     for code, (src, _nom, _unitat, _agr, *extra) in INDICADORS.items():
         concept = extra[0] if extra else code
-        filtres = extra[1] if len(extra) > 1 else {}
+        filtres = dict(extra[1]) if len(extra) > 1 else {}
+        semestre = filtres.pop("_semestre", None)
         d = load(f"{src}_com")
         d = d[(d["CONCEPT"] == concept) & d["geo_code"].isin(comarques)]
         for col, val in filtres.items():
             d = d[d[col] == val]
-        parts.append(to_year(d).assign(CONCEPT=code))
+        d = to_year_s2(d) if semestre == "S2" else to_year(d)
+        parts.append(d.assign(CONCEPT=code))
     fact = pd.concat(parts)
     fact = (fact.rename(columns={"geo_code": "comarca_code", "CONCEPT": "indicador_code",
                                  "value": "valor", "status": "estat"})
@@ -148,10 +178,40 @@ def main() -> None:
             if geo == "cat":
                 d = d.assign(geo_code="CAT", geo_label="Catalunya")
             ref.append(d.loc[d["geo_code"] != "TOTAL"].assign(nivell=nivell))
+    # Afiliats de Catalunya: el total oficial inclou els afiliats sense municipi de residència
+    # assignat, que no són a cap comarca. Les mesures DAX el fan servir quan no hi ha filtre territorial.
+    for code in ("AFI_RES", "AFI_RG_RES", "AFI_RG_LLOC"):
+        src, *_rest, concept = INDICADORS[code][:5]
+        filtres = INDICADORS[code][5] if len(INDICADORS[code]) > 5 else {}
+        d = to_year(load(f"{src}_cat"))
+        d = d[d["CONCEPT"] == concept]
+        for col, val in filtres.items():
+            d = d[d[col] == val]
+        ref.append(d.assign(geo_code="CAT", geo_label="Catalunya", CONCEPT=code, nivell="Catalunya"))
     (pd.concat(ref).rename(columns={"geo_code": "codi", "geo_label": "nom", "CONCEPT": "indicador_code",
                                     "value": "valor_oficial"})
      [["nivell", "codi", "nom", "any", "indicador_code", "valor_oficial"]]
      .to_csv(MODEL / "ref_oficial.csv", index=False))
+
+    # ---- Població i afiliats oficials per àmbit ----------------------------------
+    amb = []
+    for code, inici in AMBIT_OFICIAL.items():
+        src, _nom, _unitat, _agr, *extra = INDICADORS[code]
+        concept = extra[0] if extra else code
+        filtres = dict(extra[1]) if len(extra) > 1 else {}
+        semestre = filtres.pop("_semestre", None)
+        if not (PROCESSED / f"{src}_at.csv").exists():
+            print(f"Avís: falta data/processed/{src}_at.csv; executa python src/extract.py")
+            continue
+        d = load(f"{src}_at")
+        d = d[(d["CONCEPT"] == concept) & d["geo_code"].isin(ambits["ambit_code"])]
+        for col, val in filtres.items():
+            d = d[d[col] == val]
+        d = to_year_s2(d) if semestre == "S2" else to_year(d)
+        amb.append(d[d["any"] >= inici].assign(indicador_code=code))
+    cols = ["ambit_code", "any", "indicador_code", "valor"]
+    (pd.concat(amb).rename(columns={"geo_code": "ambit_code", "value": "valor"})[cols].dropna(subset=["valor"])
+     if amb else pd.DataFrame(columns=cols)).to_csv(MODEL / "fact_ambit_oficial.csv", index=False)
 
     ref_anys = pd.read_csv(MODEL / "ref_oficial.csv")["any"]
     anys = range(min(fact["any"].min(), ref_anys.min()), max(fact["any"].max(), ref_anys.max()) + 1)

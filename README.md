@@ -42,11 +42,12 @@ Les dades es descarreguen de l'API de l'Idescat i es poden tornar a generar amb 
 pip install -r requirements.txt
 python src/extract.py   # descarrega les taules de l'Idescat a data/processed/
 python src/model.py     # prepara les taules de l'informe de Power BI a data/model/
+python src/validate.py  # comprova les dades i el model (data/processed/validacio.md)
 ```
 
 Després, a la infografia, executa el notebook [`python/informe_economic.ipynb`](python/informe_economic.ipynb). A l'informe de Power BI, fes clic a **Actualitza**.
 
-`data/processed/qa_report.md` resumeix la revisió de les dades descarregades: valors buits, dades provisionals i si les comarques sumen el total de cada àmbit.
+`data/processed/qa_report.md` resumeix les dades descarregades (valors buits i dades provisionals), i `data/processed/validacio.md` comprova que les comarques sumen el total de Catalunya, que el PIB per habitant coincideix amb l'oficial i que les diferències entre àmbits s'expliquen pels municipis que pertanyen a un àmbit diferent del de la seva comarca.
 
 ## Fitxers
 
@@ -119,6 +120,7 @@ Data is downloaded from the Idescat API and can be regenerated with Python 3.10 
 pip install -r requirements.txt
 python src/extract.py   # downloads the Idescat tables into data/processed/
 python src/model.py     # builds the Power BI tables in data/model/
+python src/validate.py  # checks the data and the model (data/processed/validacio.md)
 ```
 
 Then run the notebook [`python/informe_economic.ipynb`](python/informe_economic.ipynb) for the infographic, or click **Refresh** in the Power BI report.

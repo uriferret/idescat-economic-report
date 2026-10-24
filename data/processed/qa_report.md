@@ -1,6 +1,6 @@
 # Informe de qualitat de les dades
 
-Extracció: 2026-10-24 09:30 UTC · Font: Idescat
+Extracció: 2026-10-24 19:15 UTC · Font: Idescat
 
 ## Resum per taula
 
@@ -17,13 +17,19 @@ Extracció: 2026-10-24 09:30 UTC · Font: Idescat
 - **ist/com**: 440 files, 9 valors buits (2.0%) | períodes 2015–2024 (10), estats: {'p': 44, '..': 9}
 - **ist_indicadors/com**: 2580 files, 349 valors buits (13.5%) | períodes 2015–2024 (10), estats: {'..': 349, 'b': 126, 'p': 86}
 - **afiliats_res/cat**: 110 files, 0 valors buits (0.0%) | períodes 2012M03–2026M09 (110), estats: {'p': 1}
+- **afiliats_res/at**: 1100 files, 0 valors buits (0.0%) | períodes 2012M03–2026M09 (110), estats: {'p': 10}
 - **afiliats_res/com**: 4950 files, 82 valors buits (1.7%) | períodes 2012M03–2026M09 (110), estats: {'..': 82, 'p': 45}
 - **afiliacions_rg_res/cat**: 110 files, 0 valors buits (0.0%) | períodes 2012M03–2026M09 (110), estats: {'p': 1}
+- **afiliacions_rg_res/at**: 1100 files, 0 valors buits (0.0%) | períodes 2012M03–2026M09 (110), estats: {'p': 10}
 - **afiliacions_rg_res/com**: 4950 files, 82 valors buits (1.7%) | períodes 2012M03–2026M09 (110), estats: {'..': 82, 'p': 45}
 - **afiliacions_rg_lloc/cat**: 105 files, 0 valors buits (0.0%) | períodes 2020M12–2025M12 (21), estats: {'p': 105}
+- **afiliacions_rg_lloc/at**: 1050 files, 0 valors buits (0.0%) | períodes 2020M12–2025M12 (21), estats: {'p': 1050}
 - **afiliacions_rg_lloc/com**: 4725 files, 50 valors buits (1.1%) | períodes 2020M12–2025M12 (21), estats: {'p': 4675, '..': 50}
+- **poblacio_16_64/at**: 801 files, 11 valors buits (1.4%) | períodes 1981S1–2025S1 (89), estats: {'..': 11}
 - **poblacio_16_64/com**: 3916 files, 154 valors buits (3.9%) | períodes 1981S1–2025S1 (89), estats: {'..': 154}
 - **taxes_mercat_cat/cat**: 783 files, 0 valors buits (0.0%) | períodes 2005M01–2026M09 (261), estats: {'p': 36, 'a': 9}
+- **poblacio_mun/mun**: 936 files, 828 valors buits (88.5%) | períodes 1986S2–2025S1 (78), estats: {'..': 828}
+- **afiliats_res_mun/mun**: 1320 files, 0 valors buits (0.0%) | períodes 2012M03–2026M09 (110), estats: {'p': 12}
 
 ## Mapatge comarca → àmbit
 
@@ -52,3 +58,24 @@ ambit_code   source period_code   SEX CONCEPT    value  value_at  rel_diff
       AT06 poblacio      2010S1 TOTAL     POP 392795.0  510572.0  0.230677
       AT06 poblacio      2009S2 TOTAL     POP 391777.0  508975.0  0.230263
       AT06 poblacio      2009S1 TOTAL     POP 390759.0  507379.0  0.229848
+- ⚠️ afiliats_res: 107 combinacions superen la tolerància (0.5%). Pitjors:
+ambit_code       source period_code   SEX               CONCEPT    value  value_at  rel_diff
+      AT06 afiliats_res     2014M06 TOTAL CONTRIB_SP_SOCIAL_SEC 146282.0  148265.0  0.013375
+      AT06 afiliats_res     2014M03 TOTAL CONTRIB_SP_SOCIAL_SEC 143710.0  145653.0  0.013340
+      AT06 afiliats_res     2014M09 TOTAL CONTRIB_SP_SOCIAL_SEC 145904.0  147850.0  0.013162
+      AT06 afiliats_res     2015M03 TOTAL CONTRIB_SP_SOCIAL_SEC 149097.0  151065.0  0.013028
+      AT06 afiliats_res     2014M12 TOTAL CONTRIB_SP_SOCIAL_SEC 147026.0  148963.0  0.013003
+- ⚠️ afiliacions_rg_res: 107 combinacions superen la tolerància (0.5%). Pitjors:
+ambit_code             source period_code            CON_REG_SS             CONCEPT    value  value_at  rel_diff
+      AT06 afiliacions_rg_res     2014M06 REG_GRL_SP_COALMINING AFFILIAT_SP_SOC_SEC 116329.0  117816.0  0.012621
+      AT06 afiliacions_rg_res     2014M03 REG_GRL_SP_COALMINING AFFILIAT_SP_SOC_SEC 114405.0  115866.0  0.012609
+      AT06 afiliacions_rg_res     2014M09 REG_GRL_SP_COALMINING AFFILIAT_SP_SOC_SEC 116129.0  117601.0  0.012517
+      AT06 afiliacions_rg_res     2014M12 REG_GRL_SP_COALMINING AFFILIAT_SP_SOC_SEC 117313.0  118795.0  0.012475
+      AT06 afiliacions_rg_res     2015M03 REG_GRL_SP_COALMINING AFFILIAT_SP_SOC_SEC 119447.0  120953.0  0.012451
+- ⚠️ poblacio_16_64: 257 combinacions superen la tolerància (0.5%). Pitjors:
+ambit_code         source period_code   SEX      AGE CONCEPT    value  value_at  rel_diff
+      AT08 poblacio_16_64      2010S1 TOTAL Y016_064     POP 312452.0   51165.0  5.106753
+      AT08 poblacio_16_64      2009S2 TOTAL Y016_064     POP 311939.0   51223.0  5.089823
+      AT08 poblacio_16_64      2010S2 TOTAL Y016_064     POP 312770.0   51421.0  5.082534
+      AT08 poblacio_16_64      2009S1 TOTAL Y016_064     POP 311435.0   51289.0  5.072160
+      AT08 poblacio_16_64      2011S1 TOTAL Y016_064     POP 313085.0   51687.0  5.057326

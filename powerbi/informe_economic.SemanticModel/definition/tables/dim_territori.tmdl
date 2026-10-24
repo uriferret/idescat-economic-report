@@ -44,11 +44,28 @@ table dim_territori
 
 		annotation SummarizationSetBy = Automatic
 
+	column canvi_limits
+		dataType: string
+		lineageTag: 5b0c1f3e-8a2d-4c7e-9f41-2d6a8e3b7c10
+		summarizeBy: none
+		sourceColumn: canvi_limits
+
+		annotation SummarizationSetBy = Automatic
+
+	column serie_comparable
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 9e7d2a41-3c6b-4f0e-8a15-7b4c2d9e1f63
+		summarizeBy: none
+		sourceColumn: serie_comparable
+
+		annotation SummarizationSetBy = Automatic
+
 	partition dim_territori = m
 		mode: import
 		source =
 				let
-				    Source = Table.TransformColumnTypes(fnCsv("dim_territori.csv"), {{"comarca_code", type text}, {"comarca", type text}, {"ambit_code", type text}, {"ambit", type text}})
+				    Source = Table.TransformColumnTypes(fnCsv("dim_territori.csv"), {{"comarca_code", type text}, {"comarca", type text}, {"ambit_code", type text}, {"ambit", type text}, {"canvi_limits", type text}, {"serie_comparable", type logical}})
 				in
 				    Source
 
