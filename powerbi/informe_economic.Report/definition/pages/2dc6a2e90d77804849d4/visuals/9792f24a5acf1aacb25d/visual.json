@@ -173,23 +173,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "2ee8bdde2847dd44cea0",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_indicadors"
-              }
-            },
-            "Property": "PIB (M€)"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

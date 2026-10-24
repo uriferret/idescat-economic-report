@@ -4,10 +4,10 @@
   "position": {
     "x": 383.30308529945552,
     "y": 88.275862068965509,
-    "z": 1,
+    "z": 1000,
     "height": 72.014519056261335,
     "width": 285.73502722323047,
-    "tabOrder": 1
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -446,20 +446,6 @@
   },
   "filterConfig": {
     "filters": [
-      {
-        "name": "72d35c8caaf6f94f925e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_indicadors"
-              }
-            },
-            "Property": "Població"
-          }
-        },
-        "type": "Advanced"
-      },
       {
         "name": "59a17310a643985b016b",
         "field": {

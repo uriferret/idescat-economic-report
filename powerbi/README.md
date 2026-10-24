@@ -41,6 +41,23 @@ Detall de les 42 comarques i l'Aran.
 
 La taula s'ordena per posició. Fes clic a la capçalera d'una columna per ordenar-la d'una altra manera.
 
+## Pàgina 3 · Laboral
+
+![Pàgina Laboral](captures/laboral.png)
+
+Ocupació, atur i desplaçaments per feina.
+
+- **Any** (a dalt a la dreta): tria l'any de les targetes, del mapa i dels rànquings (2020–2025). Les dades són a 31 de desembre. Els dos gràfics d'evolució mostren sempre tota la sèrie.
+- **Targetes:** afiliats a la Seguretat Social residents a Catalunya, creixement des del 2012, taxa d'afiliació i taxa d'atur del darrer mes de l'any.
+- **Evolució de l'atur:** taxa d'atur mensual de Catalunya des del 2005.
+- **Evolució dels afiliats:** afiliats per àmbit de residència des del 2012.
+- **On es treballa i on es viu:** cada comarca s'acoloreix segons el seu **índex d'atracció laboral**, que compara els llocs de treball de la comarca amb els seus residents que treballen:
+  - **blau (més d'1):** la comarca té més llocs de treball que residents afiliats i rep treballadors d'altres comarques;
+  - **gris (al voltant d'1):** els llocs de treball i els residents que treballen estan equilibrats;
+  - **taronja (menys d'1):** una part dels residents treballen fora de la comarca. Per exemple, un índex de 0,46 vol dir que hi ha 46 llocs de treball per cada 100 residents afiliats.
+- **Rànquing:** les comarques amb un índex d'atracció més gran que 1.
+- **Sectors:** pes de l'agricultura, la indústria, la construcció i els serveis en els llocs de treball de cada àmbit.
+
 ## Indicadors
 
 | Indicador | Què mesura | Font (Idescat) |
@@ -51,12 +68,17 @@ La taula s'ordena per posició. Fes clic a la capçalera d'una columna per orden
 | Renda per persona | Renda mitjana per persona dels residents | Índex socioeconòmic territorial |
 | IST | Índex socioeconòmic territorial (Catalunya = 100): ocupació, estudis, qualificació laboral, origen i renda | Índex socioeconòmic territorial |
 | Pes de la indústria | Part del valor afegit brut que generen la indústria i l'energia | PIB territorial, VAB per sectors |
+| Afiliats residents | Persones afiliades a la Seguretat Social que viuen al territori, a 31 de desembre | Afiliats segons residència |
+| Taxa d'afiliació | Afiliats residents dividits per la població de 16 a 64 anys | Calculat |
+| Índex d'atracció laboral | Afiliacions al règim general en centres de treball de la comarca dividides per les dels seus residents | Afiliacions segons residència i segons lloc de treball |
+| Taxa d'atur | Percentatge de la població activa que no té feina (estimació mensual, només per a Catalunya) | Estimació mensual de la població activa |
 
 ## Coses a tenir en compte
 
 - **Anys:** el PIB arriba fins al 2023, i la renda i l'IST comencen el 2015. Per això l'any es pot triar entre el 2015 i el 2023.
 - **PIB per habitant:** pot diferir lleugerament del valor que publica l'Idescat, perquè aquí es divideix per la població a 1 de gener i l'Idescat fa servir la població mitjana de l'any.
 - **Àmbits:** les xifres d'un àmbit són la suma de les seves comarques. Respecte de les xifres oficials per àmbit, la diferència és inferior a l'1%, perquè alguns municipis pertanyen a un àmbit diferent del de la seva comarca. L'IST i la renda d'un àmbit són la mitjana de les seves comarques ponderada per població.
+- **Mercat laboral:** l'índex d'atracció només inclou el règim general (assalariats), no els autònoms. Les dades per lloc de treball comencen el desembre del 2020.
 - **Lluçanès:** és comarca des del 2023 i encara no té dades de renda ni d'IST, per això surt en gris al mapa.
 
 ## Fonts

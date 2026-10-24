@@ -4,10 +4,10 @@
   "position": {
     "x": 89,
     "y": 86,
-    "z": 2,
+    "z": 2000,
     "height": 604,
     "width": 699,
-    "tabOrder": 2
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "shapeMap",
@@ -219,23 +219,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f8d4a3c942ee7d7aa9c3",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_territori"
-              }
-            },
-            "Property": "comarca"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

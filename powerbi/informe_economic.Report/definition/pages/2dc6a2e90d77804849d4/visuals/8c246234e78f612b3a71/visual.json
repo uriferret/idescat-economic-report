@@ -4,10 +4,10 @@
   "position": {
     "x": 686,
     "y": 176,
-    "z": 5,
+    "z": 5000,
     "height": 254,
     "width": 576,
-    "tabOrder": 5
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "stackedAreaChart",
@@ -203,51 +203,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "c3f8f6a075fa8ccf8b64",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_any"
-              }
-            },
-            "Property": "any"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "d599934e20e26402243c",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_territori"
-              }
-            },
-            "Property": "ambit"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "05161defbce9ef68bf8b",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_indicadors"
-              }
-            },
-            "Property": "Població"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

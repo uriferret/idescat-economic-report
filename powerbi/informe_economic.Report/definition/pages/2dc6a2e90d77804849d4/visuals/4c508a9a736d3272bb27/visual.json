@@ -4,10 +4,10 @@
   "position": {
     "x": 90,
     "y": 437,
-    "z": 6,
+    "z": 6000,
     "height": 254,
     "width": 579,
-    "tabOrder": 6
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "scatterChart",
@@ -370,79 +370,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "5ac8b20ab6f640af506f",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_territori"
-              }
-            },
-            "Property": "comarca"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "6603d63205594540cf61",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_territori"
-              }
-            },
-            "Property": "ambit"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "3f48a6a7919d45a4609a",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_indicadors"
-              }
-            },
-            "Property": "PIB per habitant (€)"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "5affe0dde32774e1db1f",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_indicadors"
-              }
-            },
-            "Property": "Renda mitjana per persona (€)"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "084ec586282ba3cc2490",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_indicadors"
-              }
-            },
-            "Property": "Població"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

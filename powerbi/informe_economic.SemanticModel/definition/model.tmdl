@@ -9,7 +9,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["RutaDades","fnCsv","dim_territori","dim_any","dim_indicador","dim_sector","fact_indicadors","fact_vab","ref_oficial"]
+annotation PBI_QueryOrder = ["RutaDades","fnCsv","dim_territori","dim_any","dim_indicador","dim_sector","fact_indicadors","fact_vab","ref_oficial","fact_afiliacions_sector","fact_mercat_cat"]
 
 annotation PBI_ProTooling = ["DaxQueryView_Desktop","DevMode"]
 
@@ -21,6 +21,10 @@ ref table fact_indicadors
 ref table fact_vab
 ref table ref_oficial
 ref table 'Selector indicador'
+ref table fact_afiliacions_sector
+ref table fact_mercat_cat
+ref table DateTableTemplate_d585d953-b2a5-4b56-95e2-488b876ac919
+ref table LocalDateTable_7e000482-a35e-434b-93ab-b594209222c6
 
 ref cultureInfo en-US
 

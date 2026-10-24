@@ -1,0 +1,58 @@
+table fact_afiliacions_sector
+	lineageTag: 62c67c8d-8ccc-46e8-af87-6f9073bbed4b
+
+	column comarca_code
+		dataType: string
+		lineageTag: fdfda79f-d677-4911-97d5-86df885ea5c8
+		summarizeBy: none
+		sourceColumn: comarca_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column any
+		dataType: int64
+		formatString: 0
+		lineageTag: 2dbd3a7c-238e-40f7-a64a-b9757187ed7f
+		summarizeBy: none
+		sourceColumn: any
+
+		annotation SummarizationSetBy = Automatic
+
+	column sector_code
+		dataType: string
+		lineageTag: a9c5f8c6-1518-4e30-8178-56df8d6d2e82
+		summarizeBy: none
+		sourceColumn: sector_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column afiliacions
+		dataType: double
+		lineageTag: 8004e44f-6e29-4ac2-8cf2-2796c7dd7e45
+		summarizeBy: sum
+		sourceColumn: afiliacions
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column estat
+		dataType: string
+		lineageTag: 9c92666f-dccb-45cd-9b0e-249dd55cbc8d
+		summarizeBy: none
+		sourceColumn: estat
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_afiliacions_sector = m
+		mode: import
+		source =
+				let
+				    Origen = Table.TransformColumnTypes(fnCsv("fact_afiliacions_sector.csv"), {{"comarca_code", type text}, {"any", Int64.Type}, {"sector_code", type text}, {"afiliacions", type number}, {"estat", type text}})
+				in
+				    Origen
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

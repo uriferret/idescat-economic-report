@@ -1,0 +1,83 @@
+table fact_mercat_cat
+	lineageTag: a70e0cd3-78b0-4e27-a0e6-77492002c611
+
+	column data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9bf238a0-c118-444d-b681-4126100985ce
+		summarizeBy: none
+		sourceColumn: data
+
+		variation Variation
+			isDefault
+			relationship: 5a849f26-4dae-4ff1-8f56-f94725de933f
+			defaultHierarchy: LocalDateTable_7e000482-a35e-434b-93ab-b594209222c6.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column any
+		dataType: int64
+		formatString: 0
+		lineageTag: 3b361152-8a74-44c8-a8af-f01ed0209ba1
+		summarizeBy: none
+		sourceColumn: any
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes
+		dataType: int64
+		formatString: 0
+		lineageTag: 0b8dde2e-8775-4eb2-91e8-be0e0039de16
+		summarizeBy: sum
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column indicador_code
+		dataType: string
+		lineageTag: 477c5d5f-886c-4493-9f76-e52c85b350b7
+		summarizeBy: none
+		sourceColumn: indicador_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column indicador
+		dataType: string
+		lineageTag: 4ebf36f2-2285-4308-a4fd-eded5705c6c3
+		summarizeBy: none
+		sourceColumn: indicador
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor
+		dataType: double
+		lineageTag: 8e1e1532-de60-472f-8ea7-5c22a92fd55f
+		summarizeBy: sum
+		sourceColumn: valor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column estat
+		dataType: string
+		lineageTag: ff116d56-d8ed-4045-883d-6ebb68bbb3fe
+		summarizeBy: none
+		sourceColumn: estat
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_mercat_cat = m
+		mode: import
+		source =
+				let
+				    Origen = Table.TransformColumnTypes(fnCsv("fact_mercat_cat.csv"), {{"data", type date}, {"any", Int64.Type}, {"mes", Int64.Type}, {"indicador_code", type text}, {"indicador", type text}, {"valor", type number}, {"estat", type text}})
+				in
+				    Origen
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

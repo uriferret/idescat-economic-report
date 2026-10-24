@@ -4,10 +4,10 @@
   "position": {
     "x": 977,
     "y": 6,
-    "z": 8,
+    "z": 8000,
     "height": 66,
     "width": 157,
-    "tabOrder": 8
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "slicer",
@@ -71,23 +71,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "736b8ecd78bd36d3102c",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_territori"
-              }
-            },
-            "Property": "ambit"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }
