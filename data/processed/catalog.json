@@ -124,5 +124,98 @@
     "url": "https://api.idescat.cat/taules/v2/ist/14074/15022/com/data",
     "filters": null,
     "rows": 2580
+  },
+  {
+    "source": "afiliats_res",
+    "geo": "cat",
+    "file": "data/processed/afiliats_res_cat.csv",
+    "label": "Afiliats a la Seguretat Social segons residència padronal de l'afiliat. Per sexe. A últim dia del mes. Catalunya",
+    "updated": "2026-10-13",
+    "url": "https://api.idescat.cat/taules/v2/afi/8604/8704/cat/data",
+    "filters": {
+      "SEX": "TOTAL"
+    },
+    "rows": 110
+  },
+  {
+    "source": "afiliats_res",
+    "geo": "com",
+    "file": "data/processed/afiliats_res_com.csv",
+    "label": "Afiliats a la Seguretat Social segons residència padronal de l'afiliat. Per sexe. A últim dia del mes. Comarques i Aran",
+    "updated": "2026-10-13",
+    "url": "https://api.idescat.cat/taules/v2/afi/8604/8704/com/data",
+    "filters": {
+      "SEX": "TOTAL"
+    },
+    "rows": 4950
+  },
+  {
+    "source": "afiliacions_rg_res",
+    "geo": "cat",
+    "file": "data/processed/afiliacions_rg_res_cat.csv",
+    "label": "Afiliacions a la Seguretat Social segons residència padronal de l'afiliat. Règim general de la Seguretat Social i Règim especial de treballadors autònoms. A últim dia del mes. Catalunya",
+    "updated": "2026-10-13",
+    "url": "https://api.idescat.cat/taules/v2/afi/8603/8703/cat/data",
+    "filters": {
+      "CON_REG_SS": "REG_GRL_SP_COALMINING"
+    },
+    "rows": 110
+  },
+  {
+    "source": "afiliacions_rg_res",
+    "geo": "com",
+    "file": "data/processed/afiliacions_rg_res_com.csv",
+    "label": "Afiliacions a la Seguretat Social segons residència padronal de l'afiliat. Règim general de la Seguretat Social i Règim especial de treballadors autònoms. A últim dia del mes. Comarques i Aran",
+    "updated": "2026-10-13",
+    "url": "https://api.idescat.cat/taules/v2/afi/8603/8703/com/data",
+    "filters": {
+      "CON_REG_SS": "REG_GRL_SP_COALMINING"
+    },
+    "rows": 4950
+  },
+  {
+    "source": "afiliacions_rg_lloc",
+    "geo": "cat",
+    "file": "data/processed/afiliacions_rg_lloc_cat.csv",
+    "label": "Afiliacions al Règim general de la Seguretat Social i al Règim especial de la mineria del carbó. Per sector d'activitat econòmica (CCAE-2009). A últim dia del mes. Catalunya",
+    "updated": "2026-01-15",
+    "url": "https://api.idescat.cat/taules/v2/afic/14983/15879/cat/data",
+    "filters": null,
+    "rows": 105
+  },
+  {
+    "source": "afiliacions_rg_lloc",
+    "geo": "com",
+    "file": "data/processed/afiliacions_rg_lloc_com.csv",
+    "label": "Afiliacions al Règim general de la Seguretat Social i al Règim especial de la mineria del carbó. Per sector d'activitat econòmica (CCAE-2009). A últim dia del mes. Comarques i Aran",
+    "updated": "2026-01-15",
+    "url": "https://api.idescat.cat/taules/v2/afic/14983/15879/com/data",
+    "filters": null,
+    "rows": 4725
+  },
+  {
+    "source": "poblacio_16_64",
+    "geo": "com",
+    "file": "data/processed/poblacio_16_64_com.csv",
+    "label": "Població. Per sexe i edat en grans grups. Comarques i Aran",
+    "updated": "2025-05-07",
+    "url": "https://api.idescat.cat/taules/v2/ep/17363/20891/com/data",
+    "filters": {
+      "SEX": "TOTAL",
+      "AGE": "Y016_064"
+    },
+    "rows": 3916
+  },
+  {
+    "source": "taxes_mercat_cat",
+    "geo": "cat",
+    "file": "data/processed/taxes_mercat_cat_cat.csv",
+    "label": "Taxes d'activitat, ocupació i atur. Catalunya",
+    "updated": "2026-10-14",
+    "url": "https://api.idescat.cat/taules/v2/e03/22274/26671/cat/data",
+    "filters": {
+      "INDICATOR": "VALUE_PERC"
+    },
+    "rows": 783
   }
 ]

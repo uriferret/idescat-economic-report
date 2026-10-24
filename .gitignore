@@ -18,3 +18,6 @@ data/raw/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Material de disseny de l'informe (només en local; el .pbip ja inclou el tema, els fons i el mapa)
+powerbi/disseny/
