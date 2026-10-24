@@ -4,10 +4,10 @@
   "position": {
     "x": 686,
     "y": 436,
-    "z": 7,
+    "z": 7000,
     "height": 268,
     "width": 280,
-    "tabOrder": 7
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -356,37 +356,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "0c54a42d11940ae848b4",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_territori"
-              }
-            },
-            "Property": "ambit"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "f9cccd3f2f0f0522170d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_indicadors"
-              }
-            },
-            "Property": "IST vs Catalunya"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

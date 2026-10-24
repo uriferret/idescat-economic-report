@@ -4,10 +4,10 @@
   "position": {
     "x": 685,
     "y": 88,
-    "z": 2,
+    "z": 2000,
     "height": 72,
     "width": 281,
-    "tabOrder": 2
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -506,20 +506,6 @@
   },
   "filterConfig": {
     "filters": [
-      {
-        "name": "168a09df13cf9d78127f",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_indicadors"
-              }
-            },
-            "Property": "PIB per habitant (€)"
-          }
-        },
-        "type": "Advanced"
-      },
       {
         "name": "a804baa894d689af0e1b",
         "field": {

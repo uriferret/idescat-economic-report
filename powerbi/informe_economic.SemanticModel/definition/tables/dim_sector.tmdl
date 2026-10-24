@@ -21,7 +21,7 @@ table dim_sector
 		dataType: int64
 		formatString: 0
 		lineageTag: 094c255e-9a15-4b07-8db4-6aff9037af36
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: ordre
 
 		annotation SummarizationSetBy = Automatic

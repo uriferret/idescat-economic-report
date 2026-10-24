@@ -1,0 +1,47 @@
+DEFINE
+    /// Afiliats a la Seguretat Social residents al territori, a 31 de desembre. Últim any amb dades si n'hi ha diversos.
+    MEASURE fact_indicadors[Afiliats residents] =
+        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = "AFI_RES" )
+        RETURN CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RES", dim_any[any] = _any )
+
+    /// Afiliats residents dividits per la població de 16 a 64 anys del mateix any.
+    MEASURE fact_indicadors[Taxa d'afiliació] =
+        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = "AFI_RES" )
+        RETURN CALCULATE (
+            DIVIDE ( CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RES" ),
+                     CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "POP_16_64" ) ),
+            dim_any[any] = _any )
+
+    /// Variació dels afiliats residents respecte al 2012 (primer any de la sèrie).
+    MEASURE fact_indicadors[Creixement afiliats des de 2012 (%)] =
+        VAR _ini = CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RES", dim_any[any] = 2012 )
+        RETURN DIVIDE ( [Afiliats residents] - _ini, _ini )
+
+    /// Afiliacions al règim general en centres de treball del territori dividides per les dels seus residents. Més d'1: la comarca atrau treballadors; menys d'1: part dels residents treballen fora.
+    MEASURE fact_indicadors[Índex d'atracció laboral] =
+        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = "AFI_RG_LLOC" )
+        RETURN CALCULATE (
+            DIVIDE ( CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RG_LLOC" ),
+                     CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RG_RES" ) ),
+            dim_any[any] = _any )
+
+    /// Pes del sector sobre les afiliacions al règim general per lloc de treball. Últim any amb dades si n'hi ha diversos.
+    MEASURE fact_indicadors[Pes del sector en l'ocupació (%)] =
+        VAR _any = CALCULATE ( MAX ( fact_afiliacions_sector[any] ) )
+        RETURN CALCULATE (
+            DIVIDE ( SUM ( fact_afiliacions_sector[afiliacions] ),
+                     CALCULATE ( SUM ( fact_afiliacions_sector[afiliacions] ), REMOVEFILTERS ( dim_sector ) ) ),
+            dim_any[any] = _any )
+
+    /// Taxa d'atur de Catalunya (estimació mensual de l'Idescat), per a cada mes.
+    MEASURE fact_indicadors[Taxa d'atur] =
+        DIVIDE ( CALCULATE ( SUM ( fact_mercat_cat[valor] ), fact_mercat_cat[indicador_code] = "UN_RATE" ), 100 )
+
+    /// Taxa d'atur de Catalunya de l'últim mes disponible dins del període filtrat.
+    MEASURE fact_indicadors[Taxa d'atur (últim mes)] =
+        VAR _d = CALCULATE ( MAX ( fact_mercat_cat[data] ), fact_mercat_cat[indicador_code] = "UN_RATE" )
+        RETURN CALCULATE ( [Taxa d'atur], fact_mercat_cat[data] = _d )
+
+EVALUATE
+    SUMMARIZECOLUMNS ( dim_territori[comarca], "Afiliats", [Afiliats residents], "Taxa afil", [Taxa d'afiliació], "Atracció", [Índex d'atracció laboral] )
+    ORDER BY [Atracció] DESC

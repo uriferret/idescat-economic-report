@@ -187,6 +187,83 @@ table fact_indicadors
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	/// Afiliats a la Seguretat Social residents al territori, a 31 de desembre. Últim any amb dades si n'hi ha diversos.
+	measure 'Afiliats residents' = ```
+			
+			        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = "AFI_RES" )
+			        RETURN CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RES", dim_any[any] = _any )
+			```
+		lineageTag: 099db7b4-3286-4267-92e1-2b8ed8e9527c
+
+		formatStringDefinition = "#,0"
+
+	/// Afiliats residents dividits per la població de 16 a 64 anys del mateix any.
+	measure 'Taxa d''afiliació' = ```
+			
+			        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = "AFI_RES" )
+			        RETURN CALCULATE (
+			            DIVIDE ( CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RES" ),
+			                     CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "POP_16_64" ) ),
+			            dim_any[any] = _any )
+			```
+		lineageTag: c045ddf1-ce11-4ab7-9f06-e6284bee4ce5
+
+		formatStringDefinition = "0.0%"
+
+	/// Variació dels afiliats residents respecte al 2012 (primer any de la sèrie).
+	measure 'Creixement afiliats des de 2012 (%)' = ```
+			
+			        VAR _ini = CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RES", dim_any[any] = 2012 )
+			        RETURN DIVIDE ( [Afiliats residents] - _ini, _ini )
+			```
+		lineageTag: f0932dce-8006-40cb-a623-6f341b4fbfab
+
+		formatStringDefinition = "0.0%"
+
+	/// Afiliacions al règim general en centres de treball del territori dividides per les dels seus residents. Més d'1: la comarca atrau treballadors; menys d'1: part dels residents treballen fora.
+	measure 'Índex d''atracció laboral' = ```
+			
+			        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = "AFI_RG_LLOC" )
+			        RETURN CALCULATE (
+			            DIVIDE ( CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RG_LLOC" ),
+			                     CALCULATE ( SUM ( fact_indicadors[valor] ), dim_indicador[indicador_code] = "AFI_RG_RES" ) ),
+			            dim_any[any] = _any )
+			```
+		lineageTag: 58e6a12d-3541-4e2d-89fe-3322d72a3930
+
+		formatStringDefinition = "0.00"
+
+	/// Pes del sector sobre les afiliacions al règim general per lloc de treball. Últim any amb dades si n'hi ha diversos.
+	measure 'Pes del sector en l''ocupació (%)' = ```
+			
+			        VAR _any = CALCULATE ( MAX ( fact_afiliacions_sector[any] ) )
+			        RETURN CALCULATE (
+			            DIVIDE ( SUM ( fact_afiliacions_sector[afiliacions] ),
+			                     CALCULATE ( SUM ( fact_afiliacions_sector[afiliacions] ), REMOVEFILTERS ( dim_sector ) ) ),
+			            dim_any[any] = _any )
+			```
+		lineageTag: 679cfadb-3b3b-44c3-af9e-658557f63f36
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	/// Taxa d'atur de Catalunya (estimació mensual de l'Idescat), per a cada mes.
+	measure 'Taxa d''atur' = ```
+			
+			        DIVIDE ( CALCULATE ( SUM ( fact_mercat_cat[valor] ), fact_mercat_cat[indicador_code] = "UN_RATE" ), 100 )
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: b0099e01-328f-45bc-b66a-7ae8f7538258
+
+	/// Taxa d'atur de Catalunya de l'últim mes disponible dins del període filtrat.
+	measure 'Taxa d''atur (últim mes)' = ```
+			
+			        VAR _d = CALCULATE ( MAX ( fact_mercat_cat[data] ), fact_mercat_cat[indicador_code] = "UN_RATE" )
+			        RETURN CALCULATE ( [Taxa d'atur], fact_mercat_cat[data] = _d )
+			```
+		lineageTag: 327d4449-5441-44ff-b86d-4fdf3d0cf715
+
+		formatStringDefinition = "0.0%"
+
 	column comarca_code
 		dataType: string
 		lineageTag: 584feca0-f15a-451e-8fb3-33e637225367

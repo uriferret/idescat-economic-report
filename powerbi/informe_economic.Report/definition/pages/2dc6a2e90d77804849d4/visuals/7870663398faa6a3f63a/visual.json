@@ -4,10 +4,10 @@
   "position": {
     "x": 982,
     "y": 89,
-    "z": 3,
+    "z": 3000,
     "height": 71,
     "width": 282,
-    "tabOrder": 3
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -495,20 +495,6 @@
   },
   "filterConfig": {
     "filters": [
-      {
-        "name": "0f372e544042e0526bd6",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_indicadors"
-              }
-            },
-            "Property": "Renda mitjana per persona (€)"
-          }
-        },
-        "type": "Advanced"
-      },
       {
         "name": "692ddca044e707fea9cd",
         "field": {

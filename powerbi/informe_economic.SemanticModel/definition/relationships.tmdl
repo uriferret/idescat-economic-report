@@ -22,3 +22,24 @@ relationship f96ae567-2116-b0cb-1263-f29fd70f8cd0
 	fromColumn: fact_vab.sector_code
 	toColumn: dim_sector.sector_code
 
+relationship 5a849f26-4dae-4ff1-8f56-f94725de933f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fact_mercat_cat.data
+	toColumn: LocalDateTable_7e000482-a35e-434b-93ab-b594209222c6.Date
+
+relationship AutoDetected_f888a73b-fe44-4950-8d7c-47ea790c5a58
+	fromColumn: fact_afiliacions_sector.any
+	toColumn: dim_any.any
+
+relationship AutoDetected_3142220f-38a2-47bf-a068-3b8bed3275b6
+	fromColumn: fact_mercat_cat.any
+	toColumn: dim_any.any
+
+relationship AutoDetected_54c9f879-5d5a-40f0-95e0-643db5fa20d7
+	fromColumn: fact_afiliacions_sector.sector_code
+	toColumn: dim_sector.sector_code
+
+relationship 16a240b8-f7e4-5963-a67e-3bfb32b6f5cb
+	fromColumn: fact_afiliacions_sector.comarca_code
+	toColumn: dim_territori.comarca_code
+

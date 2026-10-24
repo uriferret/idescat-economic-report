@@ -4,10 +4,10 @@
   "position": {
     "x": 806,
     "y": 216,
-    "z": 4,
+    "z": 4000,
     "height": 111,
     "width": 457,
-    "tabOrder": 4
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -284,65 +284,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "ed1011e5a60d2fefdd4d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_indicadors"
-              }
-            },
-            "Property": "PIB per habitant (€)"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "73d794ce6e01c6481737",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_indicadors"
-              }
-            },
-            "Property": "Renda mitjana per persona (€)"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "23a023d8273435c1d248",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_indicadors"
-              }
-            },
-            "Property": "IST (Catalunya 100)"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "e88e8e28b1fefd55ab16",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_indicadors"
-              }
-            },
-            "Property": "Pes indústria al VAB (%)"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

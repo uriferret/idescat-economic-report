@@ -4,10 +4,10 @@
   "position": {
     "x": 984,
     "y": 436,
-    "z": 8,
+    "z": 8000,
     "height": 255,
     "width": 280,
-    "tabOrder": 8
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "scatterChart",
@@ -262,51 +262,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "39e1f130d9d35cfd0657",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_territori"
-              }
-            },
-            "Property": "comarca"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "2178d9830cfd8a2c5bd6",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_indicadors"
-              }
-            },
-            "Property": "Pes indústria al VAB (%)"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "3f044340e2e39d381597",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_indicadors"
-              }
-            },
-            "Property": "PIB per habitant (€)"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

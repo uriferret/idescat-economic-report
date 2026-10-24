@@ -110,6 +110,32 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1144.7408716507043,
+            "y": 463.1899423641654
+          },
+          "nodeIndex": "fact_afiliacions_sector",
+          "nodeLineageTag": "62c67c8d-8ccc-46e8-af87-6f9073bbed4b",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1410.7878100701503,
+            "y": 467.91478245221464
+          },
+          "nodeIndex": "fact_mercat_cat",
+          "nodeLineageTag": "a70e0cd3-78b0-4e27-a0e6-77492002c611",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",

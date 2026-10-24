@@ -40,7 +40,7 @@
           "expanded": {
             "expr": {
               "Literal": {
-                "Value": "false"
+                "Value": "true"
               }
             }
           }
@@ -65,6 +65,11 @@
       "type": "RegisteredResources",
       "items": [
         {
+          "name": "comarques_catalunya45155043313285903.json",
+          "path": "comarques_catalunya45155043313285903.json",
+          "type": "ShapeMap"
+        },
+        {
           "name": "comarques_catalunya4912084294746776.json",
           "path": "comarques_catalunya4912084294746776.json",
           "type": "ShapeMap"
@@ -72,6 +77,11 @@
         {
           "name": "fons_comarques783204495285026.png",
           "path": "fons_comarques783204495285026.png",
+          "type": "Image"
+        },
+        {
+          "name": "fons_laboral18281344436724856.png",
+          "path": "fons_laboral18281344436724856.png",
           "type": "Image"
         },
         {

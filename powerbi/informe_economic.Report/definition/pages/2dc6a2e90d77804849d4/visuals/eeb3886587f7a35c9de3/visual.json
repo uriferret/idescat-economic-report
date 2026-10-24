@@ -4,10 +4,10 @@
   "position": {
     "x": 90,
     "y": 176,
-    "z": 4,
+    "z": 4000,
     "height": 254,
     "width": 579,
-    "tabOrder": 4
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "stackedAreaChart",
@@ -242,51 +242,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f0d06242dc70fcf3d4e0",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_any"
-              }
-            },
-            "Property": "any"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "1a4c9cb6d80d8957db04",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_territori"
-              }
-            },
-            "Property": "ambit"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "39e5410d720fc24dbbfa",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_indicadors"
-              }
-            },
-            "Property": "PIB (mil M€)"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
