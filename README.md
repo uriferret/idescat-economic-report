@@ -13,7 +13,6 @@ On es genera la riquesa a Catalunya, on viu la gent i com hi viu. Aquest informe
 | [**Infografia**](python/) | Llegir les conclusions en una sola pàgina | Obre la imatge [PNG](python/output/informe_economic_catalunya.png) o el [PDF](python/output/informe_economic_catalunya.pdf) |
 | [**Informe de Power BI**](powerbi/) | Explorar les dades per any, àmbit i comarca | Obre `powerbi/informe_economic.pbip` amb Power BI Desktop. Les instruccions són a [`powerbi/README.md`](powerbi/) |
 | [**Dashboard web**](https://claude.ai/artifact/F5mz53ZLQtgQfxVQYd6nZW) | Consultar l'informe des del navegador, sense instal·lar res | Obre [l'enllaç](https://claude.ai/artifact/F5mz53ZLQtgQfxVQYd6nZW) |
-| [**El Penedès en xifres**](informes/El_Penedes_en_xifres.pdf) | Informe territorial de l'àmbit del Penedès, amb focus a l'Alt Penedès | Obre el [PDF](informes/El_Penedes_en_xifres.pdf) |
 
 ## Principals conclusions
 
@@ -54,7 +53,6 @@ Després, a la infografia, executa el notebook [`python/informe_economic.ipynb`]
 ```
 python/   infografia (notebook i imatge final)
 powerbi/  informe de Power BI
-informes/ informes territorials en PDF
 data/     dades descarregades i preparades
 src/      descàrrega i preparació de les dades
 config/   correspondència entre comarques i àmbits territorials
@@ -92,7 +90,6 @@ It is a Catalan adaptation of Maven Analytics' *World Economic Report*, which ma
 | [**Infographic**](python/) | Read the main findings on a single page | Open the [PNG](python/output/informe_economic_catalunya.png) or the [PDF](python/output/informe_economic_catalunya.pdf) |
 | [**Power BI report**](powerbi/) | Explore the data by year, area and comarca | Open `powerbi/informe_economic.pbip` with Power BI Desktop (free). Instructions in [`powerbi/README.md`](powerbi/) (in Catalan) |
 | [**Web dashboard**](https://claude.ai/artifact/F5mz53ZLQtgQfxVQYd6nZW) | Browse the report in a web browser, nothing to install | Open [the link](https://claude.ai/artifact/F5mz53ZLQtgQfxVQYd6nZW) |
-| [**El Penedès en xifres**](informes/El_Penedes_en_xifres.pdf) | Territorial report on the Penedès area, focused on Alt Penedès (in Catalan) | Open the [PDF](informes/El_Penedes_en_xifres.pdf) |
 
 ### Key findings
 

@@ -24,3 +24,6 @@ powerbi/disseny/
 
 # Fitxers que l'aplicació de Claude desa a la carpeta
 Claude outputs/
+
+# Informes territorials (només en local)
+informes/
