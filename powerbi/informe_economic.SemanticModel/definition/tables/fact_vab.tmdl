@@ -48,7 +48,7 @@ table fact_vab
 		mode: import
 		source =
 				let
-				    Source = Table.TransformColumnTypes(fnCsv("fact_vab.csv"), {{"comarca_code", type text}, {"any", Int64.Type}, {"sector_code", type text}, {"vab_meur", type number}, {"estat", type text}})
+				    Source = Table.TransformColumnTypes(fnCsv("fact_vab.csv"), {{"comarca_code", type text}, {"any", Int64.Type}, {"sector_code", type text}, {"vab_meur", type number}, {"estat", type text}}, "en-US")
 				in
 				    Source
 

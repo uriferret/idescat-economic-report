@@ -73,7 +73,7 @@ table fact_mercat_cat
 		mode: import
 		source =
 				let
-				    Origen = Table.TransformColumnTypes(fnCsv("fact_mercat_cat.csv"), {{"data", type date}, {"any", Int64.Type}, {"mes", Int64.Type}, {"indicador_code", type text}, {"indicador", type text}, {"valor", type number}, {"estat", type text}})
+				    Origen = Table.TransformColumnTypes(fnCsv("fact_mercat_cat.csv"), {{"data", type date}, {"any", Int64.Type}, {"mes", Int64.Type}, {"indicador_code", type text}, {"indicador", type text}, {"valor", type number}, {"estat", type text}}, "en-US")
 				in
 				    Origen
 

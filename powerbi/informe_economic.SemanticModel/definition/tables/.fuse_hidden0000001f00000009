@@ -1,0 +1,51 @@
+/// Població i afiliats oficials per àmbit del Pla territorial (Idescat). Assignen cada municipi al seu àmbit, encara que la seva comarca sigui d'un altre.
+table fact_ambit_oficial
+	lineageTag: ce5180e5-0ca4-49d7-a3be-b3588ea1b316
+
+	column ambit_code
+		dataType: string
+		lineageTag: 278bbe35-3dcf-4144-b976-3b8409d40d55
+		summarizeBy: none
+		sourceColumn: ambit_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column any
+		dataType: int64
+		formatString: 0
+		lineageTag: 85927057-fec6-4262-aa76-fc01175cb262
+		summarizeBy: none
+		sourceColumn: any
+
+		annotation SummarizationSetBy = Automatic
+
+	column indicador_code
+		dataType: string
+		lineageTag: e0c78781-3ca9-4804-bce1-aaed9734dde7
+		summarizeBy: none
+		sourceColumn: indicador_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor
+		dataType: double
+		lineageTag: 7af76d03-5094-48a1-9a7c-f6e2eb2a6aa0
+		summarizeBy: sum
+		sourceColumn: valor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition fact_ambit_oficial = m
+		mode: import
+		source =
+				let
+				    Source = Table.TransformColumnTypes(fnCsv("fact_ambit_oficial.csv"), {{"ambit_code", type text}, {"any", Int64.Type}, {"indicador_code", type text}, {"valor", type number}})
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

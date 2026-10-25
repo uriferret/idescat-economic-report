@@ -45,7 +45,7 @@ table dim_indicador
 		mode: import
 		source =
 				let
-				    Source = Table.TransformColumnTypes(fnCsv("dim_indicador.csv"), {{"indicador_code", type text}, {"indicador", type text}, {"unitat", type text}, {"agregacio", type text}, {"font_idescat", type text}})
+				    Source = Table.TransformColumnTypes(fnCsv("dim_indicador.csv"), {{"indicador_code", type text}, {"indicador", type text}, {"unitat", type text}, {"agregacio", type text}, {"font_idescat", type text}}, "en-US")
 				in
 				    Source
 

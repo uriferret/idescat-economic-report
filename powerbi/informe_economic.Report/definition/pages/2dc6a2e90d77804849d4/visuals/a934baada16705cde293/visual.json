@@ -309,7 +309,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'IST, Catalunya = 100'"
+                  "Value": "'Punts de l''IST respecte a Catalunya (= 100)'"
                 }
               }
             },
@@ -335,6 +335,13 @@
                       "Value": "'#6B6A65'"
                     }
                   }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
                 }
               }
             }

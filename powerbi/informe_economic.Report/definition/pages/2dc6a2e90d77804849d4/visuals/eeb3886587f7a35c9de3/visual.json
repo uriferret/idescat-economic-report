@@ -103,7 +103,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -141,6 +141,27 @@
         {
           "properties": {
             "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'TopCenter'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "showTitle": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -212,7 +233,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Valors des de 2011 al 2025'"
+                  "Value": "'PIB a preus corrents per àmbit, milers de milions d''euros, 2011–2023'"
                 }
               }
             },

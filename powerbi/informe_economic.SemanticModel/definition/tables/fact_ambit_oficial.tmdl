@@ -41,7 +41,7 @@ table fact_ambit_oficial
 		mode: import
 		source =
 				let
-				    Source = Table.TransformColumnTypes(fnCsv("fact_ambit_oficial.csv"), {{"ambit_code", type text}, {"any", Int64.Type}, {"indicador_code", type text}, {"valor", type number}})
+				    Source = Table.TransformColumnTypes(fnCsv("fact_ambit_oficial.csv"), {{"ambit_code", type text}, {"any", Int64.Type}, {"indicador_code", type text}, {"valor", type number}}, "en-US")
 				in
 				    Source
 

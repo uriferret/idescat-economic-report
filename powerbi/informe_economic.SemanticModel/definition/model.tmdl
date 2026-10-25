@@ -1,7 +1,7 @@
 model Model
-	culture: en-US
+	culture: ca-ES
 	defaultPowerBIDataSourceVersion: powerBI_V3
-	sourceQueryCulture: en-US
+	sourceQueryCulture: ca-ES
 	valueFilterBehavior: independent
 	dataAccessOptions
 		legacyRedirects
@@ -27,5 +27,5 @@ ref table DateTableTemplate_d585d953-b2a5-4b56-95e2-488b876ac919
 ref table LocalDateTable_7e000482-a35e-434b-93ab-b594209222c6
 ref table fact_ambit_oficial
 
-ref cultureInfo en-US
+ref cultureInfo ca-ES
 

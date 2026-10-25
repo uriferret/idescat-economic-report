@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "501a074abf398d356fd4",
   "position": {
-    "x": 88.66995073891626,
-    "y": 446.8965517241379,
+    "x": 88.669950738916256,
+    "y": 444.23645320197045,
     "z": 7000,
-    "height": 246.5024630541872,
+    "height": 249.16256157635468,
     "width": 382.16748768472905,
     "tabOrder": 8000
   },
@@ -171,7 +171,21 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Blau: més llocs de treball que residents afiliats (índex > 1). Taronja: menys (< 1)'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
                 }
               }
             }
@@ -254,51 +268,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "0452321ff7cce86f1fbf",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_territori"
-              }
-            },
-            "Property": "comarca"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "db65a34e5a9bebfd3a59",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_indicadors"
-              }
-            },
-            "Property": "Afiliats residents"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "fd7f8200ec3a44298336",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_indicadors"
-              }
-            },
-            "Property": "Índex d'atracció laboral"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

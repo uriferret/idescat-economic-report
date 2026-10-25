@@ -56,7 +56,7 @@ table ref_oficial
 		mode: import
 		source =
 				let
-				    Source = Table.TransformColumnTypes(fnCsv("ref_oficial.csv"), {{"nivell", type text}, {"codi", type text}, {"nom", type text}, {"any", Int64.Type}, {"indicador_code", type text}, {"valor_oficial", type number}})
+				    Source = Table.TransformColumnTypes(fnCsv("ref_oficial.csv"), {{"nivell", type text}, {"codi", type text}, {"nom", type text}, {"any", Int64.Type}, {"indicador_code", type text}, {"valor_oficial", type number}}, "en-US")
 				in
 				    Source
 

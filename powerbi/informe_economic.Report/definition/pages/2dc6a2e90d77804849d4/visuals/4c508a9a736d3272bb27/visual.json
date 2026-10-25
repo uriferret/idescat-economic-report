@@ -154,7 +154,7 @@
             "displayName": {
               "expr": {
                 "Literal": {
-                  "Value": "'Línea de mediana X'"
+                  "Value": "'Mediana de les comarques'"
                 }
               }
             },
@@ -206,7 +206,7 @@
             "displayName": {
               "expr": {
                 "Literal": {
-                  "Value": "'Línea de mediana 1'"
+                  "Value": "'Mediana de les comarques'"
                 }
               }
             },
@@ -253,7 +253,7 @@
             "titleFontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "9D"
                 }
               }
             },
@@ -261,6 +261,24 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'PIB per habitant (€)'"
+                }
+              }
+            },
+            "titleColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#5F5E5A'"
+                    }
+                  }
                 }
               }
             }
@@ -300,7 +318,7 @@
             "titleFontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "9D"
                 }
               }
             },
@@ -308,11 +326,17 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0
+                    "Literal": {
+                      "Value": "'#5F5E5A'"
                     }
                   }
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Renda per persona (€)'"
                 }
               }
             }
@@ -354,14 +378,21 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'PIB per habitant (€), Renda mitjana per persona (€) i Població por comarca y ambit'"
+                  "Value": "'Cada bombolla és una comarca i la mida indica la població. Línies: mediana de les comarques'"
                 }
               }
             },
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
                 }
               }
             }

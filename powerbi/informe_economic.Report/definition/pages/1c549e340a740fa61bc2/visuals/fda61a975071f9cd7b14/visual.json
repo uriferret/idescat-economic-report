@@ -204,23 +204,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "2afe509878f8a8a17784",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Selector indicador"
-              }
-            },
-            "Property": "Indicador"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

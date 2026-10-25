@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "9792f24a5acf1aacb25d",
   "position": {
-    "x": 89.43738656987296,
-    "y": 88.27586206896551,
+    "x": 89.437386569872956,
+    "y": 88.275862068965509,
     "z": 0,
-    "height": 72.01451905626134,
+    "height": 72.014519056261335,
     "width": 281.08892921960074,
     "tabOrder": 2000
   },
@@ -154,6 +154,13 @@
                   "Value": "'center'"
                 }
               }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             }
           }
         }
@@ -164,7 +171,14 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'2023'"
                 }
               }
             }
@@ -186,5 +200,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "79e82b5877e8bdc6c7a8",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fact_indicadors"
+              }
+            },
+            "Property": "PIB (M€)"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

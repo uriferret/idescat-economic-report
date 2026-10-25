@@ -65,7 +65,7 @@ table dim_territori
 		mode: import
 		source =
 				let
-				    Source = Table.TransformColumnTypes(fnCsv("dim_territori.csv"), {{"comarca_code", type text}, {"comarca", type text}, {"ambit_code", type text}, {"ambit", type text}, {"canvi_limits", type text}, {"serie_comparable", type logical}})
+				    Source = Table.TransformColumnTypes(fnCsv("dim_territori.csv"), {{"comarca_code", type text}, {"comarca", type text}, {"ambit_code", type text}, {"ambit", type text}, {"canvi_limits", type text}, {"serie_comparable", type logical}}, "en-US")
 				in
 				    Source
 

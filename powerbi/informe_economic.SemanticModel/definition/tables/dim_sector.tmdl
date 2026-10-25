@@ -30,7 +30,7 @@ table dim_sector
 		mode: import
 		source =
 				let
-				    Source = Table.TransformColumnTypes(fnCsv("dim_sector.csv"), {{"sector_code", type text}, {"sector", type text}, {"ordre", Int64.Type}})
+				    Source = Table.TransformColumnTypes(fnCsv("dim_sector.csv"), {{"sector_code", type text}, {"sector", type text}, {"ordre", Int64.Type}}, "en-US")
 				in
 				    Source
 

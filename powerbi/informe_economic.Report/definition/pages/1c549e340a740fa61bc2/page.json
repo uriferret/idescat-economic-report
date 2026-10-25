@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
   "name": "1c549e340a740fa61bc2",
   "displayName": "Comarques",
-  "displayOption": "ActualSize",
+  "displayOption": "FitToPage",
   "height": 720,
   "width": 1280,
   "filterConfig": {

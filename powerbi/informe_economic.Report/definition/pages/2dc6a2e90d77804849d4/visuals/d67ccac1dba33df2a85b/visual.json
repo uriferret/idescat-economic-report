@@ -170,7 +170,7 @@
             "titleText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Pes de la industria (%)'"
+                  "Value": "'Pes de la indústria al VAB (%)'"
                 }
               }
             },
@@ -184,7 +184,18 @@
             "titleFontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "9D"
+                }
+              }
+            },
+            "titleColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#5F5E5A'"
+                    }
+                  }
                 }
               }
             }
@@ -204,7 +215,25 @@
             "titleFontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "9D"
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'PIB per habitant (€)'"
+                }
+              }
+            },
+            "titleColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#5F5E5A'"
+                    }
+                  }
                 }
               }
             }
@@ -246,14 +275,21 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Pes indústria al VAB (%), PIB per habitant (€) per comarca'"
+                  "Value": "'Cada punt és una comarca. Color: IST, blau per sobre de 100 i taronja per sota'"
                 }
               }
             },
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
                 }
               }
             }

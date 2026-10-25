@@ -65,12 +65,12 @@ table fact_indicadors
 		formatString: 0.00
 		lineageTag: 513e087b-fdd0-4564-b85c-f6457ffc988f
 
-	/// Índex socioeconòmic territorial (Catalunya = 100). Per a un àmbit o Catalunya, mitjana de les comarques ponderada per la població del mateix any. Últim any amb dades si n'hi ha diversos.
+	/// Índex socioeconòmic territorial (Catalunya = 100). Sense filtre territorial, 100. Per a un àmbit, mitjana de les comarques ponderada per la població del mateix any. Últim any amb dades si n'hi ha diversos.
 	measure 'IST (Catalunya 100)' = ```
 			
 			        VAR _codi = "IST_G_IND"
 			        VAR _any = CALCULATE ( MAX ( fact_indicadors[any] ), dim_indicador[indicador_code] = _codi )
-			        RETURN
+			        RETURN IF ( NOT ISCROSSFILTERED ( dim_territori ), 100,  -- Catalunya és 100 per definició
 			            CALCULATE (
 			                VAR _t =
 			                    ADDCOLUMNS (
@@ -80,7 +80,7 @@ table fact_indicadors
 			                    )
 			                RETURN DIVIDE ( SUMX ( _t, [@v] * [@p] ), SUMX ( FILTER ( _t, NOT ISBLANK ( [@v] ) ), [@p] ) ),
 			                dim_any[any] = _any
-			            )
+			            ) )
 			```
 		formatString: 0.0
 		lineageTag: a2be95d3-f24e-4fd2-bd7b-e5a359a82592
@@ -274,7 +274,7 @@ table fact_indicadors
 			
 			        DIVIDE ( CALCULATE ( SUM ( fact_mercat_cat[valor] ), fact_mercat_cat[indicador_code] = "UN_RATE" ), 100 )
 			```
-		formatString: 0.00%;-0.00%;0.00%
+		formatString: 0.0%;-0.0%;0.0%
 		lineageTag: b0099e01-328f-45bc-b66a-7ae8f7538258
 
 	/// Taxa d'atur de Catalunya de l'últim mes disponible dins del període filtrat.
@@ -334,7 +334,7 @@ table fact_indicadors
 		mode: import
 		source =
 				let
-				    Source = Table.TransformColumnTypes(fnCsv("fact_indicadors.csv"), {{"comarca_code", type text}, {"any", Int64.Type}, {"indicador_code", type text}, {"valor", type number}, {"estat", type text}})
+				    Source = Table.TransformColumnTypes(fnCsv("fact_indicadors.csv"), {{"comarca_code", type text}, {"any", Int64.Type}, {"indicador_code", type text}, {"valor", type number}, {"estat", type text}}, "en-US")
 				in
 				    Source
 

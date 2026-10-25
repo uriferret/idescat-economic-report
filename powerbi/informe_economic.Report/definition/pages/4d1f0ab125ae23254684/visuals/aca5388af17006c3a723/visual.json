@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "aca5388af17006c3a723",
   "position": {
-    "x": 485.75539568345323,
-    "y": 446.61870503597123,
+    "x": 485.9113300492611,
+    "y": 438.02955665024632,
     "z": 8000,
-    "height": 246.33093525179856,
-    "width": 382.158273381295,
+    "height": 254.48275862068965,
+    "width": 382.16748768472905,
     "tabOrder": 9000
   },
   "visual": {
@@ -201,7 +201,21 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Llocs de treball del règim general per cada resident afiliat. Línia discontínua: equilibri (1,00)'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
                 }
               }
             }
@@ -326,20 +340,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "b68f32dbdf46e0208166",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_indicadors"
-              }
-            },
-            "Property": "Índex d'atracció laboral"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

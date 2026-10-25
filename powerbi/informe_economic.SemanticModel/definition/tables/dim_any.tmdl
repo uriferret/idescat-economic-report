@@ -14,7 +14,7 @@ table dim_any
 		mode: import
 		source =
 				let
-				    Source = Table.TransformColumnTypes(fnCsv("dim_any.csv"), {{"any", Int64.Type}})
+				    Source = Table.TransformColumnTypes(fnCsv("dim_any.csv"), {{"any", Int64.Type}}, "en-US")
 				in
 				    Source
 

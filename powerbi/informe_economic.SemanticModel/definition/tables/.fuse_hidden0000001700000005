@@ -1,0 +1,55 @@
+table dim_indicador
+	lineageTag: f2b84ab6-7335-4acb-8392-183aba242ea2
+
+	column indicador_code
+		dataType: string
+		lineageTag: 2b4bca8b-ae11-4e5a-908d-83152a06ae10
+		summarizeBy: none
+		sourceColumn: indicador_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column indicador
+		dataType: string
+		lineageTag: 8a8d5737-ff60-41bf-9155-ef7a82424412
+		summarizeBy: none
+		sourceColumn: indicador
+
+		annotation SummarizationSetBy = Automatic
+
+	column unitat
+		dataType: string
+		lineageTag: 6c09e227-1bb7-4092-972c-635643b54462
+		summarizeBy: none
+		sourceColumn: unitat
+
+		annotation SummarizationSetBy = Automatic
+
+	column agregacio
+		dataType: string
+		lineageTag: c97116a2-d6f4-422e-8998-d79d54148cf2
+		summarizeBy: none
+		sourceColumn: agregacio
+
+		annotation SummarizationSetBy = Automatic
+
+	column font_idescat
+		dataType: string
+		lineageTag: b2a65d8a-fb75-409e-9baa-9543720f76cf
+		summarizeBy: none
+		sourceColumn: font_idescat
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_indicador = m
+		mode: import
+		source =
+				let
+				    Source = Table.TransformColumnTypes(fnCsv("dim_indicador.csv"), {{"indicador_code", type text}, {"indicador", type text}, {"unitat", type text}, {"agregacio", type text}, {"font_idescat", type text}})
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

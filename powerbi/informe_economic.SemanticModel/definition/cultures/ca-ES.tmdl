@@ -1,0 +1,95 @@
+cultureInfo ca-ES
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "dim_any.any": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_any",
+			          "ConceptualProperty": "any"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Any": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_territori.comarca": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_territori",
+			          "ConceptualProperty": "comarca"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Comarca": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_territori.ambit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_territori",
+			          "ConceptualProperty": "ambit"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Àmbit": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fact_indicadors.valor_seleccionat": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_indicadors",
+			          "ConceptualProperty": "Valor seleccionat"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Valor": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

@@ -48,7 +48,7 @@ table fact_afiliacions_sector
 		mode: import
 		source =
 				let
-				    Origen = Table.TransformColumnTypes(fnCsv("fact_afiliacions_sector.csv"), {{"comarca_code", type text}, {"any", Int64.Type}, {"sector_code", type text}, {"afiliacions", type number}, {"estat", type text}})
+				    Origen = Table.TransformColumnTypes(fnCsv("fact_afiliacions_sector.csv"), {{"comarca_code", type text}, {"any", Int64.Type}, {"sector_code", type text}, {"afiliacions", type number}, {"estat", type text}}, "en-US")
 				in
 				    Origen
 
