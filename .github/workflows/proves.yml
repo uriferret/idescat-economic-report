@@ -1,0 +1,31 @@
+# Executa les proves i la validació de les dades a cada canvi de la branca main.
+name: Proves
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# Només lectura: el flux no pot modificar el repositori.
+permissions:
+  contents: read
+
+jobs:
+  proves:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Instal·la les dependències
+        run: pip install -r requirements.txt
+      - name: Proves (pytest)
+        run: pytest -q
+      - name: Validació de les dades
+        run: python src/validate.py
