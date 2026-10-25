@@ -2,8 +2,6 @@
 
 On es genera la riquesa a Catalunya, on viu la gent i com hi viu. Aquest informe compara les **42 comarques i l'Aran** i els **8 àmbits territorials** amb dades oficials de l'[Idescat](https://www.idescat.cat).
 
-És una adaptació a Catalunya del projecte *World Economic Report* de Maven Analytics, que fa la mateixa comparació entre països amb dades del Banc Mundial.
-
 ![Infografia de l'informe econòmic de Catalunya. El PIB ha crescut un 42% entre el 2011 i el 2023 (un 19% en termes reals) i l'àmbit Metropolità en genera el 68%. El Penedès és l'àmbit que més ha crescut en població des del 1981 (+120%). Un gràfic de bombolles compara el PIB per habitant i la renda per persona de cada comarca: la Ribera d'Ebre té el PIB per habitant més alt però una renda per sota de la mitjana, i el Garraf, el contrari. L'IST només supera la mitjana catalana a l'àmbit Metropolità, i el PIB per habitant no hi té relació.](python/output/informe_economic_catalunya.png)
 
 ## Què hi trobaràs
@@ -12,7 +10,7 @@ On es genera la riquesa a Catalunya, on viu la gent i com hi viu. Aquest informe
 |---|---|---|
 | [**Infografia**](python/) | Llegir les conclusions en una sola pàgina | Obre la imatge [PNG](python/output/informe_economic_catalunya.png) o el [PDF](python/output/informe_economic_catalunya.pdf) |
 | [**Informe de Power BI**](powerbi/) | Explorar les dades per any, àmbit i comarca | Obre `powerbi/informe_economic.pbip` amb Power BI Desktop. Les instruccions són a [`powerbi/README.md`](powerbi/) |
-| [**Dashboard web**](https://claude.ai/artifact/F5mz53ZLQtgQfxVQYd6nZW) | Consultar l'informe des del navegador, sense instal·lar res | Obre [l'enllaç](https://claude.ai/artifact/F5mz53ZLQtgQfxVQYd6nZW) |
+| [**Dashboard web**](https://claude.ai/artifact/F5mz53ZLQtgQfxVQYd6nZW) | Consultar l'informe des del navegador, sense instal·lar res | Accés restringit: [sol·licita'n l'accés](https://www.linkedin.com/in/oriol-ferret) i obre [l'enllaç](https://claude.ai/artifact/F5mz53ZLQtgQfxVQYd6nZW) |
 
 ## Principals conclusions
 
@@ -24,7 +22,7 @@ On es genera la riquesa a Catalunya, on viu la gent i com hi viu. Aquest informe
 
 ## Dashboard web
 
-[Obre el dashboard](https://claude.ai/artifact/F5mz53ZLQtgQfxVQYd6nZW)
+[Obre el dashboard](https://claude.ai/artifact/F5mz53ZLQtgQfxVQYd6nZW) · És d'accés restringit: per consultar-lo, [sol·licita'n l'accés per LinkedIn](https://www.linkedin.com/in/oriol-ferret).
 
 - **Pestanyes:** *Resum* (PIB, població, renda i IST per àmbit), *Comarques* (taula de les 42 comarques i l'Aran) i *Laboral* (afiliacions, atur i desplaçaments per feina).
 - **Detall:** passa el ratolí per sobre de qualsevol gràfic per veure'n els valors.
@@ -33,7 +31,7 @@ On es genera la riquesa a Catalunya, on viu la gent i com hi viu. Aquest informe
 - **Tema:** la pàgina es mostra en clar o en fosc segons la configuració del teu dispositiu.
 - **Accessibilitat:** les pestanyes es poden canviar amb les fletxes del teclat, cada gràfic té una descripció per a lectors de pantalla i els valors es poden consultar en taula o en CSV al panell *Sources*.
 
-**Privadesa i accés.** El dashboard és només de lectura: qui el visita no hi pot fer canvis. La pàgina no demana cap dada ni desa res al navegador del visitant, i no es connecta a cap sistema extern. Totes les dades són estadístiques públiques de l'Idescat i no contenen informació personal.
+**Privadesa i accés.** Només hi poden accedir les persones convidades, que l'obren amb el seu compte de Claude. El dashboard és només de lectura: qui el visita no hi pot fer canvis. La pàgina no demana cap dada ni desa res al navegador del visitant, i no es connecta a cap sistema extern. Totes les dades són estadístiques públiques de l'Idescat i no contenen informació personal.
 
 ## Actualitzar les dades
 
@@ -83,15 +81,13 @@ Codi publicat amb llicència [MIT](LICENSE). Les dades són de l'Idescat i es re
 
 Where wealth is generated in Catalonia, where people live, and how well they live. This report compares the **42 comarques (counties) and Aran** and the **8 territorial planning areas** using official data from [Idescat](https://www.idescat.cat), the Statistical Institute of Catalonia.
 
-It is a Catalan adaptation of Maven Analytics' *World Economic Report*, which makes the same comparison across countries using World Bank data.
-
 ### What's inside
 
 | Version | Use it to | How to open it |
 |---|---|---|
 | [**Infographic**](python/) | Read the main findings on a single page | Open the [PNG](python/output/informe_economic_catalunya.png) or the [PDF](python/output/informe_economic_catalunya.pdf) |
 | [**Power BI report**](powerbi/) | Explore the data by year, area and comarca | Open `powerbi/informe_economic.pbip` with Power BI Desktop (free). Instructions in [`powerbi/README.md`](powerbi/) (in Catalan) |
-| [**Web dashboard**](https://claude.ai/artifact/F5mz53ZLQtgQfxVQYd6nZW) | Browse the report in a web browser, nothing to install | Open [the link](https://claude.ai/artifact/F5mz53ZLQtgQfxVQYd6nZW) |
+| [**Web dashboard**](https://claude.ai/artifact/F5mz53ZLQtgQfxVQYd6nZW) | Browse the report in a web browser, nothing to install | Restricted access: [request access](https://www.linkedin.com/in/oriol-ferret), then open [the link](https://claude.ai/artifact/F5mz53ZLQtgQfxVQYd6nZW) |
 
 ### Key findings
 
@@ -103,7 +99,7 @@ It is a Catalan adaptation of Maven Analytics' *World Economic Report*, which ma
 
 ### Web dashboard
 
-[Open the dashboard](https://claude.ai/artifact/F5mz53ZLQtgQfxVQYd6nZW) (in Catalan)
+[Open the dashboard](https://claude.ai/artifact/F5mz53ZLQtgQfxVQYd6nZW) (in Catalan) · Access is restricted: [request access on LinkedIn](https://www.linkedin.com/in/oriol-ferret).
 
 - **Tabs:** *Resum* (summary: GDP, population, income and IST by area), *Comarques* (table of all 42 comarques and Aran) and *Laboral* (employment, unemployment and commuting).
 - **Details:** hover over any chart to see its values.
@@ -112,7 +108,7 @@ It is a Catalan adaptation of Maven Analytics' *World Economic Report*, which ma
 - **Theme:** the page follows your device's light or dark setting.
 - **Accessibility:** tabs can be switched with the arrow keys, every chart has a screen-reader description, and the values are available as a table or CSV in the *Sources* panel.
 
-**Privacy and access.** The dashboard is read-only: visitors cannot change it. The page asks for no data, stores nothing in the visitor's browser and connects to no external system. All data is public Idescat statistics with no personal information.
+**Privacy and access.** Only invited people can open it, signed in with their Claude account. The dashboard is read-only: visitors cannot change it. The page asks for no data, stores nothing in the visitor's browser and connects to no external system. All data is public Idescat statistics with no personal information.
 
 ### Updating the data
 
