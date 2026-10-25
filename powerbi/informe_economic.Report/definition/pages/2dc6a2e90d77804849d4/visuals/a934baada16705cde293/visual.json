@@ -7,7 +7,7 @@
     "z": 7000,
     "height": 268,
     "width": 280,
-    "tabOrder": 7000
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -332,7 +332,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#898781'"
+                      "Value": "'#6B6A65'"
                     }
                   }
                 }
@@ -348,6 +348,19 @@
               "expr": {
                 "Literal": {
                   "Value": "14D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Gràfic de barres de l''índex socioeconòmic territorial per àmbit, en punts respecte a Catalunya (100). Només el Metropolità supera la mitjana.'"
                 }
               }
             }

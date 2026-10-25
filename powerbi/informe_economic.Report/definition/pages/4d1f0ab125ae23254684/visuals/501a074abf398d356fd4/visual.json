@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "501a074abf398d356fd4",
   "position": {
-    "x": 88.669950738916256,
-    "y": 446.89655172413791,
+    "x": 88.66995073891626,
+    "y": 446.8965517241379,
     "z": 7000,
-    "height": 246.50246305418719,
+    "height": 246.5024630541872,
     "width": 382.16748768472905,
-    "tabOrder": 7000
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "shapeMap",
@@ -233,6 +233,19 @@
               "expr": {
                 "Literal": {
                   "Value": "8D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Mapa de les comarques acolorit segons l''índex d''atracció laboral: llocs de treball del règim general per cada resident afiliat. Els valors són al gràfic de barres del costat.'"
                 }
               }
             }

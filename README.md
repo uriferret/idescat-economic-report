@@ -4,7 +4,7 @@ On es genera la riquesa a Catalunya, on viu la gent i com hi viu. Aquest informe
 
 És una adaptació a Catalunya del projecte *World Economic Report* de Maven Analytics, que fa la mateixa comparació entre països amb dades del Banc Mundial.
 
-![Infografia](python/output/informe_economic_catalunya.png)
+![Infografia de l'informe econòmic de Catalunya. El PIB ha crescut un 42% entre el 2011 i el 2023 (un 19% en termes reals) i l'àmbit Metropolità en genera el 68%. El Penedès és l'àmbit que més ha crescut en població des del 1981 (+120%). Un gràfic de bombolles compara el PIB per habitant i la renda per persona de cada comarca: la Ribera d'Ebre té el PIB per habitant més alt però una renda per sota de la mitjana, i el Garraf, el contrari. L'IST només supera la mitjana catalana a l'àmbit Metropolità, i el PIB per habitant no hi té relació.](python/output/informe_economic_catalunya.png)
 
 ## Què hi trobaràs
 
@@ -31,6 +31,7 @@ On es genera la riquesa a Catalunya, on viu la gent i com hi viu. Aquest informe
 - **Taula de comarques:** escriu el nom d'una comarca o d'un àmbit per filtrar-la, i fes clic a una capçalera per ordenar-la.
 - **Fonts:** el panell *Sources* mostra d'on surt cada xifra, de quina data és i com s'ha calculat. També permet descarregar les dades en CSV.
 - **Tema:** la pàgina es mostra en clar o en fosc segons la configuració del teu dispositiu.
+- **Accessibilitat:** les pestanyes es poden canviar amb les fletxes del teclat, cada gràfic té una descripció per a lectors de pantalla i els valors es poden consultar en taula o en CSV al panell *Sources*.
 
 **Privadesa i accés.** El dashboard és només de lectura: qui el visita no hi pot fer canvis. La pàgina no demana cap dada ni desa res al navegador del visitant, i no es connecta a cap sistema extern. Totes les dades són estadístiques públiques de l'Idescat i no contenen informació personal.
 
@@ -109,6 +110,7 @@ It is a Catalan adaptation of Maven Analytics' *World Economic Report*, which ma
 - **Comarques table:** type a comarca or area name to filter it, and click a column header to sort it.
 - **Sources:** the *Sources* panel shows where each figure comes from, its date and how it was calculated, and lets you download the data as CSV.
 - **Theme:** the page follows your device's light or dark setting.
+- **Accessibility:** tabs can be switched with the arrow keys, every chart has a screen-reader description, and the values are available as a table or CSV in the *Sources* panel.
 
 **Privacy and access.** The dashboard is read-only: visitors cannot change it. The page asks for no data, stores nothing in the visitor's browser and connects to no external system. All data is public Idescat statistics with no personal information.
 

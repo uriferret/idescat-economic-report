@@ -7,7 +7,7 @@
     "z": 2000,
     "height": 604,
     "width": 699,
-    "tabOrder": 2000
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "shapeMap",
@@ -211,6 +211,19 @@
                     }
                   },
                   "Property": "Títol mapa"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Mapa de les comarques acolorit segons la posició en l''indicador triat. Fes clic en una comarca per veure''n la fitxa. Els valors de cada comarca són a la taula del costat.'"
                 }
               }
             }

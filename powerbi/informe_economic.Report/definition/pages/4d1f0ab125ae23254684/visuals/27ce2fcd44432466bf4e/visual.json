@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "27ce2fcd44432466bf4e",
   "position": {
-    "x": 685.41871921182269,
+    "x": 685.4187192118227,
     "y": 175.56650246305418,
     "z": 5000,
     "height": 254.48275862068965,
     "width": 578.128078817734,
-    "tabOrder": 5000
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "stackedAreaChart",
@@ -126,6 +126,19 @@
               "expr": {
                 "Literal": {
                   "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Gràfic d''àrees apilades dels afiliats residents per àmbit des del 2012. Creixen a tots els àmbits, un 30% en conjunt.'"
                 }
               }
             }

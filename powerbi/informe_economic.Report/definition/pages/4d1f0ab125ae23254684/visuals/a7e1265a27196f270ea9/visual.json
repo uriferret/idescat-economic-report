@@ -7,7 +7,7 @@
     "z": 2000,
     "height": 72,
     "width": 281,
-    "tabOrder": 2000
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -488,6 +488,19 @@
               "expr": {
                 "Literal": {
                   "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Targeta: taxa d''afiliació, afiliats residents dividits per la població de 16 a 64 anys.'"
                 }
               }
             }

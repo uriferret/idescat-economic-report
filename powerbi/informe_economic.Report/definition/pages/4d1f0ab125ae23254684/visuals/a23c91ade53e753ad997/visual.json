@@ -7,7 +7,7 @@
     "z": 4000,
     "height": 254.41608662026294,
     "width": 579.1183294663573,
-    "tabOrder": 4000
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "lineChart",
@@ -143,6 +143,19 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Gràfic de línies de la taxa d''atur mensual de Catalunya des del 2005. Arriba al màxim del 24,5% el 2013 i baixa per sota del 9%.'"
                 }
               }
             }

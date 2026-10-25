@@ -7,7 +7,7 @@
     "z": 10000,
     "height": 18,
     "width": 581,
-    "tabOrder": 10000
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "textbox",
@@ -58,7 +58,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#898781'"
+                      "Value": "'#6B6A65'"
                     }
                   }
                 }

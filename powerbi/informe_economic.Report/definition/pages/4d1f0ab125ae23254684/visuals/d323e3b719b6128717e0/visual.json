@@ -5,9 +5,9 @@
     "x": 382.158273381295,
     "y": 87.4820143884892,
     "z": 1000,
-    "height": 72.014519056261335,
-    "width": 285.73502722323047,
-    "tabOrder": 1000
+    "height": 72.01451905626134,
+    "width": 285.7350272232305,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -382,6 +382,19 @@
               "expr": {
                 "Literal": {
                   "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Targeta: creixement dels afiliats residents des del 2012.'"
                 }
               }
             }

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "bfbbe34058473feea23c",
   "position": {
-    "x": 886.00154679040986,
+    "x": 886.0015467904099,
     "y": 446.4655839133797,
     "z": 9000,
     "height": 246.4965197215777,
     "width": 376.1794276875483,
-    "tabOrder": 9000
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "hundredPercentStackedBarChart",
@@ -187,6 +187,19 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Gràfic de barres al 100% del pes de cada sector en els llocs de treball per àmbit. Els serveis concentren prop del 80% de l''ocupació.'"
                 }
               }
             }

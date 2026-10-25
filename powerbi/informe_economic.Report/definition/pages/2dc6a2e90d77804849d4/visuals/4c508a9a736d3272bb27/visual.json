@@ -7,7 +7,7 @@
     "z": 6000,
     "height": 254,
     "width": 579,
-    "tabOrder": 6000
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "scatterChart",
@@ -175,7 +175,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#898781'"
+                      "Value": "'#6B6A65'"
                     }
                   }
                 }
@@ -227,7 +227,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#898781'"
+                      "Value": "'#6B6A65'"
                     }
                   }
                 }
@@ -362,6 +362,19 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Gràfic de dispersió de les comarques: PIB per habitant a l''eix horitzontal i renda per persona al vertical, amb la mida segons la població. La Ribera d''Ebre té el PIB per habitant més alt però una renda per sota de la mitjana; el Garraf, el contrari.'"
                 }
               }
             }

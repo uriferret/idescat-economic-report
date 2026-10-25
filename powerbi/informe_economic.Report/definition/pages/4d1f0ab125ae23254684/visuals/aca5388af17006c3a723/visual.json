@@ -7,7 +7,7 @@
     "z": 8000,
     "height": 246.33093525179856,
     "width": 382.158273381295,
-    "tabOrder": 8000
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -202,6 +202,19 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Gràfic de barres de l''índex d''atracció laboral per comarca. Només 6 comarques superen 1; el Barcelonès és la més alta i el Moianès i el Garraf, les més baixes.'"
                 }
               }
             }

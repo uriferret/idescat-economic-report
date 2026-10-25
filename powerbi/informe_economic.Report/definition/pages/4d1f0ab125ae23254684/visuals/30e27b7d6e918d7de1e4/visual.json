@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "30e27b7d6e918d7de1e4",
   "position": {
-    "x": 981.87050359712225,
+    "x": 981.8705035971223,
     "y": 87.4820143884892,
     "z": 3000,
     "height": 71,
     "width": 282,
-    "tabOrder": 3000
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -442,6 +442,19 @@
               "expr": {
                 "Literal": {
                   "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Targeta: taxa d''atur de Catalunya de l''últim mes amb dades.'"
                 }
               }
             }

@@ -7,7 +7,7 @@
     "z": 4000,
     "height": 254,
     "width": 579,
-    "tabOrder": 4000
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "stackedAreaChart",
@@ -234,6 +234,19 @@
               "expr": {
                 "Literal": {
                   "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Gràfic d''àrees apilades del PIB per àmbit territorial, en milers de milions d''euros, des del 2011. El PIB creix a tots els àmbits; el Metropolità en genera prop del 68%.'"
                 }
               }
             }

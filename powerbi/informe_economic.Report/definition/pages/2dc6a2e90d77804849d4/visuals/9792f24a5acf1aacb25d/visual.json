@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "9792f24a5acf1aacb25d",
   "position": {
-    "x": 89.437386569872956,
-    "y": 88.275862068965509,
+    "x": 89.43738656987296,
+    "y": 88.27586206896551,
     "z": 0,
-    "height": 72.014519056261335,
+    "height": 72.01451905626134,
     "width": 281.08892921960074,
-    "tabOrder": 0
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -165,6 +165,19 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Targeta: PIB de Catalunya en milions d''euros per a l''any triat.'"
                 }
               }
             }

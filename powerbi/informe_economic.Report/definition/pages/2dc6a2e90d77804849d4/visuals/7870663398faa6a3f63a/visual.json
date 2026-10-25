@@ -7,7 +7,7 @@
     "z": 3000,
     "height": 71,
     "width": 282,
-    "tabOrder": 3000
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -484,6 +484,19 @@
               "expr": {
                 "Literal": {
                   "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Targeta: renda mitjana per persona de Catalunya en euros per a l''any triat.'"
                 }
               }
             }

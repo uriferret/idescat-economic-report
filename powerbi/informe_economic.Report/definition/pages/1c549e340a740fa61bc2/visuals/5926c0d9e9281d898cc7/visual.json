@@ -7,7 +7,7 @@
     "z": 4000,
     "height": 111,
     "width": 457,
-    "tabOrder": 4000
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -276,6 +276,19 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Targetes de la comarca seleccionada: PIB per habitant, renda per persona, IST i pes de la indústria.'"
                 }
               }
             }

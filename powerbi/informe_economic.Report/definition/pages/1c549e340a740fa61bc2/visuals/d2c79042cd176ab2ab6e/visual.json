@@ -7,7 +7,7 @@
     "z": 7000,
     "height": 66,
     "width": 129,
-    "tabOrder": 7000
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "slicer",
@@ -125,6 +125,19 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Selector de l''any.'"
                 }
               }
             }

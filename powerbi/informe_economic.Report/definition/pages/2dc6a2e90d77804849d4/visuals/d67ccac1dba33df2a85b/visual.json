@@ -7,7 +7,7 @@
     "z": 8000,
     "height": 255,
     "width": 280,
-    "tabOrder": 8000
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "scatterChart",
@@ -254,6 +254,19 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Gràfic de dispersió de les comarques: pes de la indústria en el VAB i PIB per habitant, amb el color segons l''IST. La indústria té una relació moderada amb el PIB per habitant i cap amb l''IST.'"
                 }
               }
             }

@@ -7,7 +7,7 @@
     "z": 6000,
     "height": 351,
     "width": 457,
-    "tabOrder": 6000
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "tableEx",
@@ -204,6 +204,19 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Taula de les comarques amb l''àmbit, el valor de l''indicador triat i el rànquing.'"
                 }
               }
             }

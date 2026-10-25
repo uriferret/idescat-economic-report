@@ -7,7 +7,7 @@
     "z": 8000,
     "height": 66,
     "width": 157,
-    "tabOrder": 8000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "slicer",
@@ -63,6 +63,19 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Selector de l''àmbit territorial.'"
                 }
               }
             }

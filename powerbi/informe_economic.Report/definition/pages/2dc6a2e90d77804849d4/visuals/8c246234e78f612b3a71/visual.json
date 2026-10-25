@@ -7,7 +7,7 @@
     "z": 5000,
     "height": 254,
     "width": 576,
-    "tabOrder": 5000
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "stackedAreaChart",
@@ -195,6 +195,19 @@
               "expr": {
                 "Literal": {
                   "Value": "8D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Gràfic d''àrees apilades de la població per àmbit territorial des del 1981. Catalunya passa de 5,9 a 8,1 milions d''habitants; el Penedès és l''àmbit que més creix.'"
                 }
               }
             }
