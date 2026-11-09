@@ -1,0 +1,6 @@
+indicador_code,indicador,unitat
+ATUR_REG,Atur registrat (mitjana anual),persones
+POP_16_64,Població de 16 a 64 anys (1 de gener),persones
+PES_ATUR,Pes de l'atur registrat sobre la població de 16 a 64 anys,%
+POP,Població (1 de gener),persones
+AVER_INC_EUR,Renda mitjana per persona,€

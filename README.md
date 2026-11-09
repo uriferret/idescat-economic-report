@@ -53,8 +53,9 @@ Té tres pàgines (*Resum*, *Comarques* i *Laboral*) i es pot filtrar per any, �
 ```mermaid
 flowchart LR
   A["API Taules v2<br>Idescat"] --> B["extract.py<br>descàrrega"]
+  S["Atur registrat<br>SEPE"] --> B
   B --> C["model.py<br>model en estrella"]
-  C --> D["validate.py<br>18 comprovacions"]
+  C --> D["validate.py<br>26 comprovacions"]
   D --> E["Infografia<br>Python"]
   D --> F["Informe<br>Power BI"]
   D --> G["Dashboard<br>web"]
@@ -64,12 +65,28 @@ Les dades es descarreguen de l'API de l'Idescat en format JSON-stat i es convert
 
 ## Qualitat de les dades
 
-`src/validate.py` fa 18 comprovacions i en desa el resultat a [`data/processed/validacio.md`](data/processed/validacio.md). L'última execució les passa totes:
+`src/validate.py` fa 26 comprovacions i en desa el resultat a [`data/processed/validacio.md`](data/processed/validacio.md). L'última execució les passa totes:
 
 - **Totals:** la suma de les comarques coincideix amb el total de Catalunya en PIB, valor afegit, població i afiliats (diferència màxima del 0,03%).
 - **Indicadors calculats:** el PIB per habitant calculat coincideix amb l'oficial a totes les comarques.
 - **Àmbits territorials:** les diferències entre les xifres oficials de cada àmbit i la suma de les seves comarques s'expliquen pels 12 municipis que pertanyen a un àmbit diferent del de la seva comarca.
 - **Model:** no hi ha files duplicades, i totes les comarques tenen àmbit i existeixen a la dimensió de territori.
+- **Municipis:** l'atur registrat té els 947 municipis cada any, i la mitjana anual coincideix amb la de l'EMEX de l'Idescat (municipis i total de Catalunya); la renda dels municipis, ponderada per població, coincideix amb la de Catalunya (diferència màxima del 0,3%).
+
+### Dades per municipi
+
+A més de les comarques, `data/model/` té tres taules per municipi, que no fa servir l'informe de Power BI: `fact_municipis.csv` (municipi × any × indicador), `dim_municipi.csv` i `dim_indicador_municipi.csv`.
+
+| Indicador | Anys | Font |
+|---|---|---|
+| Atur registrat (mitjana anual) | 2006-2025 | SEPE, *Paro registrado por municipio* |
+| Pes de l'atur: atur registrat sobre la població de 16 a 64 anys | 2021-2025 | Calculat |
+| Població de 16 a 64 anys (1 de gener) | 2021-2025 | Idescat, estimacions de població |
+| Població (1 de gener) | 2006-2025 | Idescat, Padró municipal d'habitants |
+| Renda mitjana per persona | 2015-2023 | Idescat, índex socioeconòmic territorial |
+
+- **Atur registrat:** des del 2022 el SEPE amaga els valors de menys de 5 persones; un municipi amb algun mes així no té mitjana anual (estat `<5`). El fitxer del 2020 no té el desembre (mitjana d'11 mesos, estat `11m`) i el del 2013 només té de gener a abril (sense mitjana, estat `4m`).
+- **Pes de l'atur:** s'acosta a la taxa d'atur, que no es publica per municipi, però el denominador és tota la població de 16 a 64 anys, no només la població activa. Comença el 2021 perquè abans l'Idescat no estima la població de 16 a 64 anys de tots els municipis.
 
 A més, [`data/processed/qa_report.md`](data/processed/qa_report.md) resumeix les dades descarregades (valors buits i dades provisionals), i les proves de `tests/` (`pytest`) comproven la lectura del format JSON-stat i els controls de qualitat, sense connectar-se a l'API. Les proves i la validació s'executen automàticament a GitHub cada cop que es modifica el repositori.
 
@@ -79,7 +96,7 @@ Les dades es descarreguen de l'API de l'Idescat i es poden tornar a generar amb 
 
 ```bash
 pip install -r requirements.txt
-python src/extract.py   # descarrega les taules de l'Idescat a data/processed/
+python src/extract.py   # descarrega les taules de l'Idescat i l'atur del SEPE a data/processed/
 python src/model.py     # prepara les taules de l'informe de Power BI a data/model/
 python src/validate.py  # comprova les dades i el model (data/processed/validacio.md)
 ```
@@ -99,7 +116,7 @@ tests/    proves
 
 ## Fonts
 
-Dades: **[Idescat](https://www.idescat.cat)**, Institut d'Estadística de Catalunya, a través de l'[API Taules v2](https://www.idescat.cat/dev/api/taules/): PIB territorial i comptes econòmics anuals, estimacions de població, índex socioeconòmic territorial, afiliacions a la Seguretat Social i estimació mensual de la població activa. Les dades no s'han modificat. Cartografia: © Instituto Geográfico Nacional (CC BY 4.0).
+Dades: **[Idescat](https://www.idescat.cat)**, Institut d'Estadística de Catalunya, a través de l'[API Taules v2](https://www.idescat.cat/dev/api/taules/): PIB territorial i comptes econòmics anuals, estimacions de població, Padró municipal d'habitants, índex socioeconòmic territorial, afiliacions a la Seguretat Social i estimació mensual de la població activa. Atur registrat per municipi: **[SEPE](https://www.sepe.es)**, Servei Públic d'Ocupació Estatal ([datos.gob.es](https://datos.gob.es/es/catalogo/ea0041513-paro-registrado-por-municipio)). Les dades no s'han modificat. Cartografia: © Instituto Geográfico Nacional (CC BY 4.0).
 
 Aquest projecte no té cap relació ni aval de l'Idescat.
 
@@ -109,7 +126,7 @@ Aquest projecte no té cap relació ni aval de l'Idescat.
 
 Desenvolupat amb l'ajuda de Claude (Anthropic) per al codi i la documentació. L'anàlisi, el disseny de l'informe i la validació de les dades són de l'autor.
 
-Codi publicat amb llicència [MIT](LICENSE). Les dades són de l'Idescat i es regeixen per les seves [condicions d'ús](https://www.idescat.cat/dev/api/?lang=ca).
+Codi publicat amb llicència [MIT](LICENSE). Les dades són de l'Idescat i es regeixen per les seves [condicions d'ús](https://www.idescat.cat/dev/api/?lang=ca); les de l'atur registrat són del SEPE i es reutilitzen segons les condicions de [datos.gob.es](https://datos.gob.es/es/aviso-legal), citant-ne la font.
 
 ---
 
@@ -155,8 +172,9 @@ The Power BI report has three pages (*Resum*, *Comarques* and *Laboral*) and can
 ```mermaid
 flowchart LR
   A["Tables API v2<br>Idescat"] --> B["extract.py<br>download"]
+  S["Registered unemployment<br>SEPE"] --> B
   B --> C["model.py<br>star schema"]
-  C --> D["validate.py<br>18 checks"]
+  C --> D["validate.py<br>26 checks"]
   D --> E["Infographic<br>Python"]
   D --> F["Power BI<br>report"]
   D --> G["Web<br>dashboard"]
@@ -166,12 +184,17 @@ Data is downloaded from the Idescat API in JSON-stat format and converted into t
 
 ### Data quality
 
-`src/validate.py` runs 18 checks and saves the results to [`data/processed/validacio.md`](data/processed/validacio.md). The latest run passes all of them:
+`src/validate.py` runs 26 checks and saves the results to [`data/processed/validacio.md`](data/processed/validacio.md). The latest run passes all of them:
 
 - **Totals:** comarques add up to the Catalonia total for GDP, gross value added, population and affiliates (maximum difference 0.03%).
 - **Derived indicators:** calculated GDP per capita matches the official figure in every comarca.
 - **Territorial areas:** differences between each area's official figures and the sum of its comarques are explained by the 12 municipalities assigned to a different area from their comarca.
 - **Model:** no duplicate rows, and every comarca has an area and exists in the territory dimension.
+- **Municipalities:** registered unemployment covers all 947 municipalities every year and its annual average matches Idescat's EMEX (municipalities and the Catalonia total); municipal income, weighted by population, matches the Catalonia figure (maximum difference 0.3%).
+
+### Municipal data
+
+Besides the comarques, `data/model/` has three municipal tables that the Power BI report does not use: `fact_municipis.csv` (municipality × year × indicator), `dim_municipi.csv` and `dim_indicador_municipi.csv`. They contain registered unemployment (annual average, 2006-2025, SEPE), unemployment as a share of the population aged 16 to 64 (2021-2025), population (2006-2025) and average income per person (2015-2023). Since 2022 SEPE hides values below 5 people; the 2020 file has no December and the 2013 file only covers January to April (see the Catalan section for details).
 
 [`data/processed/qa_report.md`](data/processed/qa_report.md) also summarises the downloaded data (missing values and provisional figures), and the tests in `tests/` (`pytest`) check the JSON-stat parser and the quality checks without calling the API. Tests and validation run automatically on GitHub on every change.
 
@@ -181,7 +204,7 @@ Data is downloaded from the Idescat API and can be regenerated with Python 3.11 
 
 ```bash
 pip install -r requirements.txt
-python src/extract.py   # downloads the Idescat tables into data/processed/
+python src/extract.py   # downloads the Idescat tables and SEPE unemployment into data/processed/
 python src/model.py     # builds the Power BI tables in data/model/
 python src/validate.py  # checks the data and the model (data/processed/validacio.md)
 ```
@@ -190,7 +213,7 @@ Then run the notebook [`python/informe_economic.ipynb`](python/informe_economic.
 
 ### Sources
 
-Data: **[Idescat](https://www.idescat.cat)**, via the [Tables API v2](https://www.idescat.cat/dev/api/taules/): territorial GDP and annual economic accounts, population estimates, territorial socioeconomic index, Social Security affiliations and monthly labour force estimates. Data has not been modified. Maps: © Instituto Geográfico Nacional (CC BY 4.0). This project is not affiliated with or endorsed by Idescat.
+Data: **[Idescat](https://www.idescat.cat)**, via the [Tables API v2](https://www.idescat.cat/dev/api/taules/): territorial GDP and annual economic accounts, population estimates, municipal population register, territorial socioeconomic index, Social Security affiliations and monthly labour force estimates. Registered unemployment by municipality: **[SEPE](https://www.sepe.es)**, the Spanish Public Employment Service ([datos.gob.es](https://datos.gob.es/es/catalogo/ea0041513-paro-registrado-por-municipio)). Data has not been modified. Maps: © Instituto Geográfico Nacional (CC BY 4.0). This project is not affiliated with or endorsed by Idescat.
 
 
 ### Author
@@ -199,4 +222,4 @@ Data: **[Idescat](https://www.idescat.cat)**, via the [Tables API v2](https://ww
 
 Built with the help of Claude (Anthropic) for code and documentation. The analysis, report design and data validation are the author's.
 
-Code released under the [MIT](LICENSE) licence. Data belongs to Idescat and is subject to its [terms of use](https://www.idescat.cat/dev/api/?lang=en).
+Code released under the [MIT](LICENSE) licence. Data belongs to Idescat and is subject to its [terms of use](https://www.idescat.cat/dev/api/?lang=en); registered unemployment data belongs to SEPE and is reused under the [datos.gob.es](https://datos.gob.es/es/aviso-legal) terms, citing the source.

@@ -31,6 +31,10 @@ Extracció: 2026-10-24 21:11 UTC · Font: Idescat
 - **taxes_mercat_cat/cat**: 783 files, 0 valors buits (0.0%) | períodes 2005M01–2026M09 (261), estats: {'p': 36, 'a': 9}
 - **poblacio_mun/mun**: 936 files, 828 valors buits (88.5%) | períodes 1986S2–2025S1 (78), estats: {'..': 828}
 - **afiliats_res_mun/mun**: 1320 files, 0 valors buits (0.0%) | períodes 2012M03–2026M09 (110), estats: {'p': 12}
+- **ist_indicadors/cat**: 60 files, 7 valors buits (11.7%) | períodes 2015–2024 (10), estats: {'..': 7, 'b': 3, 'p': 2}
+- **renda_municipis/mun**: 9470 files, 1155 valors buits (12.2%) | períodes 2015–2024 (10), estats: {'..': 1155}
+- **poblacio_municipis/mun**: 18960 files, 5 valors buits (0.0%) | períodes 2006–2025 (20), estats: {'..': 5}
+- **poblacio_16_64_municipis/mun**: 4740 files, 0 valors buits (0.0%) | períodes 2021S1–2025S1 (5), estats: cap
 
 ## Mapatge comarca → àmbit
 

@@ -1,6 +1,6 @@
 # Validació de les dades
 
-2026-10-24 21:11 UTC · 18 correctes, 0 amb incidències
+2026-11-09 18:48 UTC · 26 correctes, 0 amb incidències
 
 - ✅ pib: suma de comarques = Catalunya. Diferència màxima 0.000%
 - ✅ vab: suma de comarques = Catalunya. Diferència màxima 0.033%
@@ -20,6 +20,14 @@
 - ✅ fact_afiliacions_sector: sense files duplicades
 - ✅ fact_afiliacions_sector: totes les comarques existeixen a dim_territori
 - ✅ fact_ambit_oficial: 6 de 6 indicadors amb xifres oficials per àmbit
+- ✅ dim_municipi: 947 municipis sense duplicats
+- ✅ fact_municipis: sense files duplicades
+- ✅ fact_municipis: tots els municipis existeixen a dim_municipi
+- ✅ Atur registrat 2006-2025: els 947 municipis cada any (mínim 947)
+- ✅ Atur registrat 2025: la suma dels municipis (324,351) és la de Catalunya a l'EMEX (325,084), menys els 199 municipis que el SEPE amaga («<5»): diferència 0.23%
+- ✅ Atur registrat 2025: la mitjana anual de 5 municipis és la de l'EMEX (diferència màxima 0.00)
+- ✅ Renda per municipi 2015-2023: almenys 900 municipis cada any (mínim 911)
+- ✅ Renda per municipi: la mitjana dels municipis ponderada per població és la de Catalunya (diferència màxima 0.32%)
 
 ## Detall
 
@@ -54,3 +62,29 @@ indicador_code  min  max  count
      POP_16_64 2015 2025     88
        POP_JUL 2015 2024     80
 ```
+### Atur registrat 2025 · SEPE i EMEX
+
+```
+municipi_code    EMEX    SEPE
+        08019 63038.8 63038.8
+        17079  4296.4  4296.4
+        25120  6434.9  6434.9
+        43148  6235.3  6235.3
+        08305  1703.5  1703.5
+```
+
+### Renda per municipi · mitjana ponderada i Catalunya
+
+```
+ any  municipis  ponderada  Catalunya diferència
+2015        914      12353    12326.0     +0.22%
+2016        912      12735    12695.0     +0.32%
+2017        911      13120    13082.0     +0.29%
+2018        915      13682    13650.0     +0.24%
+2019        912      14139    14107.0     +0.22%
+2020        947      14180    14152.0     +0.19%
+2021        945      14780    14748.0     +0.22%
+2022        932      15542    15519.0     +0.15%
+2023        927      16492    16461.0     +0.19%
+```
+

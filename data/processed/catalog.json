@@ -303,5 +303,63 @@
       "MUN": "080556,080641,080958,082397,080312,080364,080608,081705,081764,082286,081897,082975"
     },
     "rows": 1320
+  },
+  {
+    "source": "ist_indicadors",
+    "geo": "cat",
+    "file": "data/processed/ist_indicadors_cat.csv",
+    "label": "Indicadors socioeconòmics. Valors. Catalunya",
+    "updated": "2026-06-26",
+    "url": "https://api.idescat.cat/taules/v2/ist/14074/15022/cat/data",
+    "filters": null,
+    "rows": 60
+  },
+  {
+    "source": "renda_municipis",
+    "geo": "mun",
+    "file": "data/processed/renda_municipis_mun.csv",
+    "label": "Indicadors socioeconòmics. Valors. Municipis",
+    "updated": "2026-06-26",
+    "url": "https://api.idescat.cat/taules/v2/ist/14074/15022/mun/data",
+    "filters": {
+      "CONCEPT": "AVER_INC_EUR"
+    },
+    "rows": 9470
+  },
+  {
+    "source": "poblacio_municipis",
+    "geo": "mun",
+    "file": "data/processed/poblacio_municipis_mun.csv",
+    "label": "Població a 1 de gener. Per sexe. Municipis",
+    "updated": "2025-12-12",
+    "url": "https://api.idescat.cat/taules/v2/pmh/446/477/mun/data",
+    "filters": {
+      "SEX": "TOTAL"
+    },
+    "rows": 18960
+  },
+  {
+    "source": "poblacio_16_64_municipis",
+    "geo": "mun",
+    "file": "data/processed/poblacio_16_64_municipis_mun.csv",
+    "label": "Població. Per sexe i edat en grans grups. Municipis",
+    "updated": "2025-05-07",
+    "url": "https://api.idescat.cat/taules/v2/ep/17363/20891/mun/data",
+    "filters": {
+      "SEX": "TOTAL",
+      "AGE": "Y016_064",
+      "SEMESTER": "2021S1,2022S1,2023S1,2024S1,2025S1"
+    },
+    "rows": 4740
+  },
+  {
+    "source": "atur_registrat",
+    "geo": "mun",
+    "file": "data/processed/atur_registrat_municipis.csv",
+    "label": "Paro registrado por municipios (SEPE), mitjana anual",
+    "updated": null,
+    "url": "https://sede.sepe.gob.es/es/portaltrabaja/resources/sede/datos_abiertos/datos/Paro_por_municipios_2025_csv.csv",
+    "filters": null,
+    "rows": 18940
   }
 ]

@@ -1,0 +1,61 @@
+source,period_code,period_label,geo_code,geo_label,CONCEPT,CONCEPT_label,value,status
+ist_indicadors,2015,2015,TOTAL,Catalunya,POP_EMP_PERC,població ocupada (%),59.9,
+ist_indicadors,2015,2015,TOTAL,Catalunya,WOR_LOWSK _PERC,treballadors de baixa qualificació (%),12.8,
+ist_indicadors,2015,2015,TOTAL,Catalunya,POP_PS_EDU_PERC,població amb estudis baixos (%),,..
+ist_indicadors,2015,2015,TOTAL,Catalunya,POP_Y_WSTU_PERC,població jove sense estudis postobligatoris (%),,..
+ist_indicadors,2015,2015,TOTAL,Catalunya,POP_INC_LM_PERC,població estrangera de països de renda baixa o mitjana (%),10.9,
+ist_indicadors,2015,2015,TOTAL,Catalunya,AVER_INC_EUR,renda mitjana per persona (€),12326.0,
+ist_indicadors,2016,2016,TOTAL,Catalunya,POP_EMP_PERC,població ocupada (%),61.9,
+ist_indicadors,2016,2016,TOTAL,Catalunya,WOR_LOWSK _PERC,treballadors de baixa qualificació (%),12.8,
+ist_indicadors,2016,2016,TOTAL,Catalunya,POP_PS_EDU_PERC,població amb estudis baixos (%),,..
+ist_indicadors,2016,2016,TOTAL,Catalunya,POP_Y_WSTU_PERC,població jove sense estudis postobligatoris (%),,..
+ist_indicadors,2016,2016,TOTAL,Catalunya,POP_INC_LM_PERC,població estrangera de països de renda baixa o mitjana (%),10.9,
+ist_indicadors,2016,2016,TOTAL,Catalunya,AVER_INC_EUR,renda mitjana per persona (€),12695.0,
+ist_indicadors,2017,2017,TOTAL,Catalunya,POP_EMP_PERC,població ocupada (%),63.9,
+ist_indicadors,2017,2017,TOTAL,Catalunya,WOR_LOWSK _PERC,treballadors de baixa qualificació (%),12.8,
+ist_indicadors,2017,2017,TOTAL,Catalunya,POP_PS_EDU_PERC,població amb estudis baixos (%),,..
+ist_indicadors,2017,2017,TOTAL,Catalunya,POP_Y_WSTU_PERC,població jove sense estudis postobligatoris (%),,..
+ist_indicadors,2017,2017,TOTAL,Catalunya,POP_INC_LM_PERC,població estrangera de països de renda baixa o mitjana (%),11.0,
+ist_indicadors,2017,2017,TOTAL,Catalunya,AVER_INC_EUR,renda mitjana per persona (€),13082.0,
+ist_indicadors,2018,2018,TOTAL,Catalunya,POP_EMP_PERC,població ocupada (%),65.6,
+ist_indicadors,2018,2018,TOTAL,Catalunya,WOR_LOWSK _PERC,treballadors de baixa qualificació (%),12.6,
+ist_indicadors,2018,2018,TOTAL,Catalunya,POP_PS_EDU_PERC,població amb estudis baixos (%),15.5,
+ist_indicadors,2018,2018,TOTAL,Catalunya,POP_Y_WSTU_PERC,població jove sense estudis postobligatoris (%),29.9,
+ist_indicadors,2018,2018,TOTAL,Catalunya,POP_INC_LM_PERC,població estrangera de països de renda baixa o mitjana (%),11.4,
+ist_indicadors,2018,2018,TOTAL,Catalunya,AVER_INC_EUR,renda mitjana per persona (€),13650.0,
+ist_indicadors,2019,2019,TOTAL,Catalunya,POP_EMP_PERC,població ocupada (%),66.2,
+ist_indicadors,2019,2019,TOTAL,Catalunya,WOR_LOWSK _PERC,treballadors de baixa qualificació (%),12.4,
+ist_indicadors,2019,2019,TOTAL,Catalunya,POP_PS_EDU_PERC,població amb estudis baixos (%),14.9,
+ist_indicadors,2019,2019,TOTAL,Catalunya,POP_Y_WSTU_PERC,població jove sense estudis postobligatoris (%),28.6,
+ist_indicadors,2019,2019,TOTAL,Catalunya,POP_INC_LM_PERC,població estrangera de països de renda baixa o mitjana (%),12.1,
+ist_indicadors,2019,2019,TOTAL,Catalunya,AVER_INC_EUR,renda mitjana per persona (€),14107.0,
+ist_indicadors,2020,2020,TOTAL,Catalunya,POP_EMP_PERC,població ocupada (%),64.0,
+ist_indicadors,2020,2020,TOTAL,Catalunya,WOR_LOWSK _PERC,treballadors de baixa qualificació (%),11.8,
+ist_indicadors,2020,2020,TOTAL,Catalunya,POP_PS_EDU_PERC,població amb estudis baixos (%),14.0,
+ist_indicadors,2020,2020,TOTAL,Catalunya,POP_Y_WSTU_PERC,població jove sense estudis postobligatoris (%),26.6,
+ist_indicadors,2020,2020,TOTAL,Catalunya,POP_INC_LM_PERC,població estrangera de països de renda baixa o mitjana (%),13.0,
+ist_indicadors,2020,2020,TOTAL,Catalunya,AVER_INC_EUR,renda mitjana per persona (€),14152.0,
+ist_indicadors,2021,2021,TOTAL,Catalunya,POP_EMP_PERC,població ocupada (%),65.1,
+ist_indicadors,2021,2021,TOTAL,Catalunya,WOR_LOWSK _PERC,treballadors de baixa qualificació (%),12.1,
+ist_indicadors,2021,2021,TOTAL,Catalunya,POP_PS_EDU_PERC,població amb estudis baixos (%),15.2,b
+ist_indicadors,2021,2021,TOTAL,Catalunya,POP_Y_WSTU_PERC,població jove sense estudis postobligatoris (%),25.7,b
+ist_indicadors,2021,2021,TOTAL,Catalunya,POP_INC_LM_PERC,població estrangera de països de renda baixa o mitjana (%),12.4,b
+ist_indicadors,2021,2021,TOTAL,Catalunya,AVER_INC_EUR,renda mitjana per persona (€),14748.0,
+ist_indicadors,2022,2022,TOTAL,Catalunya,POP_EMP_PERC,població ocupada (%),66.5,
+ist_indicadors,2022,2022,TOTAL,Catalunya,WOR_LOWSK _PERC,treballadors de baixa qualificació (%),12.0,
+ist_indicadors,2022,2022,TOTAL,Catalunya,POP_PS_EDU_PERC,població amb estudis baixos (%),14.3,
+ist_indicadors,2022,2022,TOTAL,Catalunya,POP_Y_WSTU_PERC,població jove sense estudis postobligatoris (%),24.0,
+ist_indicadors,2022,2022,TOTAL,Catalunya,POP_INC_LM_PERC,població estrangera de països de renda baixa o mitjana (%),12.4,
+ist_indicadors,2022,2022,TOTAL,Catalunya,AVER_INC_EUR,renda mitjana per persona (€),15519.0,
+ist_indicadors,2023,2023,TOTAL,Catalunya,POP_EMP_PERC,població ocupada (%),66.8,
+ist_indicadors,2023,2023,TOTAL,Catalunya,WOR_LOWSK _PERC,treballadors de baixa qualificació (%),11.6,
+ist_indicadors,2023,2023,TOTAL,Catalunya,POP_PS_EDU_PERC,població amb estudis baixos (%),13.7,
+ist_indicadors,2023,2023,TOTAL,Catalunya,POP_Y_WSTU_PERC,població jove sense estudis postobligatoris (%),22.9,
+ist_indicadors,2023,2023,TOTAL,Catalunya,POP_INC_LM_PERC,població estrangera de països de renda baixa o mitjana (%),13.5,
+ist_indicadors,2023,2023,TOTAL,Catalunya,AVER_INC_EUR,renda mitjana per persona (€),16461.0,
+ist_indicadors,2024,2024,TOTAL,Catalunya,POP_EMP_PERC,població ocupada (%),67.2,p
+ist_indicadors,2024,2024,TOTAL,Catalunya,WOR_LOWSK _PERC,treballadors de baixa qualificació (%),11.4,p
+ist_indicadors,2024,2024,TOTAL,Catalunya,POP_PS_EDU_PERC,població amb estudis baixos (%),13.1,
+ist_indicadors,2024,2024,TOTAL,Catalunya,POP_Y_WSTU_PERC,població jove sense estudis postobligatoris (%),22.4,
+ist_indicadors,2024,2024,TOTAL,Catalunya,POP_INC_LM_PERC,població estrangera de països de renda baixa o mitjana (%),14.1,
+ist_indicadors,2024,2024,TOTAL,Catalunya,AVER_INC_EUR,renda mitjana per persona (€),,..

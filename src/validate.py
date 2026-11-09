@@ -22,6 +22,9 @@ TOL_TOTAL = 0.001    # suma de comarques vs Catalunya (arrodoniments)
 TOL_PIB_HAB = 0.005  # PIB per habitant calculat vs oficial (últim any)
 TOL_MUNICIPIS = 0.02  # diferència d'àmbit explicada pels municipis reassignats
 ARRODONIMENT = 25     # els afiliats es publiquen arrodonits a múltiples de 5 per territori
+TOL_RENDA_MUN = 0.005  # renda dels municipis ponderada per població vs Catalunya
+TOL_ATUR_EMEX = 0.005  # atur dels municipis (sense els «<5») vs Catalunya a l'EMEX
+MUNICIPIS = 947
 
 resultats: list[tuple[bool, str]] = []
 detall: list[str] = []
@@ -137,10 +140,63 @@ def model() -> None:
     detall.append("### fact_ambit_oficial\n\n" + taula(resum.reset_index()))
 
 
+# ---- 5. Municipis: atur registrat (SEPE) i renda (Idescat) ---------------------
+def municipis() -> None:
+    dim = pd.read_csv(MODEL / "dim_municipi.csv", dtype={"municipi_code": str, "codi_idescat": str})
+    f = pd.read_csv(MODEL / "fact_municipis.csv", dtype={"municipi_code": str}, keep_default_na=False,
+                    na_values=[""])
+    ok(len(dim) == MUNICIPIS and dim["municipi_code"].is_unique, f"dim_municipi: {len(dim)} municipis sense duplicats")
+    ok(not f.duplicated(["municipi_code", "any", "indicador_code"]).any(), "fact_municipis: sense files duplicades")
+    orfes = sorted(set(f["municipi_code"]) - set(dim["municipi_code"]))
+    ok(not orfes, "fact_municipis: tots els municipis existeixen a dim_municipi" + (f" (orfes: {orfes[:5]})" if orfes else ""))
+
+    # Atur: cada any, els 947 municipis; i la mitjana anual és la de l'EMEX.
+    atur = f[f["indicador_code"] == "ATUR_REG"]
+    per_any = atur.groupby("any")["municipi_code"].nunique()
+    ok((per_any == MUNICIPIS).all(), f"Atur registrat {per_any.index.min()}-{per_any.index.max()}: "
+       f"els {MUNICIPIS} municipis cada any (mínim {per_any.min()})")
+    ref = pd.read_csv(PROCESSED / "ref_emex_atur.csv", dtype={"municipi_code": str})
+    darrer = int(ref["any"].max())
+    a = atur[atur["any"] == darrer]
+    suma, cat = a["valor"].sum(), ref["atur_catalunya"].iloc[0]
+    amagats = int((a["estat"] == "<5").sum())
+    ok(suma <= cat and 1 - suma / cat <= TOL_ATUR_EMEX,
+       f"Atur registrat {darrer}: la suma dels municipis ({suma:,.0f}) és la de Catalunya a l'EMEX ({cat:,.0f}), "
+       f"menys els {amagats} municipis que el SEPE amaga («<5»): diferència {1 - suma / cat:.2%}")
+    m = ref.merge(a, on=["municipi_code", "any"], how="left")
+    dif = (m["valor"] - m["atur_municipi"]).abs()
+    ok(dif.max() <= 0.05, f"Atur registrat {darrer}: la mitjana anual de {len(m)} municipis és la de l'EMEX "
+       f"(diferència màxima {dif.max():.2f})")
+    detall.append(f"### Atur registrat {darrer} · SEPE i EMEX\n\n" + taula(m[["municipi_code", "atur_municipi", "valor"]]
+                  .rename(columns={"atur_municipi": "EMEX", "valor": "SEPE"})) + "\n")
+
+    # Renda: prou municipis, i la mitjana ponderada per població és la de Catalunya.
+    renda = f[f["indicador_code"] == "AVER_INC_EUR"]
+    pob = f[f["indicador_code"] == "POP"][["municipi_code", "any", "valor"]].rename(columns={"valor": "pob"})
+    r = renda.dropna(subset=["valor"]).merge(pob, on=["municipi_code", "any"])
+    cat = load("ist_indicadors_cat")
+    cat = cat[cat["CONCEPT"] == "AVER_INC_EUR"].assign(any=lambda d: d["period_code"].astype(int)).set_index("any")["value"]
+    files = []
+    for any_, g in r.groupby("any"):
+        if pd.isna(cat.get(any_)):
+            continue
+        w = (g["valor"] * g["pob"]).sum() / g["pob"].sum()
+        files.append({"any": any_, "municipis": len(g), "ponderada": round(w), "Catalunya": cat[any_],
+                      "diferència": w / cat[any_] - 1})
+    t = pd.DataFrame(files)
+    ok((t["municipis"] >= 900).all(), f"Renda per municipi {t['any'].min()}-{t['any'].max()}: "
+       f"almenys 900 municipis cada any (mínim {t['municipis'].min()})")
+    ok((t["diferència"].abs() <= TOL_RENDA_MUN).all(),
+       f"Renda per municipi: la mitjana dels municipis ponderada per població és la de Catalunya "
+       f"(diferència màxima {t['diferència'].abs().max():.2%})")
+    detall.append("### Renda per municipi · mitjana ponderada i Catalunya\n\n"
+                  + taula(t.assign(diferència=t["diferència"].map("{:+.2%}".format))) + "\n")
+
+
 def main() -> int:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-    for prova in (suma_comarques_catalunya, pib_per_habitant, ambits, model):
+    for prova in (suma_comarques_catalunya, pib_per_habitant, ambits, model, municipis):
         try:
             prova()
         except Exception as exc:  # una prova que peta no ha d'amagar les altres

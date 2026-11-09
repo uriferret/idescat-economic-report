@@ -14,6 +14,12 @@ Sortida a data/model/:
     fact_mercat_cat.csv gra: mes (Catalunya): taxes d'activitat, ocupació i atur
     ref_oficial.csv     valors oficials d'àmbit i Catalunya (per conciliar amb la suma de comarques)
     fact_ambit_oficial.csv  població i afiliats oficials per àmbit (gra: àmbit × any × indicador)
+    dim_municipi.csv    els 947 municipis: codi INE (5 xifres), codi Idescat (6) i nom
+    dim_indicador_municipi.csv  indicadors per municipi
+    fact_municipis.csv  gra: municipi × any × indicador (atur registrat, població, renda)
+
+Els fets per municipi van a part i amb la seva dimensió d'indicadors: l'informe de
+Power BI no els fa servir, i així no en canvia res.
 
 Decisió de disseny: els fets són a nivell de comarca i els àmbits s'obtenen sumant
 comarques (vegeu README, "Notes metodològiques"). El PIB per habitant es calcula amb la
@@ -66,6 +72,16 @@ INDICADORS = {
 # municipis de config/municipis_ambit_diferent.csv al seu àmbit (abans, Alta Segarra al Penedès).
 AMBIT_OFICIAL = {"POP": 2015, "POP_JUL": 2015, "POP_16_64": 2015,
                  "AFI_RES": 2015, "AFI_RG_RES": 2015, "AFI_RG_LLOC": 2015}
+
+
+# Indicadors per municipi: codi -> (nom, unitat). Vegeu `municipis()`.
+INDICADORS_MUNICIPI = {
+    "ATUR_REG": ("Atur registrat (mitjana anual)", "persones"),
+    "POP_16_64": ("Població de 16 a 64 anys (1 de gener)", "persones"),
+    "PES_ATUR": ("Pes de l'atur registrat sobre la població de 16 a 64 anys", "%"),
+    "POP": ("Població (1 de gener)", "persones"),
+    "AVER_INC_EUR": ("Renda mitjana per persona", "€"),
+}
 
 
 def load(name: str) -> pd.DataFrame:
@@ -203,12 +219,66 @@ def main() -> None:
     (pd.concat(amb).rename(columns={"geo_code": "ambit_code", "value": "valor"})[cols].dropna(subset=["valor"])
      if amb else pd.DataFrame(columns=cols)).to_csv(MODEL / "fact_ambit_oficial.csv", index=False)
 
+    municipis()
+
     ref_anys = pd.read_csv(MODEL / "ref_oficial.csv")["any"]
     anys = range(min(fact["any"].min(), ref_anys.min()), max(fact["any"].max(), ref_anys.max()) + 1)
     pd.DataFrame({"any": list(anys)}).to_csv(MODEL / "dim_any.csv", index=False)
 
     for f in sorted(MODEL.glob("*.csv")):
         print(f"{f.name:22} {sum(1 for _ in f.open(encoding='utf-8')) - 1:>6} files")
+
+
+def municipis() -> None:
+    """Fets per municipi: atur registrat (SEPE), població i renda (Idescat).
+
+    - ATUR_REG: mitjana anual de l'atur registrat (src/sepe.py). Buit amb estat
+      «<5» si algun mes la font l'amaga; estat «11m» el 2020 (falta el desembre).
+    - POP_16_64 i POP: població a 1 de gener.
+    - PES_ATUR: atur registrat / població de 16 a 64 anys × 100, el mateix any.
+      És una aproximació a la taxa d'atur, que no es publica per municipi: el
+      denominador és tota la població en edat de treballar, no la població activa.
+    - AVER_INC_EUR: renda mitjana per persona (indicadors de l'IST).
+    """
+    pob = load("poblacio_municipis_mun")
+    pob = pob[(pob["geo_code"] != "TOTAL") & (pob["CONCEPT"] == "POP")]
+    noms = pob[["geo_code", "geo_label"]].drop_duplicates("geo_code")
+    dim = pd.DataFrame({"municipi_code": noms["geo_code"].str[:5], "codi_idescat": noms["geo_code"],
+                        "municipi": noms["geo_label"]}).sort_values("municipi_code")
+    dim.to_csv(MODEL / "dim_municipi.csv", index=False)
+    a_ine = dict(zip(dim["codi_idescat"], dim["municipi_code"]))
+
+    def idescat(nom: str, concepte: str, codi: str) -> pd.DataFrame:
+        d = to_year(load(nom))
+        d = d[(d["geo_code"] != "TOTAL") & (d["CONCEPT"] == concepte)]
+        return pd.DataFrame({"municipi_code": d["geo_code"].map(a_ine), "any": d["any"], "indicador_code": codi,
+                             "valor": d["value"], "estat": d["status"].fillna("")})
+
+    parts = [
+        idescat("poblacio_municipis_mun", "POP", "POP"),
+        idescat("poblacio_16_64_municipis_mun", "POP", "POP_16_64"),
+        idescat("renda_municipis_mun", "AVER_INC_EUR", "AVER_INC_EUR"),
+    ]
+    atur = pd.read_csv(PROCESSED / "atur_registrat_municipis.csv", dtype={"municipi_code": str}, keep_default_na=False,
+                       na_values=[""])
+    atur["estat"] = atur["estat"].fillna("")
+    parts.append(atur.assign(indicador_code="ATUR_REG")[["municipi_code", "any", "indicador_code", "valor", "estat"]])
+    fact = pd.concat(parts, ignore_index=True)
+    # Pes de l'atur: només amb les dues xifres del mateix any.
+    piv = fact.pivot_table(index=["municipi_code", "any"], columns="indicador_code", values="valor")
+    pes = (piv["ATUR_REG"] / piv["POP_16_64"] * 100).dropna().round(2).rename("valor").reset_index()
+    estat_atur = atur.set_index(["municipi_code", "any"])["estat"]
+    pes["estat"] = [estat_atur.get(k, "") for k in zip(pes["municipi_code"], pes["any"])]
+    fact = pd.concat([fact, pes.assign(indicador_code="PES_ATUR")], ignore_index=True)
+    # Una fila buida només es queda si l'estat explica per què és buida (el SEPE
+    # l'amaga o li falten mesos); les «..» de l'Idescat (encara no publicat)
+    # fora, com a fact_indicadors.
+    fact = fact[fact["valor"].notna() | (fact["estat"] == "<5") | fact["estat"].str.fullmatch(r"\d+m")]
+    (fact[["municipi_code", "any", "indicador_code", "valor", "estat"]]
+     .sort_values(["indicador_code", "municipi_code", "any"])
+     .to_csv(MODEL / "fact_municipis.csv", index=False))
+    pd.DataFrame([{"indicador_code": k, "indicador": n, "unitat": u} for k, (n, u) in INDICADORS_MUNICIPI.items()]
+                 ).to_csv(MODEL / "dim_indicador_municipi.csv", index=False)
 
 
 if __name__ == "__main__":

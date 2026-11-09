@@ -47,10 +47,11 @@ SOURCES = {
         "geos": ["cat", "com"],
         "description": "Índex socioeconòmic territorial (IST). Índex Catalunya=100",
     },
-    # Components de l'IST en valors (inclou renda mitjana per persona).
+    # Components de l'IST en valors (inclou renda mitjana per persona). Catalunya,
+    # per comprovar la renda dels municipis.
     "ist_indicadors": {
         "stat": "ist", "node": 14074, "table": 15022,
-        "geos": ["com"],
+        "geos": ["cat", "com"],
         "description": "Indicadors socioeconòmics. Valors",
     },
     # ---- Mercat laboral -------------------------------------------------------
@@ -87,6 +88,39 @@ SOURCES = {
         "geos": ["cat"],
         "filters": {"INDICATOR": "VALUE_PERC"},
         "description": "Estimació mensual de la població activa. Taxes d'activitat, ocupació i atur",
+    },
+    # ---- Municipis ---------------------------------------------------------------
+    # Renda mitjana per persona de cada municipi (un dels indicadors de l'IST),
+    # la mateixa definició que la de les comarques. 2015-2023.
+    "renda_municipis": {
+        "stat": "ist", "node": 14074, "table": 15022,
+        "geos": ["mun"],
+        "filters": {"CONCEPT": "AVER_INC_EUR"},
+        "description": "Renda mitjana per persona. Municipis",
+    },
+    # Població de cada municipi a 1 de gener, del Padró (pondera la renda i fa de
+    # denominador per habitant). Les estimacions de població (`ep`) només tenen
+    # tots els municipis des del 2021. Són més cel·les de les que l'API serveix
+    # d'una vegada (respon 416): es demana en dos trossos d'anys.
+    "poblacio_municipis": {
+        "stat": "pmh", "node": 446, "table": 477,
+        "geos": ["mun"],
+        "filters": {"SEX": "TOTAL"},
+        "trossos": [
+            {"YEAR": ",".join(str(a) for a in range(2006, 2016))},
+            {"YEAR": ",".join(str(a) for a in range(2016, 2026))},
+        ],
+        "description": "Padró municipal d'habitants. Població a 1 de gener. Municipis",
+    },
+    # Població de 16 a 64 anys de cada municipi a 1 de gener (denominador del pes
+    # de l'atur), la mateixa estimació que la de les comarques. L'Idescat només
+    # l'estima per a tots els municipis des del 2021.
+    "poblacio_16_64_municipis": {
+        "stat": "ep", "node": 17363, "table": 20891,
+        "geos": ["mun"],
+        "filters": {"SEX": "TOTAL", "AGE": "Y016_064",
+                    "SEMESTER": ",".join(f"{a}S1" for a in range(2021, 2026))},
+        "description": "Estimacions de població de 16 a 64 anys. Municipis, a 1 de gener",
     },
     # ---- Municipis amb un àmbit diferent del de la seva comarca (verificació) ----
     "poblacio_mun": {
